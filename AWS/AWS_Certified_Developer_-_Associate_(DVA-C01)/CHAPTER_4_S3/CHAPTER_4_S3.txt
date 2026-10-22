@@ -1,0 +1,17 @@
+CHAPTER 4 
+S3S3 101
+Reviewing S3 Storage Classes
+Securing S3 Buckets
+S3 Bucket Policies Demo
+HANDS-ON LAB Create a Static Website Using Amazon S3
+S3 Encryption
+Configuring Encryption on an S3 Bucket - Demo
+CORS Configuration - Demo
+Overview of CloudFront
+Configuring Amazon CloudFront Demo
+Configuring CloudFront With Origin Access Identity
+Understanding CloudFront AllowedMethods
+Introducing Athena
+Demo: Working with Athena
+S3 Summary
+QUIZ AWS Certified Developer - Associate - S3 Quiz

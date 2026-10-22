@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4-04 ACLs and Bucket Policies Demo - Part 1</title>
+</head>
+
+<body>
+<p><img src="4-04 001.png" width="1442" height="326">
+</p>
+<p>&nbsp;</p>
+<p><img src="4-04 002.png" width="1721" height="770"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 003.png" width="306" height="360"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 004.png" width="1415" height="433"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 005.png" width="930" height="524"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 006.png" width="922" height="343"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 007.png" width="917" height="560"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 008.png" width="922" height="498"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 009.png" width="225" height="79"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 010.png" width="1466" height="649"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 011.png" width="1414" height="520"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 012.png" width="1386" height="512"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 013.png" width="649" height="269"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 014.png" width="234" height="89"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 015.png" width="1375" height="384"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 016.png" width="1381" height="389"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 017.png" width="656" height="279"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 018.png" width="1394" height="440"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 019.png" width="1386" height="322"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 020.png" width="914" height="466"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 021.png" width="926" height="412"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 022.png" width="862" height="198"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 023.png" width="909" height="784"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 024.png" width="889" height="778"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 025.png" width="563" height="190"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 026.png" width="912" height="336"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 027.png" width="932" height="347"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 028.png" width="207" height="95"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 029.png" width="1000" height="202"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 030.png" width="347" height="116"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 031.png" width="1679" height="435"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 032.png" width="1643" height="293"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 033.png" width="1405" height="789"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 034.png" width="370" height="746"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 035.png" width="1387" height="550"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 036.png" width="296" height="309"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 037.png" width="1067" height="223"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 038.png" width="1390" height="448"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 039.png" width="1390" height="332"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 040.png" width="909" height="464"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 041.png" width="942" height="783"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 042.png" width="938" height="673"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 043.png" width="173" height="100"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 044.png" width="1675" height="328"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 045.png" width="1668" height="395"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 046.png" width="1674" height="574"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 047.png" width="1597" height="623"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 048.png" width="950" height="685"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 049.png" width="687" height="447"></p>
+<p>&nbsp;</p>
+<p><img src="4-04 050.png" width="1672" height="334"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

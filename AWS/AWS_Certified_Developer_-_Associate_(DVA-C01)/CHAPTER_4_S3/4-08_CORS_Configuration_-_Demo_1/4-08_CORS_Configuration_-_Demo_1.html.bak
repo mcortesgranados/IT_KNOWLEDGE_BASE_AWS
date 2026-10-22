@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4-08 CORS Configuration - Demo 1</title>
+</head>
+
+<body>
+<p><img src="4-08 001.png" width="1434" height="258">
+</p>
+<p>&nbsp;</p>
+<p><img src="4-08 002.png" width="672" height="346"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 003.png" width="1729" height="813"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 004.png" width="281" height="311"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 005.png" width="1395" height="523"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 006.png" width="936" height="629"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 007.png" width="942" height="778"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 008.png" width="872" height="287"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 009.png" width="933" height="218"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 010.png" width="1388" height="354"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 011.png" width="1408" height="535"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 012.png" width="1374" height="236"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 013.png" width="917" height="799"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 014.png" width="695" height="242"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="4-08 015.png" width="415" height="169"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 016.png" width="1404" height="472"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 017.png" width="697" height="257"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 018.png" width="958" height="108"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 019.png" width="1397" height="626"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 020.png" width="1367" height="498"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 021.png" width="916" height="455"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 022.png" width="907" height="792"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 023.png" width="529" height="109"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 024.png" width="887" height="278"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 025.png" width="1347" height="244"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 026.png" width="1637" height="756"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 027.png" width="1687" height="496"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 028.png" width="815" height="243"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 029.png" width="1637" height="686"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 030.png" width="1666" height="492"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 031.png" width="927" height="305"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 032.png" width="1381" height="346"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 033.png" width="930" height="695"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 034.png" width="915" height="568"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 035.png" width="874" height="283"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 036.png" width="250" height="70"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 037.png" width="1388" height="408"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 038.png" width="1397" height="601"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 039.png" width="1382" height="234"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 040.png" width="949" height="803"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 041.png" width="690" height="244"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 042.png" width="228" height="73"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 043.png" width="1372" height="507"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 044.png" width="923" height="466"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 045.png" width="935" height="565"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 046.png" width="410" height="109"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 047.png" width="1368" height="244"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 048.png" width="1633" height="735"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 049.png" width="1238" height="456"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 050.png" width="1057" height="451"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 051.png" width="852" height="130"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 052.png" width="1570" height="719"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 053.png" width="1527" height="661"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 054.png" width="1398" height="393"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 055.png" width="1414" height="664"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 056.png" width="917" height="304"></p>
+<p><img src="4-08 057.png" width="1653" height="386"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 058.png" width="915" height="465"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 059.png" width="921" height="356"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 060.png" width="935" height="661"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 061.png" width="866" height="227"></p>
+<p><img src="4-08 062.png" width="681" height="106"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 063.png" width="1181" height="665"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 064.png" width="1197" height="470"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 065.png" width="721" height="143"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 066.png" width="718" height="438"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 067.png" width="1761" height="289"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 068.png" width="1222" height="347"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 069.png" width="1201" height="458"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 070.png" width="1384" height="457"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 071.png" width="1392" height="559"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 072.png" width="1372" height="372"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 073.png" width="941" height="746"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 074.png" width="1384" height="409"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 075.png" width="1369" height="799"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 076.png" width="1379" height="465"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 077.png" width="742" height="217"></p>
+<p>&nbsp;</p>
+<p><img src="4-08 078.png" width="1616" height="456"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

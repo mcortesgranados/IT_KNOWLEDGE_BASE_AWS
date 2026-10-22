@@ -1,0 +1,182 @@
+True or False? An Amazon S3 object owner can optionally share objects with others by creating a presigned URL.
+
+True
+
+All Amazon S3 objects by default are private. Only the object owner has permission to access these objects. However, the object owner can optionally share objects with others by creating a presigned URL, using their own security credentials, to grant time-limited permission to download the objects. Sharing an object with a presigned URL.
+
+__________________________________________________________________________________________
+
+
+You would like to configure your S3 bucket to deny requests that do not use server-side encryption. Which bucket policy can you use to deny permissions to upload objects, unless the request includes server-side encryption?
+
+   {
+                "Version": "2012-10-17",
+                "Id": "PutObjPolicy",
+                "Statement": [
+                    {
+                        "Sid": "DenyUnEncryptedObjectUploads",
+                        "Effect": "Deny",
+                        "Principal": "*",
+                        "Action": "s3:PutObject",
+                        "Resource": "arn:aws:s3:::bucket/*",
+                        "Condition": {
+                            "Null": {
+                                "s3:x-amz-server-side-encryption": "true"
+                            }
+                        }
+                    }
+                ]
+            }
+			
+			
+Setting the condition in the policy to "s3:x-amz-server-side-encryption": "true" would deny requests that do not use server-side encryption.
+
+__________________________________________________________________________________________
+
+When you first create an S3 bucket, this bucket is publicly accessible by default.
+
+False
+
+__________________________________________________________________________________________
+
+You are hosting a website in an Amazon S3 bucket. Which feature defines a way for client web applications that are loaded in one domain to interact with resources in a different domain?
+
+CORS
+
+Cross-origin resource sharing (CORS) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain. With CORS support, you can build rich client-side web applications with Amazon S3 and selectively allow cross-origin access to your Amazon S3 resources. Reference: Configuring and using cross-origin resource sharing (CORS).
+
+__________________________________________________________________________________________
+
+You would like to configure your S3 bucket to only serve content over HTTPS/SSL and explicitly deny all unencrypted HTTP access. In your bucket policy, how should you specify the type of request that should be denied?
+
+"aws:SecureTransport": "false"
+
+Explicitly denying requests that are identified as "aws:SecureTransport": "false" would deny requests that are using HTTP and are unencrypted.
+
+__________________________________________________________________________________________
+
+What is the maximum file size that can be stored on S3?
+
+5TB
+
+__________________________________________________________________________________________
+
+Which storage class is suitable for long-term archiving of data that occasionally needs to be accessed within a few hours or minutes?
+
+Glacier Flexible Retrieval
+
+Glacier Flexible Retrieval is designed for long-term data archiving that occasionally needs to be accessed within a few hours or minutes. It supports retrieval options of 1 minute to 12 hours.
+
+__________________________________________________________________________________________
+
+Which storage class is suitable for long-term archiving of data and supports millisecond retrieval times?
+
+Glacier Instant Retrieval
+
+Glacier Instant Retrieval is designed for long-lived data, accessed approximately once per quarter with millisecond retrieval time. 
+
+__________________________________________________________________________________________
+
+Which of the following encryption methods are supported in S3?
+
+SSE-S3
+SSE-C
+SSE-KMS
+
+Server-side encryption is the encryption of data at its destination by the application or service that receives it. Amazon S3 encrypts your data at the object level as it writes it to disks in its data centers and decrypts it for you when you access it. You have three mutually exclusive options, depending on how you choose to manage the encryption keys: Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3), Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS), or Server-Side Encryption with Customer-Provided Keys (SSE-C). Reference: Protecting data using server-side encryption.
+
+__________________________________________________________________________________________
+
+What is the largest size file you can transfer to S3 using a single PUT operation?
+
+5GB
+
+Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.
+
+__________________________________________________________________________________________
+
+Which of the following HTTP methods supported by CloudFront are read-only methods?
+
+HEAD
+OPTIONS
+GET
+
+HEAD is used to inspect resource headers; similar to GET, except without the response body.
+
+'OPTIONS is used to find out what other HTTP methods are supported by the given URL.'
+
+The GET method is used to read data.
+
+__________________________________________________________________________________________
+
+What is the HTTP code you would see once you successfully place a file in an S3 bucket?
+
+200
+
+__________________________________________________________________________________________
+
+You would like to migrate your website to AWS and use CloudFront to provide the best performance. Your users will need to complete a form on the website in order to subscribe to a mailing list and comment on blog posts. Which of the following allowed HTTP methods should you configure in your CloudFront distribution settings?
+
+GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE
+
+This combination of HTTP methods will enable your users to interact with the website and send, modify, insert, and delete data.
+
+__________________________________________________________________________________________
+
+You are hosting a static website in an S3 bucket that uses Javascript to reference assets in another S3 bucket. For some reason, these assets are not displaying when users browse to the site. What could be the problem?
+
+You haven't enabled Cross-origin Resource Sharing (CORS) on the bucket where the assets are stored.
+
+__________________________________________________________________________________________
+
+If you encrypt a bucket on S3, what type of encryption does AWS use?
+
+Advanced Encryption Standard (AES-256)
+
+Amazon S3 server-side encryption uses one of the strongest block ciphers available, 256-bit Advanced Encryption Standard (AES-256). Protecting data using server-side encryption.
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html
+
+__________________________________________________________________________________________
+
+
+Which of the following options allows users to have secure access to private files located in S3?
+
+
+CloudFront Signed URLs
+CloudFront Signed Cookies
+CloudFront Origin Access Identity
+
+There are three options in the question which can be used to secure access to files stored in S3 and therefore can be considered correct. Signed URLs and Signed Cookies are different ways to ensure that users attempting access to files in an S3 bucket can be authorized. One method generates URLs and the other generates special cookies but they both require the creation of an application and policy to generate and control these items. An Origin Access Identity on the other hand, is a virtual user identity that is used to give the CloudFront distribution permission to fetch a private object from an S3 bucket. Public S3 buckets should never be used unless you are using the bucket to host a public website and therefore this is an incorrect option.
+
+__________________________________________________________________________________________
+
+You are using S3 in ap-northeast-1 to host a static website in a bucket called "acloudguru". What would the new URL endpoint be?
+
+
+http://acloudguru.s3-website-ap-northeast-1.amazonaws.com
+
+Depending on your Region, your Amazon S3 website endpoint follows one of these two formats:
+
+s3-website dash (-) Region ‐ http://bucket-name.s3-website-Region.amazonaws.com
+s3-website dot (.) Region ‐ http://bucket-name.s3-website.Region.amazonaws.com
+The Asia Pacific (Tokyo) region ap-northeast-1 uses the website endpoint s3-website-ap-northeast-1.amazonaws.com.
+
+Hence, the correct URL is http://acloudguru.s3-website-ap-northeast-1.amazonaws.com.
+
+References:
+
+Website endpoints
+Amazon S3 Website Endpoints
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteEndpoints.html
+https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints
+
+__________________________________________________________________________________________
+
+The minimum file size allowed on S3 is 1 byte.
+
+False
+
+Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. Reference: How much data can I store in Amazon S3?
+https://aws.amazon.com/s3/faqs/
+

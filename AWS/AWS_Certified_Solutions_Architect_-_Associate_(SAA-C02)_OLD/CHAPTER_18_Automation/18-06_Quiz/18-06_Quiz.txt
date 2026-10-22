@@ -1,0 +1,66 @@
+ElasticBeanstalk is an example of ___.
+
+Platform as a Service (PaaS)
+
+Correct Answer
+ElasticBeanstalk is a PaaS service and handles everything for you! Reference Documentation: AWS Elastic Beanstalk
+https://aws.amazon.com/elasticbeanstalk/
+
+_____________________________________________________________________________
+
+
+What best describes "immutable pattern" for application code deployments?
+
+Deployment of application code can't modify existing cloud resources, requiring creation of new resources.
+
+Correct Answer
+The immutable pattern specifies a deployment of application code by starting an entirely new set of servers with a new configuration or version of application code. When we go immutable, we don't want to ever upgrade in place. Once the cloud resource exists, it can't be modified. Reference Documentation: Immutable and Blue/Green Deployment.
+https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/immutable-and-bluegreen-deployment.html
+
+
+_____________________________________________________________________________
+
+Whenever possible, we should focus on __ processes over doing things ____.
+
+Automating, manually
+
+Automation is key when using AWS. Reference Documentation: Infrastructure & Automation
+https://aws.amazon.com/blogs/infrastructure-and-automation/
+
+_____________________________________________________________________________
+
+Your brand new CloudFormation stack just encountered an error. By default, what happens to the resources that it had created?
+
+They are terminated.
+
+Good work!
+In order to save money, CloudFormation terminates the resources from the template. Reference Documentation: Troubleshooting AWS CloudFormation
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html
+
+_____________________________________________________________________________
+
+What part of a CloudFormation template allows you to pass values into the template?
+
+Parameters
+
+Correct Answer
+Parameters allow us to pass data into the template before it's created.
+
+
+_____________________________________________________________________________
+
+What are common use cases for the AWS Systems Manager Parameter Store "SecureString" parameter?
+
+For using data/parameters across AWS services without exposing the values as plaintext in commands, functions, agent logs, or CloudTrail logs.
+
+For sensitive data that needs to be stored and referenced in a secure manner.
+
+AWS recommends SecureString parameters if you want to use data/parameters across AWS services without exposing the values as plaintext in commands, functions, agent logs, or CloudTrail logs. AWS Systems Manager Parameter Store.
+
+A SecureString parameter is any sensitive data that needs to be stored and referenced in a secure manner. If you have data that you don't want users to alter or reference in plaintext, such as passwords or license keys, create those parameters using the SecureString data type. Only the value of a SecureString parameter is encrypted. Parameter names, descriptions, and other properties aren't encrypted. Reference Documentation: AWS Systems Manager Patch Manager.
+
+https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
+https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
+
+_____________________________________________________________________________
+

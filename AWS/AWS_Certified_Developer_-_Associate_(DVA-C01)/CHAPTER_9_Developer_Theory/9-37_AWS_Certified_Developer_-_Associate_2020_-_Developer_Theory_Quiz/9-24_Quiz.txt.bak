@@ -1,0 +1,210 @@
+You are using CloudFormation to create a new S3 bucket, which of the following sections would you use to define the properties of your bucket?
+
+Resources
+
+Correct. The Resources section specifies the stack resources and their properties, such as an Amazon Elastic Compute Cloud instance or an Amazon Simple Storage Service bucket.
+
+____________________________________________________________________________
+
+
+You are running your application using Docker provisioned with Elastic Beanstalk. You would like to upgrade the application to a new version. How should you approach this?
+
+Bundle your Dockerfile and the application code into a zip file, then upload and deploy it using the Elastic Beanstalk console.
+
+Elastic Beanstalk supports the deployment of web applications as Docker containers. Each time you upload a new version of your application with the Elastic Beanstalk console or the EB CLI, Elastic Beanstalk creates an application version. When using the console you can choose to upload and deploy your code in a single step. Elastic Beanstalk will manage the previous version of your code so you can revert back to it if necessary.
+
+____________________________________________________________________________
+
+You want to use the output of your CloudFormation stack as input for another CloudFormation stack. Which section of your CloudFormation template would you use to help you do this?
+
+Outputs
+
+Outputs is used to output user-defined data relating to the resources you have built. It can also used as input for another CloudFormation stack.
+
+____________________________________________________________________________
+
+Part of your CloudFormation deployment fails due to a misconfiguration, by default what will happen?
+
+CloudFormation will rollback the entire stack
+
+Correct. By default, the “automatic rollback on error” feature is enabled. This will direct CloudFormation to only create or update all resources in your stack if all individual operations succeed. If they do not, CloudFormation reverts the stack to the last known stable configuration.
+
+____________________________________________________________________________
+
+You want users to receive an email notification whenever they push code to their AWS CodeCommit repositories. How can you configure this?
+
+Configure Notifications in the AWS CodeCommit console, this will create a CloudWatch Events rule to send a notification to an Amazon SNS topic which will trigger an email to be sent to the user
+
+Correct. You can set up notification rules for a repository so that repository users receive emails about the repository event types you specify. Notifications are sent when events match the notification rule settings. You can create an Amazon SNS topic to use for notifications or use an existing one in your AWS account. You can use the CodeCommit console and the AWS CLI to configure notification rules.
+
+____________________________________________________________________________
+
+Which of the following should you do if you want to allow developers to pull packages from an external public repository and make them available in a CodeArtifact repository?
+
+Create an upstream CodeArtifact repository with an external connection to the external repository. Associate the upstream repository with the repository used by the developers.
+
+You can add a connection between a CodeArtifact repository and an external, public repository, so that when developers request a package from the CodeArtifact repository that's not already present in the repository, the package can be fetched from the external connection. This makes it possible to consume open-source dependencies used by your application.
+
+____________________________________________________________________________
+
+Which of the following is an artifact repository that makes it easy for developers to find approved software packages they need to build their applications?
+
+CodeArtifact
+
+AWS CodeArtifact is an artifact repository service that makes it easy for organizations to securely store, publish, and share software packages used in their software development process.
+
+____________________________________________________________________________
+
+Which AWS service can be used to fully automate your entire release process?
+
+CodePipeline
+
+Correct. AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates.
+
+____________________________________________________________________________
+
+Which two things can you define using the Transforms section of the CloudFormation template?
+
+To re-use code located in S3
+To specify the use of the Serverless Application Model for Lambda deployments
+
+Transforms is used to reference code located in S3 and also for specifying the use of the Serverless Application Model (SAM) for Lambda deployments.
+
+____________________________________________________________________________
+
+Which AWS CloudFormation section specifies one or more macros that AWS CloudFormation uses to process your templates, and is required for AWS SAM template files?
+
+Transform
+
+The Transform section specifies one or more macros that AWS CloudFormation uses to process your template. The Transform section builds on the simple, declarative language of AWS CloudFormation with a powerful macro system. The declaration Transform: AWS::Serverless-2016-10-31 is required for AWS SAM template files.
+
+____________________________________________________________________________
+
+Which of the following practices allows multiple developers working on the same application to merge code changes frequently, without impacting each other and enables the identification of bugs early on in the release process?
+
+Continuous Integration
+
+Correct. Continuous Integration (CI) is the practice of merging all developers' working copies to a shared repository frequently, preferably several times a day. One of the key benefits of integrating regularly is that you can detect errors quickly and locate them more easily. As each change introduced is typically small, pinpointing the specific change that introduced a defect can be done quickly.
+
+____________________________________________________________________________
+
+You are deploying a number of EC2 and RDS instances using CloudFormation. Which section of the CloudFormation template would you use to define these?
+
+Resources
+
+The Resources section defines the resources you are provisioning. Outputs is used to output user defined data relating to the resources you have built and can also be used as input to another CloudFormation stack. Transforms is used to reference code located in S3.
+
+____________________________________________________________________________
+
+Which AWS service can be used to centrally store and version control your application source code, binaries and libraries?
+
+CodeCommit
+
+Correct. AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories. It makes it easy for teams to collaborate on code in a secure and highly scalable ecosystem.
+
+____________________________________________________________________________
+
+In the CodeDeploy AppSpec file, what are hooks used for?
+
+To specify code, scripts or functions that you want to run at set points in the deployment lifecycle
+
+Correct. The hooks section specifies the location (as relative paths starting from the root of the revision bundle) of the scripts to run during each phase of the deployment. Each phase of a deployment is called a deployment lifecycle event.
+
+____________________________________________________________________________
+
+Which of the following are suitable to store in CodeArtifact?
+
+All of these are suitable
+
+CodeArtifact is a fully managed artifact repository service that makes it easy for organizations of any size to securely store, publish, and share software packages used in their software development process. This includes everything needed to build your application, including libraries, deployable packages, compiled applications, and documentation relating to your application.
+
+____________________________________________________________________________
+
+Which AWS service can be used to compile source code, run tests and also package code?
+
+CodeBuild
+
+Correct. CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+
+
+____________________________________________________________________________
+
+How can you prevent AWS CloudFormation from deleting successfully provisioned resources during a stack create operation, while allowing resources in a failed state to be updated or deleted upon the next stack operation?
+
+Use the "--disable-rollback" flag with the AWS CLI
+In the CloudFormation console, for Stack failure options, select "Preserve successfully provisioned resources"
+
+Specifying the disable-rollback option or on-failure DO_NOTHING enumeration during a create-stack operation will preserve successfully provisioned resources during a stack create operation. Stack failure options.
+
+Create operations set to "Preserve successfully provisioned resources" preserves the state of successful resources, while failed resources will stay in a failed state until the next update operation is performed. Stack failure options.
+
+____________________________________________________________________________
+
+When deploying application code to a EC2/On-Premises compute platform, the AppSpec file can be written in which language?
+
+YAML
+
+AppSpec files on an EC2/on-premises compute platform must be a YAML-formatted file named appspec.yml and it must be placed in the root of the directory structure of an application's source code. Otherwise, deployments fail. Reference: CodeDeploy AppSpec File reference.
+https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html
+
+____________________________________________________________________________
+
+When deploying application code to Lambda, the AppSpec file can be written in which language?
+
+YAML
+JSON
+
+Correct. The application specification file (AppSpec file) is a YAML-formatted or JSON-formatted file used by CodeDeploy to manage a deployment.
+
+
+____________________________________________________________________________
+
+Which AWS service can be used to automatically install your application code onto EC2, on-premises systems and Lambda?
+
+CodeDeploy
+
+Correct. CodeDeploy is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
+
+____________________________________________________________________________
+
+What is the purpose of creating an external connection when configuring CodeArtifact?
+
+An external connection is a connection between a CodeArtifact repository and an external, public repository so that packages can be fetched from the external repository.
+
+An external connection is a connection between a CodeArtifact repository and an external, public repository so that when you request a package from the CodeArtifact repository that's not already present in the repository, the package can be fetched from the external connection.
+
+____________________________________________________________________________
+
+You are running your application using Docker provisioned with Elastic Beanstalk. You would like to upgrade the application to a new version. How should you approach this?
+
+Bundle your Dockerfile and the application code into a zip file, then upload and deploy it using the Elastic Beanstalk console.
+
+Elastic Beanstalk supports the deployment of web applications as Docker containers. Each time you upload a new version of your application with the Elastic Beanstalk console or the EB CLI, Elastic Beanstalk creates an application version. When using the console you can choose to upload and deploy your code in a single step. Elastic Beanstalk will manage the previous version of your code so you can revert back to it if necessary.
+
+____________________________________________________________________________
+
+Your company has moved to AWS so it can use "Infrastructure as Code". You would like to apply version control to your infrastructure, so that you can roll back infrastructure to a previous stable version if needed. You would also like to quickly deploy testing and staging environments in multiple regions. What services should you use to achieve this?
+
+CloudFormation and CodeCommit.
+
+CloudFormation allows for the rolling back to prior stacks and is AWS's go to Infrastructure as code solution. CodeCommit is a fully-managed source control service for secure Git-based repositories.
+
+____________________________________________________________________________
+
+Which of the following approaches allows you to re-use pieces of CloudFormation code in multiple templates, for common use cases like provisioning a load balancer or web server?
+
+Use a CloudFormation nested stack
+
+Correct. Nested stacks are stacks created as part of other stacks. As your infrastructure grows, common patterns can emerge in which you declare the same components in multiple templates. You can separate out these common components and create dedicated templates for them. Then use the resource in your template to reference other templates, creating nested stacks. For example, assume that you have a load balancer configuration that you use for most of your stacks. Instead of copying and pasting the same configurations into your templates, you can create a dedicated template for the load balancer. Then, you just use the resource to reference that template from within other templates.
+
+____________________________________________________________________________
+
+You are deploying an application to a number of EC2 instances using CodeDeploy. What is the name of the file used on the EC2/on-premises compute platform?
+
+appspec.yml
+
+AppSpec files on an EC2/on-premises compute platform must be a YAML-formatted file named appspec.yml and it must be placed in the root of the directory structure of an application's source code. Otherwise, deployments fail. Reference: AppSpec files on an EC2/on-premises compute platform.
+https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html
+
+____________________________________________________________________________
+

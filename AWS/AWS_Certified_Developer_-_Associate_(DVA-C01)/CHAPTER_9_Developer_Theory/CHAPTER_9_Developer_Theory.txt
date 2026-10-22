@@ -1,0 +1,32 @@
+CHAPTER 9 Developer Theory
+9-01 What is CI/CD?
+9-02 CodeCommit 101
+9-03 CodeCommit Demo
+9-04 HANDS-ON LAB Configure and Work with CodeCommit from the CLI
+9-05 CodeDeploy 101
+9-06 The CodeDeploy AppSpec File
+9-07 CodeDeploy Lifecycle Event Hooks
+HANDS-ON LAB Deploying an Application Using CodeDeploy
+CodePipeline 101
+CodePipeline Demo - Part 1
+CodePipeline Demo - Part 2
+HANDS-ON LAB Setting Up a Pipeline with a Manual Approval in AWS CodePipeline
+HANDS-ON LAB Working with a DevOps CI/CD Pipeline in AWS
+Introducing CodeArtifact
+Demo - Creating a CodeArtifact Repository
+Elastic Container Service
+Introduction To CloudFormation
+Provisioning Resources Using CloudFormation Demo
+HANDS-ON LAB Create a DynamoDB Table Using CloudFormation
+Exporting CloudFormation Stack Values
+The Serverless Application Model (SAM)
+CloudFormation and SAM Demo
+CloudFormation Nested Stacks
+HANDS-ON LAB Working with CloudFormation Nested Stacks
+Introducing The Cloud Development Kit (CDK)
+CDK Demo 
+Introducing Amplify
+Amplify Demo
+Developer Theory Summary - Part 1
+Developer Theory Summary - Part 2
+QUIZ AWS Certified Developer - Associate - Developer Theory Quiz

@@ -1,0 +1,19 @@
+CHAPTER 19 Governance
+Managing Accounts with Organizations
+Sharing Resources with AWS RAM
+Setting Up Cross-Account Role Access
+Inventory Management with AWS Config
+Offloading Active Directory to Directory Service
+Exploring with Cost Explorer
+Using AWS Budgets
+Optimizing Costs with AWS Cost and Usage Reports
+Reducing Compute Spend Using Savings Plans and AWS Compute Optimizer
+Auditing with Trusted Advisor
+Enforcing Account Governance via AWS Control Tower
+Managing Software Licenses in AWS with AWS License Manager
+Monitoring Health Events in the AWS Personal Health Dashboard
+Standardizing Deployments Using AWS Service Catalog and AWS Proton
+Optimizing Architectures with the AWS Well-Architected Tool
+Governance Exam Tips
+HANDS-ON LAB Using AWS Tags and Resource Groups
+AWS Certified Solutions Architect - Associate (SAA-C03) - Governance Quiz

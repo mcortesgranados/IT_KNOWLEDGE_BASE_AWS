@@ -1,0 +1,143 @@
+https://learn.acloud.guru/course/aws-networking-specialty/overview
+
+CHAPTER 01 Introduction
+01-01 An Important Note About A Cloud Guru and Linux Academy Courses
+01-02 Introduction
+01-03 Course Overview
+01-04 Exam Overview
+01-05 A Note About Demo Lessons
+CHAPTER 02 Design and Implement AWS Networks
+02-01 Introduction
+02-02 AWS Global Infrastructure
+02-03 VPC Basic Networking Design
+02-04 Demo: Default VPC
+02-05 Subnets, VPC Routers, and Route Tables Part 1
+02-06 Subnets, VPC Routers, and Route Tables Part 2
+02-07 Demo: Subnets, VPC Routers, and Route Tables
+02-08 Elastic Network Interface, Elastic IP, and Internet Gateway Part 1
+02-09 Elastic Network Interface, Elastic IP, and Internet Gateway Part 2
+02-10 Demo: Elastic Network Interface, Elastic IP, and Internet Gateway
+02-11 Traffic Control: Network Access Control Lists and Security Groups Part 1
+02-12 Traffic Control: Network Access Control Lists and Security Groups Part 2
+02-13 NAT Gateways
+02-14 Demo: NAT Gateway
+02-15 VPC Endpoints
+02-16 Demo: VPC Endpoints
+02-17 VPC Peering
+02-18 Demo: VPC Peering
+02-19 Creating VPC Flow Logs
+02-20 Viewing VPC Flow Logs
+02-21 Demo: Define and View VPC Flow Logs
+02-22 Network Performance
+02-23 Exam Tips
+02-24 HANDS-ON LAB Create a Multi-Subnet VPC with Secure Access to Private Servers with Outbound Internet Access
+02-25 QUIZ AWS Certified Advanced Networking - Specialty 2020 - Design and Implement AWS Networks Quiz
+CHAPTER 03 Configure Network Integration with Application Services
+03-01 Introduction
+03-02 Domain Name System
+03-03 Route 53 Hosted Zonesand Zone Records – Part 1
+03-04 Route 53 Hosted Zonesand Zone Records – Part 2
+03-05 Route 53 Demo: Hosted Zones and Zone Records
+03-06 Route 53 Subdomain Delegation
+03-07 Route 53 Demo: Subdomain Delegation
+03-08 Route 53 Routing Policies Part 1
+03-09 Route 53 Routing Policies Part 2
+03-10 Route 53 Health Checks
+03-11 Route 53 Demo:Health Checks and DNS Failover
+03-12 Route 53 Demo:Routing Policies and DNS Failover
+03-13 Route 53 Private Hosted Zones
+03-14 Route 53 Demo:VPC DNS
+03-15 Elastic Load BalancerOverview
+03-16 ELB Target Groups
+03-17 Application Load Balancers
+03-18 Network Load Balancers
+03-19 Classic Load Balancers
+03-20 VPCEndpoint Services
+03-21 Gateway Load Balancers
+03-22 Creating CloudFront Distributions
+03-23 Securing CloudFront Distributions - Part 1
+03-24 Securing CloudFront Distributions - Part 2
+03-25 Optimizing CloudFront Distributions - Part 1
+03-26 Optimizing CloudFront Distributions - Part 2
+03-27 Lambda within a VPC
+03-28 Amazon WorkSpaces
+03-29 Amazon AppStream 2.0
+03-30 Exam Tips
+03-31 Demo: Configure Network Integration with Application Services Part 1
+03-32 Demo: Configure Network Integration with Application Services Part 2 - Cleanup
+03-33 HANDS-ON LAB Create a VPC Endpoint and S3 bucket in AWS
+03-34 QUIZ AWS Certified Advanced Networking - Specialty 2020 - Configure Network Integration with Application Services Quiz
+CHAPTER 04 Hybrid Networking Basics and VPNs in AWS
+04-01 Introduction
+04-02 Virtual Private Gateway
+04-03 AWS Hybrid Route Learning
+04-04 Border Gateway Protocol (BGP)
+04-05 BGP Prefix Preference - Part 1
+04-06 BGP Prefix Preference - Part 2
+04-07 BGP Prefix Preference - Part 3
+04-08 VPN and IPSec Overview
+04-09 Customer Gateways
+04-10 AWS Site-to-Site VPN Configuration
+04-11 Demo: AWS VPN Connection - Part 1
+04-12 Demo: AWS VPN Connection - Part 2
+04-13 Demo: AWS VPN Connection - Part 3
+04-14 AWS VGW and VPN Limitations
+04-15 Other VPN Options in AWS
+04-16 AWS VPN Monitoring and Optimization
+04-17 AWS VPN Cost Optimization
+04-18 Exam Tips
+04-19 QUIZ AWS Certified Advanced Networking - Specialty 2020 - Hybrid Networking Basics and VPNs in AWS Quiz
+CHAPTER 05 AWS Direct Connect and Hybrid DNS
+05-01 Introduction
+05-02 Direct Connect Locations & Hardware
+05-03 DX Connections
+05-04 Demo: DX Connections
+05-05 Virtual Interfaces (VIFs)
+05-06 Demo: Virtual Interfaces
+05-07 Virtual LANs (VLANs)
+05-08 Virtual Interfaces & BGP
+05-09 Link Aggregation Groups (LAGs)
+05-10 Demo: Link Aggregation Groups
+05-11 Direct Connect Gateways
+05-12 Demo: DX Gateway
+05-13 Well-Architected Direct Connect
+05-14 Hybrid DNS
+05-15 Exam Tips
+QUIZ AWS Certified Advanced Networking - Specialty 2020 - AWS Direct Connect and Hybrid DNS Quiz
+CHAPTER 06 Transitive Networking
+06-01 Introduction
+06-02 Inter-VPC Connectivity
+06-03 Transit VPCs and Hybrid Connectivity
+06-04 Transit Gateway Configuration
+06-05 Transit Gateway Routing
+06-06 Network Size Limits
+06-07 Demo: Transit Gateway Part 1
+06-08 Demo: Transit Gateway Part 2
+06-09 Exam Tips
+06-10 HANDS-ON LAB Configure Transit Gateway for a Multi-VPC Environment
+06-11 QUIZ AWS Certified Advanced Networking - Specialty 2020 - Transitive Networking Quiz
+CHAPTER 07 Design and Implement for Security and Compliance
+07-01 Introduction
+07-02 Traffic Control
+07-03 Demo: Web Application Firewall
+07-04 Traffic Protection
+06-05 Demo: AWS Certificate Manager
+Traffic Awareness
+Demo: AWS Guard Duty & AWS Inspector
+Governance & Compliance
+Exam Tips
+QUIZ AWS Certified Advanced Networking - Specialty 2020 - Design and Implement for Security and Compliance Quiz
+CHAPTER 08 Automate AWS Tasks
+Introduction
+Infrastructure as Code
+CloudFormation Part 1
+CloudFormation Part 2
+Demo: CloudFormation
+OpsWorks and CDK
+Troubleshoot CloudFormation
+Exam Tips
+QUIZ AWS Certified Advanced Networking - Specialty 2020 - Automate AWS Tasks Quiz
+CHAPTER 09 Conclusion
+Final Words
+Conclusion
+PRACTICE EXAM AWS Certified Advanced Networking - Specialty

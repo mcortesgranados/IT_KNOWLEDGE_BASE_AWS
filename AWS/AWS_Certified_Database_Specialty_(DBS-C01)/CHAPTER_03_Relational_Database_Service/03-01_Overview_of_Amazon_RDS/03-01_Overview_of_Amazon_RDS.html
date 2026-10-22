@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Container for the gallery -->
+<div id="imageGallery"></div>
+
+<script>
+    // Array of image file paths
+    var imagePaths = [
+        'path/to/image1.jpg',
+        'path/to/image2.jpg',
+        'path/to/image3.jpg',
+        // Add more image paths as needed
+    ];
+
+    // Index to keep track of the current image
+    var currentIndex = 0;
+
+    // Function to display the current image
+    function showImage(index) {
+        var gallery = document.getElementById('imageGallery');
+        gallery.innerHTML = ''; // Clear previous content
+
+        // Create an image element
+        var img = document.createElement('img');
+        img.src = imagePaths[index];
+        gallery.appendChild(img);
+    }
+
+    // Initial display
+    showImage(currentIndex);
+
+    // Function to navigate to the next image
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % imagePaths.length;
+        showImage(currentIndex);
+    }
+
+    // Function to navigate to the previous image
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + imagePaths.length) % imagePaths.length;
+        showImage(currentIndex);
+    }
+
+    // Event listeners for keyboard arrow keys
+    document.addEventListener('keydown', function(event) {
+        switch(event.key) {
+            case 'ArrowRight':
+                nextImage();
+                break;
+            case 'ArrowLeft':
+                prevImage();
+                break;
+        }
+    });
+</script>
+
+</body>
+</html>

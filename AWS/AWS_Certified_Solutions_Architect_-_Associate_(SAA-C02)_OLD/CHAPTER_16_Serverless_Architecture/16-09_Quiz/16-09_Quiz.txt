@@ -1,0 +1,75 @@
+What AWS service can create EC2 instances and place containers in them based on your task definitions?
+
+ECS
+
+Correct Answer
+Correct! ECS manages this process for you. Reference Documentation: Amazon ECS task definitions
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html
+
+
+____________________________________________________________________________
+
+
+What is the maximum length of time Lambda can run?
+
+15 minutes
+
+Good work!
+Yes! Lambda can run for up to 15 mintues. Reference Documentation: AWS Lambda enables functions that can run up to 15 minutes
+https://aws.amazon.com/about-aws/whats-new/2018/10/aws-lambda-supports-functions-that-can-run-up-to-15-minutes/
+
+
+____________________________________________________________________________
+
+What is one thing EC2 instances allow you to configure but a serverless application doesn't?
+
+Operating System
+
+Good work!
+Yes! In a serverless application, you don't have access to the OS. Reference Documentation: AWS Lambda FAQs
+https://aws.amazon.com/lambda/faqs/
+
+____________________________________________________________________________
+
+What feature of ECS and EKS allows you to run containers without having to manage the underlying hosts?
+
+Fargate
+
+Good work!
+Yes! Fargate allows you to run containers without using EC2 instances. Reference Documentation: AWS Fargate
+https://aws.amazon.com/fargate/
+
+____________________________________________________________________________
+
+What is the maximum amount of RAM you can allocate to a single Lambda function?
+
+10GB
+
+Correct Answer
+Exactly! Lambda supports up to 10GB of RAM. Reference Documentation: AWS Lambda now supports up to 10 GB of memory
+https://aws.amazon.com/about-aws/whats-new/2020/12/aws-lambda-supports-10gb-memory-6-vcpu-cores-lambda-functions/
+
+____________________________________________________________________________
+
+What type of file is used to build a container image?
+
+Dockerfile
+
+Good work!
+Exactly! You'd use a Dockerfile to create the container image. Reference Documentation: Docker basics for Amazon ECS
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+
+____________________________________________________________________________
+
+Which IAM entity is assigned to a Lambda function to provide it with permissions to access other AWS APIs?
+
+Role
+
+Good work!
+Yes! Roles should be used for Lambda to talk to other AWS APIs. Reference Documentation: AWS Lambda execution role
+https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html
+
+____________________________________________________________________________
+
+
+

@@ -1,0 +1,17 @@
+CHAPTER 15 Serverless Architecture
+Serverless Overview
+Computing with Lambda
+Leveraging the AWS Serverless Application Repository
+Container Overview
+Running Containers in ECS or EKS
+Removing Servers with Fargate
+Amazon EventBridge (CloudWatch Events)
+Storing Custom Docker Images in Amazon Elastic Container Registry (Amazon ECR)
+Using Open-Source Kubernetes in Amazon EKS Distro
+Orchestrating Containers Outside AWS Using Amazon ECS Anywhere and Amazon EKS Anywhere
+Auto Scaling Databases On Demand with Amazon Aurora Serverless
+Using AWS X-Ray for Application Insights
+Deploying GraphQL Interfaces in AWS AppSync
+Serverless Architecture Exam Tips
+HANDS-ON LAB Triggering AWS Lambda from Amazon SQS
+AWS Certified Solutions Architect - Associate (SAA-C03) - Serverless Architecture Quiz

@@ -1,0 +1,75 @@
+Which of the following tools can be used to determine who provisioned an EC2 instance and what time they made the API call?
+
+CloudTrail
+
+CloudTrail enables governance, compliance, operational auditing, and risk auditing of your account. It tracks user activity and API usage. CloudTrail could be used to determine who provisioned an EC2 instance and what time they made the API call.
+
+_______________________________________________________________________________________________________
+
+
+Which of the following CloudWatch actions enables you to publish metric data points to CloudWatch?
+
+PutMetricData
+
+PutMetricData publishes metric data points to CloudWatch.
+
+_______________________________________________________________________________________________________
+
+Which of the following CloudWatch actions enables you to create an alarm associated with a CloudWatch metric so that you can be alerted if a threshold has been reached?
+
+PutMetricAlarm
+
+PutMetricAlarm creates an alarm associated with a metric to alert you if a threshold has been reached.
+
+_______________________________________________________________________________________________________
+
+Which of the following services can you use to track all user activity and API usage in your AWS account?
+
+CloudTrail
+
+CloudTrail enables governance, compliance, operational auditing, and risk auditing of your account. It tracks user activity and API usage.
+
+_______________________________________________________________________________________________________
+
+Which of the following is a container for CloudWatch metrics?
+
+Namespace
+
+A namespace is a container for CloudWatch metrics (e.g., EC2 uses the AWS/EC2 namespace). Metrics in different namespaces are isolated from each other so that metrics from different applications are not mistakenly aggregated into the same statistics.
+
+_______________________________________________________________________________________________________
+
+Which of the following tools can you use to monitor CPU utilization metrics for your EC2 instances?
+
+CloudWatch
+
+CloudWatch provides data with actionable insights and collects data in the form of logs, metrics, and events. CloudWatch can you use to monitor CPU utilization metrics for your EC2 instances.
+
+_______________________________________________________________________________________________________
+
+Which of the following is a like a filter that can be used to search for metrics; for example, if you wanted to check CPU utilization on a specific EC2 instance?
+
+Dimension
+
+A dimension is like a filter (e.g., you can use the InstanceId dimension to search for metrics related to a specific EC2 instance).
+
+_______________________________________________________________________________________________________
+
+Which of the following tools can be used to determine who provisioned an EC2 instance and what time they made the API call?
+
+CloudTrail
+
+CloudTrail enables governance, compliance, operational auditing, and risk auditing of your account. It tracks user activity and API usage. CloudTrail could be used to determine who provisioned an EC2 instance and what time they made the API call.
+
+_______________________________________________________________________________________________________
+
+Which of the following services can you use to monitor and report on performance metrics for your AWS Infrastructure?
+
+CloudWatch
+
+CloudWatch provides data with actionable insights and collects data in the form of logs, metrics, and events. CloudWatch can be used to monitor and report on performance metrics for your AWS Infrastructure.
+
+_______________________________________________________________________________________________________
+
+
+

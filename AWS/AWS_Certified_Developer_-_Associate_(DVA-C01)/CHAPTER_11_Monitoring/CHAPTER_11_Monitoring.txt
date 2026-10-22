@@ -1,0 +1,16 @@
+CHAPTER 11 Monitoring
+Introduction to CloudWatch
+CloudWatch Demo
+Creating CloudWatch Dashboards Demo
+Understanding CloudWatch Concepts
+CloudWatch vs CloudTrail
+Using CloudWatch for Resource Monitoring
+Using CloudWatch Actions
+Exploring CloudWatch Logs Insights Demo
+Receiving Notifications with CloudWatch - Demo
+What is EventBridge?
+Using EventBridge - Demo
+Recognizing Common HTTP Error Codes
+Recognizing Common SDK Exceptions
+Monitoring Summary
+QUIZ AWS Certified Developer - Associate - Monitoring Quiz

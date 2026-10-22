@@ -1,0 +1,166 @@
+You are developing a new mobile application to share photos, which AWS technology can you use to ensure your users have a seamless experience across all their devices?
+
+Cognito
+
+Correct. AWS recommends Amazon Cognito to synchronize user data seamlessly across end users’ devices. Reference: Using Amazon Cognito to Sync Data.
+https://aws.amazon.com/blogs/mobile/using-amazon-cognito-to-sync-data/
+
+__________________________________________________________________________
+
+Which of the following are provided by AWS to allow you to easily assign IAM permissions to your users based on pre-defined common use cases?
+
+Managed Policy
+
+Correct. An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed to provide permissions for many common use cases. Reference: AWS managed policies
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html
+
+__________________________________________________________________________
+
+Which of the following features of IAM allows you to have your users Authenticate using Facebook, Google or Amazon?
+
+Web Identity Federation
+
+Correct. With web identity federation, you don't need to create custom sign-in code or manage your own user identities. Instead, users of your app can sign in using a well-known external identity provider (IdP), such as Login with Amazon, Facebook, Google, or any other OpenID Connect (OIDC)-compatible IdP.
+__________________________________________________________________________
+
+Which of the following API calls can be used to enable a user authenticated by Facebook to access your web application hosted in AWS?
+
+STS assume-role-with-web-identity
+
+Correct. assume-role-with-web-identity returns a set of temporary security credentials for users who have been authenticated in a mobile or web application with a web identity provider. Example providers include Amazon Cognito, Login with Amazon, Facebook, Google, or any OpenID Connect-compatible identity provider.
+
+__________________________________________________________________________
+
+Which allows users to use their social media account to gain temporary access to the AWS platform?
+
+Web Identity Federation
+
+Correct. Web identity federation removes the need for creating individual IAM users. Instead, users can sign in to an identity provider and then obtain temporary security credentials from AWS Security Token Service (AWS STS).
+
+__________________________________________________________________________
+
+When would you use an Inline Policy over a Managed Policy?
+
+To add permissions that are only ever intended to be used for a single user in your account
+
+Correct. Inline policies are useful if you want to maintain a strict one-to-one relationship between a policy and the identity that it's applied to. For example, you want to be sure that the permissions in a policy are not inadvertently assigned to an identity other than the one they're intended for.
+
+__________________________________________________________________________
+
+
+You are working on a mobile phone app for an online retailer that stores customer data in DynamoDB. You would like to allow new users to sign-up using their Facebook credentials. What is the recommended approach?
+
+After the user has successfully logged in to Facebook and received an authentication token, Cognito should be used to exchange the token for temporary access to DynamoDB
+
+Correct. Amazon Cognito works with external identity providers that support SAML or OpenID Connect, social identity providers (such as Facebook, Twitter, Amazon) and you can also integrate your own identity provider.
+
+__________________________________________________________________________
+
+Amazon Cognito is recommended for which use case?
+
+Web Identity Federation for mobile applications
+Access AWS Services with a User Pool and an Identity Pool
+Support anonymous guest users
+
+Correct. The preferred way to use web identity federation for mobile apps is to use Amazon Cognito. Reference: Using Amazon Cognito for mobile apps
+Correct. After a successful user pool authentication, your app will receive user pool tokens from Amazon Cognito. You can exchange them for temporary access to other AWS services with an identity pool.
+Correct. With Amazon Cognito identity pool, your users can obtain temporary AWS credentials to access AWS services, such as Amazon S3 and DynamoDB. Identity pools support anonymous guest users, as well as federation through third-party IdPs. Reference: Common Amazon Cognito Scenarios
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_cognito.html
+https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-scenarios.html
+
+__________________________________________________________________________
+
+
+Which of the following correctly describes an Inline Policy?
+
+The policy will be deleted if you delete the user, group or role it is associated with
+It is embedded in a user, group or role
+
+Correct. When you use the AWS Management Console to delete an identity, the inline policies embedded in the identity are deleted as well. That's because they are part of the principal entity.
+Correct. An inline policy is a policy that's embedded in an IAM identity (a user, group, or role).
+
+__________________________________________________________________________
+
+
+How can you allow a user from one AWS account to access and manage resources in another AWS account?
+
+Configure cross-account access
+
+Correct. By setting up cross-account access, you can delegate access to resources that are in different AWS accounts, and you don't need to create individual IAM users in each account. Reference: IAM Tutorial: Delegate access across AWS accounts using IAM roles.
+https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html
+
+__________________________________________________________________________
+
+Which of the following correctly describes a Customer Managed Policy?
+
+It can be assigned to multiple users, groups or roles in your account
+It is managed by you
+
+Correct. You can attach customer managed policies to multiple principal entities in your AWS account.
+
+Correct. You can create standalone policies that you administer in your own AWS account, which are referred to as customer managed policies.
+
+__________________________________________________________________________
+
+Amazon Cognito provides Web Identity Federation with which of the following features?
+
+Sign-up and sign-in to your applications
+Multi-Factor Authentication
+Synchronization of user data across multiple device types
+
+Amazon Cognito User Pools provide sign-up and sign-in services.
+
+With Amazon Cognito, you can add Multi-Factor Authentication (MFA) to a User Pool. Reference: Adding Multi-Factor Authentication (MFA) to a User Pool.
+
+Cognito enables developers to sync data across devices, platforms, and applications.
+https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-mfa.html
+
+__________________________________________________________________________
+
+When using Web Identity Federation to allow a user to access an AWS service (such as an S3 bucket), which of the following is the correct order of steps?
+
+A user authenticates with Facebook first. They are then given an ID token by Facebook, which they can then trade for temporary security credentials.
+
+Correct. The user needs to authenticate with Facebook first, that will return a web identity token. Then AWS STS is called and passes the web identity token as input. AWS STS authorizes the call and provides temporary AWS access credentials. The user is allowed to assume an IAM role and access AWS resources in accordance with the role's security policy.
+
+__________________________________________________________________________
+
+Which of the following applies to an AWS Managed Policy?
+
+It is available for use by any AWS account
+It can be assigned to multiple users, groups or roles
+AWS occasionally updates the permissions defined in an AWS managed policy
+
+Correct. AWS managed policies are designed to provide permissions for many common use cases. They are available and can be used in any AWS account.
+
+Correct. You can attach AWS managed policies to multiple principal entities in your AWS account.
+
+Correct. AWS occasionally updates the permissions defined in an AWS managed policy. When AWS does this, the update affects all principal entities (users, groups, and roles) that the policy is attached to.
+
+__________________________________________________________________________
+
+Which statement best describes IAM?
+
+IAM allows you to manage users, groups, and roles and their corresponding level of access to the AWS Platform.
+
+Correct. Using IAM, you can create and manage AWS users, groups, roles, and use permissions to allow and deny their access to AWS resources.
+
+__________________________________________________________________________
+
+Which Amazon Cognito component enables you to provide user temporary credentials to grant access only to allowed AWS services?
+
+Identity Pools
+
+Amazon Cognito identity pools enable you to create unique identities for your users and authenticate them with identity providers. With an identity, you can obtain temporary, limited-privilege AWS credentials to access other AWS services. Amazon Cognito identity pools support public identity providers—Amazon, Apple, Facebook, and Google—as well as unauthenticated identities. It also supports developer authenticated identities, which let you register and authenticate users via your own back-end authentication process. Think of User Pools as providing authentication, and Identity Pools as providing authorization.
+
+__________________________________________________________________________
+
+What does Cognito use to manage sign-up and sign-in functionality for mobile and web applications?
+
+User Pools
+
+Correct. A user pool is a user directory in Amazon Cognito. With a user pool, your users can sign-up and sign-in to your web or mobile app through Amazon Cognito.
+
+__________________________________________________________________________
+

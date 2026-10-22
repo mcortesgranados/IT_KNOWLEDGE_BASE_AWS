@@ -1,0 +1,144 @@
+https://learn.acloud.guru/course/aws-certified-security-specialty/overview
+
+CHAPTER 01 Introduction To The Course
+01-01 nAn Important Note About A Cloud Guru and Linux Academy Courses
+01-02 Introduction
+01-03 The Exam Blueprint
+01-04 Introducing The AWS Cloud Sandbox
+CHAPTER 02 Security 101
+02-01 Security Basics
+02-02 Security of AWS
+02-03 Shared Responsibility Model
+02-04 Security in AWS
+02-05 Chapter 2 Summary
+02-06 QUIZ AWS Certified Security - Specialty 2020 - Security 101 Quiz
+CHAPTER 03 Identity Access Management, S3 & Security Policies
+03-01 IAM Recap
+03-02 HANDS-ON LAB Introduction to AWS Identity and Access Management (IAM)
+03-03 IAM Root Users
+03-04 IAM Policies 101
+03-06 S3 Bucket Policies
+03-07 S3 ACLs
+03-08 Conflicting Policies - The Key To Passing Your Exam
+03-09 Forcing Encryption Using S3
+03-10 Cross Region Replication And S3
+03-11 Forcing S3 to Use CloudFront
+03-12 Custom SSL Certificates With CloudFront
+03-13 S3 Pre-signed URLs
+03-14 Security Token Services With Active Directory
+03-15 Web Identity Federation
+03-16 Cognito
+03-17 Demo: Cognito
+03-18 Glacier Vault Lock
+03-19 AWS Organizations & Service Control Policies
+03-20 IAM Credential Report
+Chapter 3 Summary
+03-01 QUIZ AWS Certified Security - Specialty 2020 - Identity Access Management, S3 & Security Policies Quiz
+03-02 CHAPTER 04 Logging And Monitoring
+03-03 CloudTrail - Turning It On
+03-04 CloudTrail - Protecting Your Logs
+03-05 CloudWatch 101
+03-06 AWS Config 101
+03-07 Demo: AWS Config
+03-08 Set Up An Alert If The Root User Logs In
+03-09 Cloud HSM
+03-10 Inspector & Trusted Advisor
+03-11 Logging With AWS - White Paper
+Chapter 4 Summary
+04-01 QUIZ AWS Certified Security - Specialty 2020 - Logging And Monitoring Quiz
+CHAPTER 05 Infrastructure Security
+05-01 KMS Part 1
+05-02 KMS Part 2
+05-03 KMS Part 3
+05-04 KMS Part 4
+05-05 KMS Key Rotation Options
+05-06 Using Your Own Key Pairs - Mac Users Only
+05-07 Using Your Own Key Pairs - Windows Users Only
+05-08 Using KMS With EBS
+05-09 EC2 & Key Pairs
+05-10 EC2 & Key Pairs - Part 2
+05-11 AWS Market Place Security Products
+05-12 AWS WAF & AWS Shield
+05-13 Dedicated Instances vs Dedicated Hosts
+05-14 AWS Hypervisors
+05-15 KMS Grants
+05-16 KMS ViaService
+05-17 Cross Account Access To KMS CMKs
+05-18 Introduction To Microservices
+05-19 Introduction To Containers
+05-20 Demo: Containers
+05-21 Container Security
+05-22 Chapter 5 Summary
+05-23 QUIZ AWS Certified Security - Specialty 2020 - Infrastructure Security Quiz
+CHAPTER 06 Data Protection With VPCs
+06-01 VPC Introduction
+06-02 Setting Up Our VPC Part 1
+06-03 Setting Up Our VPC Part 2
+06-04 Nat Instances & Nat Gateways
+06-05 NACLs vs Security Groups
+06-06 Application Load Balancers & custom VPC's
+06-07 Elastic Load Balancers and TLS/SSL Termination
+07-08 VPC Flow Logs
+06-09 NAT's vs Bastions
+06-10 Session Manager
+06-11 Demo: Session Manager
+06-12 VPC End Points
+06-13 CloudHSM - Introduction
+06-14 CloudHSM - Setup & Initializing Our Cluster
+06-15 CloudHSM - Installing and Configuring Our Client
+06-16 CloudHSM - User Management & Generating & Exporting Keys
+06-17 CloudHSM - Clean Up
+06-18 VPC - Clean Up
+06-19 Amazon DNS
+06-20 Transit Gateway
+06-21 Chapter 6 Summary
+06-22 QUIZ AWS Certified Security - Specialty 2020 - Data Protection With VPCs Quiz
+CHAPTER 07 Incident Response & AWS In The Real World
+07-01 DDOS Overview
+07-02 WAF Integration
+07-03 EC2 Has Been Hacked! What should you do?
+07-04 I've Leaked My Keys On Github Accidentally
+07-05 Reading CloudTrail Logs
+07-06 Pen Testing - AWS Market Place
+07-07 AWS Certificate Manager
+07-08 Perfect Forward Secrecy and ALBs
+07-09 API Gateway - Throttling & Caching
+07-10 AWS Systems Manager Parameter Store
+07-11 AWS Systems Manager Run Command
+07-12 Compliance in AWS
+07-13 Chapter 7 Summary
+07-14 QUIZ AWS Certified Security - Specialty 2020 - Incident Response & AWS In The Real World Quiz
+CHAPTER 08 Updates Based On Student Feedback
+Introduction To Athena
+Demo: Athena
+Introduction To Macie
+Demo: Macie
+Introduction To GuardDuty
+Demo: GuardDuty
+Secrets Manager
+Simple Email Service
+Security Hub
+Demo: Security Hub
+Network Packet Inspection
+Active Directory Federation With AWS
+AWS Artifact
+Additional Resources For Exam Preparation
+Free Practice Questions To Help You Prepare
+Chapter 8 Summary
+QUIZ AWS Certified Security - Specialty 2020 - Updates Based On Student Feedback Quiz
+CHAPTER 09 Troubleshooting Scenarios
+Troubleshooting Monitoring & Alerting
+Demo: Lambda
+Troubleshooting Logging
+HANDS-ON LAB Troubleshooting CloudTrail and S3 Logging Issues in AWS
+Troubleshooting Secure Network Infrastructure
+Troubleshooting Authentication & Authorization
+Troubleshooting Cross Account Access With STS:AssumeRole
+Troubleshooting Lambda Access
+Troubleshooting Access To CMKs in KMS
+Chapter 9 Summary
+QUIZ AWS Certified Security - Specialty 2020 - Troubleshooting Scenarios Quiz
+CHAPTER 10 Conclusion
+How To Book Your Exam
+Good Luck!
+PRACTICE EXAM AWS Certified Security - Specialty

@@ -1,0 +1,229 @@
+https://learn.acloud.guru/course/aws-certified-sysops-admin-associate/overview
+
+CHAPTER 01 Introduction
+01-01 Introduction
+01-02 The Exam Guide
+01-03 Introducing the AWS Cloud Sandbox
+01-04 Introducing Hands-On Labs
+01-05 Course Updates
+CHAPTER 02 Supporting Courses
+02-01 nSupporting Courses
+CHAPTER 03 Deployment, Provisioning, and Automation
+03-01 Section Introduction
+03-02 Demo: Deploying an Elastic Compute Cloud (EC2) Instance
+03-03 HANDS-ON LAB Creating and Working with an EC2 Instance in AWS
+03-04 Understanding EBS Volumes
+03-05 What Is a Bastion Host?
+03-06 Exploring Elastic Load Balancer
+03-07 Understanding Elastic Load Balancer Error Messages
+03-08 Demo: Deploying an Elastic Load Balancer
+03-09 Demo: Understanding Elastic Load Balancer CloudWatch Metrics
+03-10 Demo: Working with Elastic Load Balancer Access Logs
+03-11 Understanding Sticky Sessions
+03-12 Discovering EC2 Image Builder
+03-13 Demo: Creating an AMI Using EC2 Image Builder
+03-14 Introducing CloudFormation
+03-15 Demo: Provisioning AWS Resources Using CloudFormation
+03-16 HANDS-ON LAB Deploying a Basic Infrastructure Using CloudFormation Templates
+03-17 Troubleshooting CloudFormation
+03-18 Demo: CloudFormation Errors
+03-19 Introducing CloudFormation StackSets
+03-20 CloudFormation Best Practices
+03-21 Exploring Blue/Green Deployments
+03-22 Understanding Rolling Deployments
+03-23 When to Use Canary Deployments
+03-24 Automating Tasks Using AWS Systems Manager
+03-25 Demo: Implementing Automated Patching Using AWS Systems Manager
+03-26 Demo: Using AWS Systems Manager EC2 Run Command
+03-27 Understanding OpsWorks
+03-28 Section Review: Deployment, Provisioning, and Automation Summary - Part 1
+03-29 Section Review: Deployment, Provisioning, and Automation Summary - Part 2
+03-30 QUIZ Deployment, Provisioning, and Automation Quiz
+CHAPTER 04 Monitoring, Logging, and Remediation
+04-01 Section Introduction
+04-02 Introduction to CloudWatch
+04-03 Demo: Creating Cloudwatch Dashboards
+04-04 Exploring CloudWatch Logs
+04-05 Demo: Collecting Metrics and Logs Using the CloudWatch Agent
+04-06 Demo: Creating CloudWatch Metric Filters
+04-07 Demo: Exploring CloudWatch Logs Insights
+04-08 HANDS-ON LAB Using CloudWatch for Resource Monitoring
+04-09 Receiving Notifications with CloudWatch
+04-10 Demo: Creating CloudWatch Alarms
+04-11 Introduction to CloudTrail
+04-12 Demo: Working with CloudTrail
+04-13 AWS Config 101
+04-14 Demo: Using AWS Config
+04-15 HANDS-ON LAB Auditing Resource Compliance with AWS Config
+04-16 Remediation Using AWS Systems Manager and AWS Config
+04-17 Demo: Configuring Automatic Remediation Using AWS Systems Manager and AWS Config
+04-18 What Is EventBridge?
+04-19 Demo: Using Amazon EventBridge
+04-20 Demo: Scheduling Automated Tasks Using EventBridge and AWS Config
+04-21 Demo: Exploring Health Dashboards
+04-22 Section Review: Monitoring, Logging, and Remediation Summary - Part 1
+04-23 Section Review: Monitoring, Logging, and Remediation Summary - Part 2
+04-24 QUIZ Monitoring, Logging, and Remediation Quiz
+CHAPTER 05 Storage and Data Management
+05-01 Section Introduction
+05-02 Reviewing S3 Storage Classes
+05-03 Demo: Creating an S3 Bucket
+05-04 Working with S3 Lifecycle Policies
+05-05 Protecting Data from Accidental Deletion Using S3 Versioning
+05-06 Protecting Data from Accidental Deletion with MFA Delete
+05-07 S3 Encryption
+05-08 Demo: Configuring Encryption on an S3 Bucket
+05-09 Introduction to Elastic File System (EFS)
+05-10 Demo: Working with EFS
+05-11 Advanced EFS
+05-12 EFS and Multi-AZ Applications
+05-13 Introducing Athena
+05-14 Demo: Working with Athena|
+05-15 Introducing Amazon OpenSearch Service (Formerly Amazon Elasticsearch Service)
+05-16 OpenSearch Deployment Best Practices
+05-17 Demo: Creating an Amazon OpenSearch Service Domain
+05-18 Demo: Configuring Static Website Hosting Using S3
+05-19 HANDS-ON LAB Creating a Static Website Using Amazon S3
+05-20 Demo: Leveraging Pre-Signed URLs with S3
+05-21 Restricting S3 Accessibility with IP Addresses
+05-22 Demo: Using AWS Config with S3
+05-23 Overview of Storage Gateway
+05-24 Section Review: Storage and Data Management Summary - Part 1
+05-25 Section Review: Storage and Data Management Summary - Part 2
+05-26 QUIZ Storage and Data Management Overview Quiz
+CHAPTER 06 Reliability and Business Continuity
+06-01 Section Introduction
+06-02 Elasticity and Scalability 101
+06-03 Introducing AWS Auto Scaling
+06-04 Demo: Creating Auto Scaling Plans
+06-05 Troubleshooting Auto Scaling Issues
+06-06 Vertical Scaling vs. Horizontal Scaling
+06-07 Using AWS ElastiCache
+06-08 Aurora 101
+06-09 HANDS-ON LAB Creating an Amazon Aurora RDS Database (MySQL Compatible)
+06-10 RDS and Multi-AZ Failover
+06-11 RDS and Read Replicas
+06-12 HANDS-ON LAB Deploying an Amazon RDS Multi-AZ and Read Replica in AWS
+06-13 Demo: Creating and Encrypting RDS Snapshots
+06-14 Differentiating Single Availability Zones vs. Multi-AZ Deployments
+06-15 Implementing Fault Tolerant Workloads Using Amazon Elastic File System (EFS)
+06-16 Building Fault Tolerance Using Elastic IPs
+06-17 Readying for Disaster Recovery
+06-18 AWS Service Maintenance Windows
+06-19 Configuring S3 Cross-Region Replication
+06-20 Implementing Loosely Coupled Architectures with SQS
+06-21 Demo: Automating EBS Snapshots Using Data Lifecycle Manager
+06-22 Using DynamoDB Streams for Backing Up Your Table to Another Region
+06-23 Section Review: Reliability and Business Continuity Summary - Part 1
+06-24 Section Review: Reliability and Business Continuity Summary - Part 2
+06-25 QUIZ Reliability and Business Continuity Quiz
+CHAPTER 07 Security and Compliance
+07-01 Section Introduction
+07-02 Compliance on AWS
+07-03 Understanding Distributed Denial of Service (DDoS)
+07-04 AWS Marketplace Security Products
+07-05 IAM Refresh
+07-06 HANDS-ON LAB Introduction to AWS Identity and Access Management (IAM)
+07-07 Demo: Creating Custom IAM Policies and Roles
+07-08 Demo: Enabling MFA and Reporting with IAM
+07-09 Introducing AWS Single Sign-On (SSO)
+07-10 Auditing and Troubleshooting Access Issues
+07-11 AWS Inspector vs. Trusted Advisor
+07-12 Introducing AWS Organizations
+07-13 Service Control Policies
+07-14 Securing Multiple Accounts with AWS Control Tower and Organizations
+07-15 Security Token Service (STS)
+07-16 AWS Key Management Service (KMS)
+07-17 AWS Certificate Manager
+07-18 AWS Web Application Firewall (WAF)
+07-19 Demo: Configuring AWS Web Application Firewall (WAF)
+07-20 Differentiating Dedicated Instances vs. Dedicated Hosts
+07-21 Using AWS Systems Manager Parameter Store
+07-22 Understanding AWS Service Quotas
+07-23 Reviewing the AWS Shared Responsibility Model
+07-24 Protecting Logs within CloudTrail
+07-25 Demo: Introducing AWS Security Hub
+07-26 Exploring Amazon GuardDuty
+07-27 Demo: Working with Amazon GuardDuty
+07-28 Securely Storing Secrets Using AWS Secrets Manager
+07-29 Section Review: Security and Compliance Summary - Part 1
+07-30 Section Review: Security and Compliance Summary - Part 2
+07-31 QUIZ Security and Compliance Quiz
+CHAPTER 8 Networking and Content Delivery
+08-01 Section Introduction
+08-02 Virtual Private Cloud (VPC) Overview
+08-03 Demo: Building Your Own Custom VPC - Part 1
+08-04 Demo: Building Your Own Custom VPC - Part 2
+08-05 Demo: Building Your Own Custom VPC - Part 3
+08-06 HANDS-ON LAB Creating a Basic VPC and Associated Components in AWS
+08-07 Demo: Configuring Network ACLs - Part 1
+08-08 Demo: Configuring Network ACLs - Part 2
+08-09 Demo: Connecting to an EC2 Instance Using Systems Manager Session Manager
+08-10 Demo: Introducing VPC Endpoints
+08-11 HANDS-ON LAB Create a VPC Endpoint and S3 bucket in AWS
+08-12 Understanding VPC Peering
+08-13 Securely Connecting to a VPC Using a Virtual Private Network (VPN)
+08-14 What Is Direct Connect?
+08-15 Understanding VPC Flow Logs
+08-16 Demo: Using VPC Flow Logs
+08-17 HANDS-ON LAB Working with AWS VPC Flow Logs for Network Monitoring - 2020
+08-18 Introducing Domain Name System (DNS)
+08-19 Introducing Route 53
+08-20 Exploring Route 53 Resolver
+08-21 Understanding Route 53 Routing Policies
+08-22 Demo: Route 53 Simple Routing Policy
+08-23 Demo: Route 53 and Weighted Routing Policy
+08-24 Demo: Route 53 Latency Routing Policy
+08-25 Demo: Route 53 Failover Routing Policy
+08-26 Demo: Route 53 Geolocation Routing Policy
+08.27 Demo: Configuring Route 53 Alias
+08-28 Overview of CloudFront
+08-29 Demo: Configuring Amazon CloudFront
+08-30 Demo: Configuring Amazon CloudFront with Origin Access Identity
+08-31 Demo: Interpreting CloudFront Logs
+08-32 Identifying CloudFront Caching Errors
+08-33 CloudFront Cache Hit Ratio
+08-34 Improving CloudFront Cache Hit Ratio When Forwarding Request Headers and Cookies
+08-35 Advanced CloudFront
+08-36 Section Review: Networking and Content Delivery Summary - Part 1
+08-37 Section Review: Networking and Content Delivery Summary - Part 2
+08-38 QUIZ Networking and Content Delivery Overview Quiz
+CHAPTER 09 Cost and Performance Optimization
+09-01 Section Introduction
+09-02 AWS Cost Explorer and Cost Allocation Tags
+09-03 HANDS-ON LAB Using AWS Tags and Resource Groups in AWS
+09-04 Improving Costs with AWS Budgets
+09-05 Demo: Creating an AWS Budget and Billing Alarm
+09-06 Reducing Cost through Managed Services
+09-07 AWS Compute Optimizer
+09-08 Using Metrics to Improve Performance and Costs
+09-09 Increasing S3 Transfer Speeds with Transfer Acceleration
+09-10 Enhancing S3 Performance with Multipart Upload
+09-11 Using Placement Groups to Increase TCP/IP Traffic Flow
+09-12 Identifying Underutilized Resources Using Trusted Advisor
+09-13 Demo: Performance Analysis Using RDS Performance Insights
+09-14 Increasing Scalability with RDS Proxy
+09-15 Enhancing EC2 Performance Using Instance Store
+09-16 Section Review: Cost and Performance Optimization Summary
+09-17 QUIZ Cost and Performance Optimization Quiz
+CHAPTER 10 Additional Resources to Help You Prepare for the Exam
+10-01 Additional Resources to Help You Pass the Exam
+CHAPTER 11 Challenge Labs
+11-01 Introducing Challenge Labs
+11-02 HANDS-ON LAB Creating an AWS Config Rule
+11-03 HANDS-ON LAB Configure an Application Load Balancer and Auto Scaling Group
+11-04 HANDS-ON LAB Configuring a CloudFormation Template
+11-05 HANDS-ON LAB Creating a Highly Available VPC
+11-06 HANDS-ON LAB Configuring S3
+11-07 HANDS-ON LAB Configure an Alert Based on Logging Content
+11-08 HANDS-ON LAB Configure At Rest Encryption for EFS
+CHAPTER 12 Practice Exam
+12-01 Introducing The Practice Exams
+12-02 PRACTICE EXAM AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam 01
+12-03 PRACTICE EXAM AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam 02
+12-04 PRACTICE EXAM AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam 03
+12-05 PRACTICE EXAM AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam 04
+12-06 PRACTICE EXAM AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam 05
+12-07 PRACTICE EXAM AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam 06
+CHAPTER 13 Good Luck and What's Next
+13-01 Summary and Next Steps

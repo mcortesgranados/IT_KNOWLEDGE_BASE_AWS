@@ -1,0 +1,51 @@
+Amazon _____ is the most common service used to trigger a scaling event in an EC2 Auto Scaling group.
+
+CloudWatch
+
+Correct Answer
+CloudWatch is the most commonly used service to trigger a scaling event. Reference Documentation: Why Doesn't My Amazon EC2 Auto Scaling Policy Trigger When My CloudWatch Alarm Changes States?
+https://aws.amazon.com/premiumsupport/knowledge-center/autoscaling-policy-cloudwatch-alarm/
+
+_________________________________________________________________________________
+
+
+What should you add to your RDS database to help with a read-heavy workload?
+
+Read replicas
+
+Good work!
+Read replicas are the best way to handle a read-heavy workload. Reference Documentation: Amazon RDS Read Replicas
+
+_________________________________________________________________________________
+
+You would select _____ capacity for a DynamoDB table with a predictable workload.
+
+Provisioned
+
+Good work!
+Provisioned is the best option for a predictable workload. Reference Documentation: Pricing for Provisioned Capacity
+https://aws.amazon.com/dynamodb/pricing/provisioned/
+
+_________________________________________________________________________________
+
+What RDS database engine offers a serverless scaling option?
+
+Aurora
+
+Good work!
+Aurora is the only engine that offers a serverless scaling option. Reference Documentation: Amazon Aurora Serverless
+https://aws.amazon.com/rds/aurora/serverless/
+
+_________________________________________________________________________________
+
+What AWS resource defines the configuration of instances created by EC2 Auto Scaling?
+
+Launch templates
+
+Good work!
+Launch templates are the best way to define what your instances will look like. Reference Documentation: Launch Templates
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchTemplates.html
+
+
+_________________________________________________________________________________
+

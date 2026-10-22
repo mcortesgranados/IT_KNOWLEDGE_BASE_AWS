@@ -1,0 +1,105 @@
+CHAPTER 01 Introduction
+01-01 An Important Note About A Cloud Guru and Linux Academy Courses
+01-02 Course Introduction
+01-03 About The Exam
+01-04 About This Course
+01-05 A Note About Demo Lessons
+CHAPTER 02 Data Collection
+02-01 Introduction
+02-02 Concepts
+02-03 General Data Terminology
+02-04 Machine Learning Data Terminology
+02-05 AWS Data Stores
+02-06 AWS Migration Tools
+02-07 AWS Helper Tools
+02-08 Exam Tips
+02-09 QUIZ AWS Certified Machine Learning - Specialty 2020 - Data Collection Quiz
+CHAPTER 03 Streaming Data Collection
+03-01 Introduction 
+03-02 Concepts
+03-03 Kinesis Data Streams
+03-04 Kinesis Firehose
+03-05 Kinesis Video Streams
+03-06 Kinesis Data Analytics
+03-07 Exam Tips
+03-08 Demo: Streaming Data Collection
+03-09 QUIZ AWS Certified Machine Learning - Specialty 2020 - Streaming Data Collection Quiz
+03-10 HANDS-ON LAB Performing Real-Time Data Analysis with Kinesis
+CHAPTER 04 Data Preparation
+04-01 Introduction
+04-02 Concepts
+04-03 Categorical Encoding
+04-04 Text Feature Engineering
+04-05 Numeric Feature Engineering
+04-06 Other Feature Engineering
+04-07 Handling Missing Values
+04-08 Feature Selection
+04-09 Helper Tools
+04-10 Exam Tips
+04-11 Demo: Data Preparation
+04-12 QUIZ AWS Certified Machine Learning - Specialty 2020 - Data Preparation Quiz
+CHAPTER 05 Data Analysis and Visualization
+05-01 Introduction
+05-02 Concepts
+05-03 Relationships
+05-04 Comparisons
+05-05 Distributions
+05-06 Compositions
+05-07 Choosing A Visualization
+05-08 Exam Tips
+05-09 Demo: Data Analysis and Visualization
+05-10 QUIZ AWS Certified Machine Learning - Specialty 2020 - Data Analysis and Visualization Quiz
+CHAPTER 06 Modeling
+06-01 Introduction
+06-02 Concepts
+06-03 Data Preparation
+06-04 SageMaker Modeling
+06-05 SageMaker Training
+06-06 Exam Tips
+06-07 Demo: Modeling
+06-08 QUIZ AWS Certified Machine Learning - Specialty 2020 - Modeling Quiz
+06-09 HANDS-ON LAB Introducing Jupyter Notebooks (AWS SageMaker)
+CHAPTER 07 Algorithms
+07-01 Introduction
+07-02 OPTIONAL - Why do we call them "Algorithms"?
+07-03 Concepts
+07-04 Regression
+07-05 Clustering
+07-06 Classification
+07-07 Image Analysis
+07-08 Anomaly Detection
+07-09 Text Analytics
+07-10 Reinforcement Learning
+07-11 Forecasting
+07-12 Ensemble Learning
+07-13 Exam Tips
+07-14 Demo: Algorithms
+07-15 HANDS-ON LAB Creating a TensorFlow Image Classifier in AWS SageMaker
+07-16 HANDS-ON LAB Creating an MXNet Image Classifier in AWS SageMaker
+07-17 HANDS-ON LAB Creating a scikit-learn Random Forest Classifier in AWS SageMaker
+QUIZ AWS Certified Machine Learning - Specialty 2020 - Algorithms Quiz
+CHAPTER 08 Evaluation and Optimization
+08-01 Introduction
+08-02 Concepts
+08-03 Monitoring and Analyzing Training Jobs
+08-04 Evaluating Model Accuracy
+08-05 Model Tuning
+08-06 Exam Tips
+08-07 Demo: Evaluation and Optimization
+08-08 QUIZ AWS Certified Machine Learning - Specialty 2020 - Evaluation and Optimization Quiz
+CHAPTER 09 Implementation and Operations
+09-01 Introduction
+09-02 Concepts
+09-03 AI Developer Services
+09-04 HANDS-ON LAB Categorizing Uploaded Data Using AWS Step Functions
+09-05 Amazon SageMaker Deployments
+09-06 Other ML Deployment Options
+09-07 Security
+09-08 Monitor and Evaluate
+09-09 Exam Tips
+09-10 Demo: Implementation and Operations
+09-11 Demo: Deconstruction
+09-12 QUIZ AWS Certified Machine Learning - Specialty 2020 - Implementation and Operations Quiz
+CHAPTER 10 Wrap-Up
+10-01 Good Luck!
+10-02 PRACTICE EXAM AWS Certified Machine Learning - Specialty

@@ -1,0 +1,17 @@
+CHAPTER 5 Elastic Compute Cloud (EC2)
+EC2 Overview
+Demo: Launching an EC2 Instance
+AWS Command Line
+Using Roles
+Security Groups and Bootstrap Scripts
+EC2 Metadata and User Data
+Networking with EC2
+Optimizing with EC2 Placement Groups
+Solving Licensing Issues with Dedicated Hosts
+Timing Workloads with Spot Instances and Spot Fleets
+Deploying vCenter in AWS with VMware Cloud on AWS
+Extending AWS Beyond the Cloud with AWS Outposts
+EC2 Exam Tips
+HANDS-ON LAB EC2 Instance Bootstrapping
+HANDS-ON LAB Using EC2 Roles and Instance Profiles in AWS
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Elastic Compute Cloud (EC2) Quiz

@@ -1,0 +1,78 @@
+You have a small number of critical instances that should be kept separate from each other. You want to ensure that each instance is placed on distinct underlying hardware. What kind of placement group would you pick?
+
+Spread
+
+Correct Answer
+In this scenario, a spread placement group would be the best fit. Reference Documentation: Spread Placement Groups
+
+__________________________________________________________________________________________________
+
+What is the minimum time that AWS requires you to keep an EC2 instance online after you've turned it on?
+
+None (no minimum run time)
+
+Correct Answer
+There is no minimum uptime requirement for an EC2 instance once it has been enabled. Reference Documentation: How Are Amazon EC2 Instance Hours Billed?
+
+__________________________________________________________________________________________________
+
+What happens when your Spot instance is chosen by AWS for termination?
+
+While it is possible that your Spot Instance is interrupted before the warnings can be made, AWS makes a best effort to provide two-minute Spot Instance interruption notices to the metadata of your EC2 instance(s).
+
+Correct Answer
+If your Spot Instance has been marked for termination, a notification will be best-effort posted to the metadata of your EC2 instance 2 minutes before it is stopped or terminated. Reference Documentation: Spot Instance Interruption Notices
+
+__________________________________________________________________________________________________
+
+
+Which of the following is NOT a valid use case for IAM roles?
+
+Using IAM groups to manage the same set of permissions for a set of IAM roles.
+
+Good work!
+This is not a valid use case for an IAM role. AWS doesn't allow users to add an IAM role to an IAM group at this time.
+
+Reference Documentation: IAM Role Management
+
+__________________________________________________________________________________________________
+
+In general, what is the first AWS CLI command that you'll run on a new EC2 instance?
+
+aws configure
+
+Good work!
+Most likely, for your general use, the first step you will need to take is to set up your AWS CLI installation using the aws configure command. Reference Documentation: Configuring the AWS CLI
+
+__________________________________________________________________________________________________
+
+
+When would you want to use a cluster placement group?
+
+When you want to reduce network latency in your application
+
+Correct Answer
+Reducing network latency in an application is the exact use case for a cluster placement group. Reference Documentation: Cluster Placement Groups
+
+__________________________________________________________________________________________________
+
+Why would you want to spin up an EC2 Dedicated Host?
+
+Because your application has hardware-specific licensing requirements
+
+Good work!
+Dedicated Hosts are designed to solve hardware-specific licensing requirements. Reference Documentation: Amazon EC2 Dedicated Hosts
+
+__________________________________________________________________________________________________
+
+
+What is EC2 metadata commonly used for?
+
+
+When your code needs to learn something about the EC2 instances that it's running on
+
+Good work!
+EC2 instance metadata can be used to configure or manage a running instance, and can also be used to access user data that was specified when the instance was launched. Reference Documentation: Instance Metadata and User Data
+
+__________________________________________________________________________________________________
+

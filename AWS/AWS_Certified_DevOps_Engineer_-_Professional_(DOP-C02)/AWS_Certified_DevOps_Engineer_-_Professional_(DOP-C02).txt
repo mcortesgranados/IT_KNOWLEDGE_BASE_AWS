@@ -1,0 +1,180 @@
+CHAPTER 01 Introduction
+01-01 Course Introduction
+01-02 About the Training Architect
+01-03 About the Exam
+01-04 Update - New Exam Version - DOP-C02
+01-05 Course Updates and Changelog
+
+CHAPTER 02 Certification Path and Supporting Courses
+02-01 Supporting Course Overviews
+
+CHAPTER 03 SDLC Automation
+03-01 CI/CD Concepts
+03-02 CodeCommit Overview
+03-03 CodeCommit Repository Actions - Demo
+03-04 CodeCommit Cloning, Commit, Pushes, and Pulls - Demo
+03-05 CodeCommit Merging and Branching - Demo
+03-06 CodeCommit Data Security
+03-07 Introduction to CodeBuild
+03-08 CodeBuild Walkthrough - Demo
+03-09 Working with Build Projects and the Buildspec File
+03-10 Introduction to CodeDeploy
+03-11 CodeDeploy Setup and Configuration
+03-12 CodeDeploy Application, Deployment Groups, and Deployment Configurations
+03-13 CodeDeploy appspec.yml
+03-14 CodeDeploy Revision and Deployment Details
+03-15 Introduction to CodePipeline Concepts
+03-16 CodePipeline with CodeBuild
+03-17 Managing CodePipeline
+03-18 Creating a Pipeline - Demo
+03-19 CodePipeline Continuous Delivery and Approval Actions
+03-20 CodePipeline with EventBridge
+03-21 Jenkins with AWS Developer Tools
+03-22 SDLC Automation Scenarios
+03-23 Pipeline Deployment for Multi-Account Environments
+03-24 Pipeline Testing
+03-25 AWS CodeArtifact
+03-26 Automating EC2 Builds Using EC2 Image Builder
+03-27 Amazon CodeGuru
+03-28 Supporting Services for SDLC Automation
+03-29 DevOps Conversations for SDLC Automation
+03-30 Deployment Strategies and Test Scenarios
+03-31 HANDS-ON LAB Creating an AWS CodeCommit Repository That Triggers Email Notifications
+03-32 HANDS-ON LAB Configure and Work with CodeCommit from the CLI
+03-33 HANDS-ON LAB Setting Up a Pipeline with a Manual Approval in AWS CodePipeline
+03-34 HANDS-ON LAB Setting Up CodeArtifact from the CLI
+03-35 QUIZ SDLC Automation
+
+CHAPTER 04 Configuration Management and Infrastructure as Code
+04-01 Elastic Beanstalk Overview
+04-02 Elastic Beanstalk Deployment Strategies
+04-03 Elastic Beanstalk Environment Configurations
+04-04 Elastic Beanstalk Docker Deployments
+04-05 Elastic Beanstalk with RDS
+04-06 Lambda Overview
+04-07 Lambda Versions and Aliases - Demo
+04-08 Lambda SAM Framework
+04-09 Deploying Step Functions
+04-10 API Gateway Overview
+04-11 REST API vs. WebSocket API
+04-12 API Gateway with Lambda Proxy Integration
+04-13 CloudFormation Template Overview
+04-14 CloudFormation Intrinsic Functions
+04-15 CloudFormation Wait Conditions and Creation Policies
+04-16 CloudFormation Helper Scripts
+04-17 CloudFormation Stack Protection
+04-18 Updating CloudFormation Stacks
+04-19 CloudFormation Nested Stacks and Cross-Stack References
+04-20 CloudFormation Drift Detection and Remediation
+04-21 CloudFormation Custom Resources
+04-22 CloudFormation StackSets
+04-23 OpsWorks Essentials
+04-24 Deployment Strategies with AWS OpsWorks
+04-25 Working with ECS
+04-26 Fargate Overview
+04-27 AWS Cloud Development Kit (CDK)
+04-28 AWS AppConfig
+04-29 AWS Control Tower
+04-30 Amazon Detective
+04-31 Supporting Services for Configuration Management and IaC
+04-32 DevOps Conversations for Configuration Management and Infrastructure as Code
+04-33 Configuration Management and Infrastructure as Code Scenarios
+04-34 HANDS-ON LAB Working with CloudFormation Condition Functions
+04-35 HANDS-ON LAB Working with CloudFormation Nested Stacks
+04-36 HANDS-ON LAB Updating CloudFormation Stacks with Direct Updates and Change Sets
+04-37 QUIZ Configuration Management and Infrastructure as Code
+
+CHAPTER 05 Monitoring and Logging
+05-01 EventBridge Overview
+05-02 CloudWatch Alarms
+05-03 CloudWatch Logs and Metrics
+05-04 Automation with EventBridge and SNS - Demo
+05-05 CloudTrail Overview
+05-06 Kinesis Overview
+05-07 Kinesis Data Streams with Lambda - Demo
+05-08 X-Ray Concepts
+05-09 Amazon OpenSearch (Amazon Elasticsearch)
+05-10 Tagging and Resource Groups
+05-11 Encrypting Logs
+05-12 Amazon QuickSight Dashboards
+05-13 Supporting Services for Monitoring and Logging
+05-14 DevOps Match Game for Monitoring and Logging
+05-15 Monitoring and Logging Scenarios
+05-16 HANDS-ON LAB Monitoring AWS CodePipeline Changes through AWS CloudWatch Events Rules
+05-17 QUIZ Monitoring and Logging
+
+CHAPTER 06 Incident and Event Response
+06-01 Incident and Event Response Overview
+06-02 CloudFormation Stack Troubleshooting and Rollback
+06-03 CodeDeploy Rollback
+06-04 Event-Driven Automated Actions
+06-05 GuardDuty Overview
+06-06 AWS Inspector Overview
+06-07 Kinesis and Event-Driven Automation
+06-08 Security Information and Event Management
+06-09 AWS Systems Manager OpsCenter
+06-10 Troubleshooting Failed Deployments
+06-11 More Event-Driven Scenarios
+06-12 DevOps Match Game for Incident and Event Response
+06-13 Incident and Event Response Scenarios
+06-14 QUIZ Incident and Event Response
+
+CHAPTER 07 Security and Compliance
+07-01 Implement Techniques for Identity and Access Management at Scale
+07-02 Apply Automation for Security Controls and Data Protection
+07-03 Implement Security Monitoring and Auditing Solutions
+07-04 Role and Attribute Policies
+07-05 Identity Providers and Federation
+07-06 AWS Organizations for Multi-Account Environments
+07-07 Trusted Advisor for Policies and Standards
+07-08 Service Catalog for Organizational Control
+07-09 Systems Manager Introduction and Setup - Demo
+07-10 Systems Manager Configuration Compliance
+07-11 Systems Manager Run Command
+07-12 Systems Manager Parameter Store
+07-13 Automate with Systems Manager - Demo
+07-14 Patch Manager
+07-15 AWS Config
+07-16 Amazon Macie
+07-17 Secrets Manager
+07-18 Multi-Account Scenarios with AWS Organizations
+07-19 Supporting Services for Security and Compliance
+07-20 DevOps Conversations for Security and Compliance
+07-21 Policies and Standards Automation Scenarios
+07-22 HANDS-ON LAB Creating an IAM Role and Configuring an EC2 Instance for AWS Systems Manager
+07-23 HANDS-ON LAB Configuring AWS Network Firewall
+07-24 QUIZ Policies and Standards Automation
+
+CHAPTER 08 Resilient Cloud Solutions
+08-01 Auto Scaling Launch Templates
+08-02 ASG Scaling Policies and Scheduled Actions - Demo
+08-03 Auto Scaling Lifecycle Hooks for Configuring Instances
+08-04 Termination Policies and Suspending Auto Scaling Processes
+08-05 Auto Scaling to Support SQS - Demo
+08-06 Load Balancers Fronting Auto Scaling Groups
+08-07 Troubleshooting Auto Scaling
+08-08 Auto Scaling Deployments
+08-09 AWS Auto Scaling
+08-10 DynamoDB Overview
+08-11 DynamoDB Streams, DAX, and TTL
+08-12 Highly Available RDS
+08-13 Aurora for High Availability
+08-14 Content Delivery with CloudFront
+08-15 High Availability with Route 53
+08-16 AWS Single Sign-On
+08-17 Multi-AZ and Multi-Region Deployments
+08-18 Disaster Recovery
+08-19 AWS Elastic Disaster Recovery
+08-20 Amazon Elastic Kuberenetes Service (EKS)
+08-21 DevOps Match Game for Resilient Cloud Solutions
+08-22 Supporting Services for Resilient Cloud Solutions
+08-23 High Availability, Fault Tolerance, and Disaster Recovery Scenarios
+08-24 HANDS-ON LAB Configuring AWS Auto Scaling Rolling Updates
+08-25 QUIZ High Availability, Fault Tolerance, and Disaster Recovery
+
+CHAPTER 09 Conclusion
+09-01 PRACTICE EXAM AWS Certified DevOps Engineer – Professional (DOP-C02) Exam
+09-02 PRACTICE EXAM AWS Certified DevOps Engineer – Professional (DOP-C02) Exam #2
+09-03 PRACTICE EXAM AWS Certified DevOps Engineer – Professional (DOP-C02) Exam #3
+09-04 Course Summary, Whitepapers, and Additional Resources
+09-05 Conclusion and What’s Next

@@ -1,0 +1,68 @@
+Which of the following is a managed service that allows you to create and control the encryption keys used to encrypt your data?
+
+KMS
+
+Correct. AWS KMS is a managed service that enables you to easily create and control the keys used for cryptographic operations.
+
+_____________________________________________________________________________________________________
+
+
+What is the name of the practice of encrypting plaintext data with a data key, and then encrypting the data key under another key?
+
+Envelope encryption
+
+When you encrypt your data, your data is protected, but you have to protect your encryption key. One strategy is to encrypt it. Envelope encryption is the practice of encrypting plaintext data with a data key, and then encrypting the data key under another key.
+
+_____________________________________________________________________________________________________
+
+Which of the following statements is correct in relation to KMS?
+
+You cannot export (copy out of the AWS KMS service in plain text) your customer master key
+KMS encryption keys are Single-Region by default
+
+CMKs are created and used only within the service to help ensure their security, enable your policies to be consistently enforced, and provide a centralized log of their use.
+
+Single-Region is the default option when creating KMS keys, which are only stored and used in the Region they are configured. KMS Multi-Region encryption keys can be created using advanced options and can be replicated into other Regions. AWS Key Management Service FAQs > Security.
+https://aws.amazon.com/kms/faqs/#Security
+
+_____________________________________________________________________________________________________
+
+You would like KMS to rotate your encryption keys on a yearly basis, which API command can you use to configure this?
+
+enable-key-rotation
+
+Use the aws kms enable-key-rotation command to configure key rotation. This can also be enabled in the console.
+
+_____________________________________________________________________________________________________
+
+You need to re-encrypt a file with a new customer master key, which API call can you use to do this?
+
+re-encrypt
+
+The re-encrypt API call encrypts data on the server side with a new customer master key (CMK) without exposing the plaintext of the data on the client side.
+
+_____________________________________________________________________________________________________
+
+Which command can you use to encrypt a plain text file using a CMK?
+
+aws kms encrypt
+
+Use the aws kms encrypt command to encrypt files.
+
+_____________________________________________________________________________________________________
+
+Which of the following statements are correct about AWS managed keys?
+
+You cannot use AWS managed keys in cryptographic operations directly
+Envelope encryption is used to protect your encryption key
+
+You can view AWS managed keys and their key policies in your account, and audit their use in AWS CloudTrail logs. However, you cannot manage, rotate, or change their key policies. And, you cannot use AWS managed keys in cryptographic operations directly; the service that creates them uses them on your behalf. Reference: Customer master keys (CMKs).
+When you encrypt your data, your data is protected, but you have to protect your encryption key. One strategy is to encrypt it. Envelope encryption is the practice of encrypting plaintext data with a data key, and then encrypting the data key under another key. Reference: Envelope encryption.
+
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping
+
+_____________________________________________________________________________________________________
+
+
+

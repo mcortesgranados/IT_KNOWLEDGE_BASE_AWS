@@ -1,0 +1,10 @@
+CHAPTER 7 KMS and Encryption on AWS
+KMS 101
+Creating A CMK - Demo
+CMK Summary
+Understanding KMS API Calls - Demo
+Exploring Envelope Encryption
+Enabling and Disabling KMS Key Rotation - Demo
+Certificate Management in AWS
+KMS Summary THIS MONTH
+QUIZ AWS Certified Developer - Associate - KMS and Encryption on AWS Quiz

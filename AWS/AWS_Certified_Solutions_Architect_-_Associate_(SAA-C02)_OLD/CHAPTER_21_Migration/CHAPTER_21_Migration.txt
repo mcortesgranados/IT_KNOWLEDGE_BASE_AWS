@@ -1,0 +1,11 @@
+CHAPTER 20 Migration
+Migrating Data with AWS Snow Family
+Storage Gateway
+AWS DataSync
+AWS Transfer Family
+Moving to the Cloud with Migration Hub
+Migrating Workloads to AWS Using AWS Application Discovery Service or AWS Application Migration Service (AWS MGN)
+Migrating Databases from On-Premises to AWS with AWS Database Migration Service (AWS DMS)
+Replicating and Tracking Migrations with AWS Migration Hub and AWS Server Migration Service (AWS SMS)
+Migration Exam Tips
+AWS Certified Solutions Architect - Associate (SAA-C03) - Migration Quiz

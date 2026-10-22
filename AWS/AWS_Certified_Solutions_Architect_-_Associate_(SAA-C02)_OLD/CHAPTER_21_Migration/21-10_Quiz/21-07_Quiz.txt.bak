@@ -1,0 +1,50 @@
+f
+
+AWS DataSync
+
+Correct Answer
+Yes! AWS DataSync excels at one time migrations. https://aws.amazon.com/datasync/
+
+________________________________________________________________________
+
+Which AWS tool would you use to integrate S3 and an application that only supports FTPS transfers?
+
+Transfer Family
+
+Correct Answer
+Yes! Transfer Family allows you to integrate legacy applications that use FTPS and S3 together. https://aws.amazon.com/aws-transfer-family/
+https://aws.amazon.com/aws-transfer-family/
+
+________________________________________________________________________
+
+What would be the best way to migrate 100PB of data into AWS?
+
+Snowmobile
+
+Correct Answer
+Yup! Due to the size, Snowmobile would be the most cost and time effective solution. https://aws.amazon.com/snowmobile/
+https://aws.amazon.com/snowmobile/
+
+________________________________________________________________________
+
+What would be the best way to migrate 80TB of data into S3 if you have limited bandwidth at your datacenter?
+
+Snowball
+
+Correct Answer
+Yes! Due to the limited bandwidth Snowball is the best choice. https://aws.amazon.com/snowball/?
+https://aws.amazon.com/snowball/
+
+________________________________________________________________________
+
+What is the easiest way to start sending your tape backups into AWS rather than keeping them on prem?
+
+Tape Gateway
+
+Correct Answer
+Yup! Tape Gateway would be the best choice as it can emulate a tape and then ship the data to AWS. https://aws.amazon.com/storagegateway/vtl/
+https://aws.amazon.com/storagegateway/vtl/
+
+________________________________________________________________________
+
+

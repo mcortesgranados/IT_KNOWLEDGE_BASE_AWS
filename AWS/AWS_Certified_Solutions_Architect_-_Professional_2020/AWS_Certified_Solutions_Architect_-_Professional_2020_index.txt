@@ -1,0 +1,161 @@
+https://learn.acloud.guru/course/aws-certified-solutions-architect-professional/overview
+
+CHAPTER 01 Introduction
+01-01 An Important Note About A Cloud Guru and Linux Academy Courses
+01-02 Welcome
+01-03 Introduction
+01-04 About the Exam
+01-05 About This Course
+01-06 About the Demos
+01-07 A Note About Demo Lessons
+CHAPTER 02 Data Stores
+02-01 Introduction
+02-02 Concepts
+02-03 S3
+02-04 Glacier
+02-05 Elastic Block Storage
+02-06 Elastic File System
+02-07 Storage Gateway
+02-08 WorkDocs
+02-09 EC2 Databases
+02-10 RDS
+02-11 HANDS-ON LAB Deploying an Amazon RDS Multi-AZ and Read Replica in AWS
+02-12 DynamoDB
+02-13 Redshift
+02-14 Neptune
+02-15 HANDS-ON LAB Loading and Retrieving Data in Neptune
+02-16 Elasticache
+02-17 Other Datastore Options
+02-18 Comparing DB Options
+02-19 Exam Tips
+02-20 Pro Tips
+02-21 Challenge 1
+02-22 Challenge 2
+02-23 HANDS-ON LAB Querying Data in S3 with Amazon Athena
+02-24 HANDS-ON LAB Loading Data into a Redshift Cluster
+02-25 Demo: Air Quality Analysis
+02-26 QUIZ AWS Certified Solutions Architect - Professional 2020 - Data Stores Quiz
+CHAPTER 03 Networking
+03-01 Introduction
+03-02 Concepts
+03-03 Network to VPC Connectivity
+03-04 VPC to VPC Connectivity
+03-05 Internet Gateways
+03-06 Routing
+03-07 Enhanced Networking
+03-08 Route 53
+03-09 CloudFront
+03-10 Elastic Load Balancers
+03-11 Exam Tips
+03-12 Pro Tips
+03-13 Challenge 1
+03-14 Challenge 2
+03-15 HANDS-ON LAB Creating a Multi-Region Network with VPC Peering Using SGs, IGW, and RTs
+03-16 HANDS-ON LAB Creating and Configuring a Network Load Balancer in AWS
+03-17 HANDS-ON LAB Troubleshooting Amazon EC2 Network Connectivity
+03-18 Demo: Network Mess
+03-19 QUIZ AWS Certified Solutions Architect - Professional 2020 - Networking Quiz
+CHAPTER 04 Security
+04-01 Introduction
+04-02 Concepts
+04-03 Multi-Account Management
+04-04 Network Controls and Security Groups
+04-05 HANDS-ON LAB Troubleshooting AWS Network Connectivity: Security Groups and NACLs
+04-06 AWS Directory Services
+04-07 Credentials and Access Management
+04-08 Encryption
+04-09 Distributed Denial of Service Attacks
+04-10 IDS and IPS
+04-11 Service Catalog
+04-12 Exam Tips
+04-13 Pro Tips
+04-14 Challenge 1
+04-15 Challenge 2
+04-16 QUIZ
+04-17 AWS Certified Solutions Architect - Professional 2020 - Security Quiz
+CHAPTER 05 Migrations
+05-01 Introduction
+05-02 Migration Strategies
+05-03 Cloud Adoption Framework
+05-04 Hybrid Architecture
+05-05 Migration Tools
+05-06 Network Migrations and Cutovers
+05-07 Snow Family
+05-08 Exam Tips
+05-09 Pro Tips
+05-10 Challenge 1
+05-11 Challenge 2
+05-12 HANDS-ON LAB Migrating from a Relational Database to DynamoDB
+05-13 HANDS-ON LAB Using the AWS DMS to Migrate Data to an Aurora Database
+05-14 QUIZ AWS Certified Solutions Architect - Professional 2020 - Migrations Quiz
+CHAPTER 06 Architecting to Scale
+06-01 Introduction
+06-02 Concepts
+06-03 Auto-Scaling
+06-04 Kinesis
+06-05 DynamoDB Scaling
+06-06 CloudFront Part 2
+06-07 SNS
+06-08 SQS
+06-09 HANDS-ON LAB Scaling EC2 Using SQS
+06-10 Lambda, Serverless Application Model and EventBridge
+06-11 Simple Workflow Service
+06-12 Step Functions and Batch
+06-13 HANDS-ON LAB Coordinating AI Services with Step Functions
+06-14 Elastic MapReduce
+06-15 Exam Tips
+06-16 Pro Tips
+06-17 Challenge 1
+06-18 Challenge 2
+06-19 Demo: Auto-Scale Experiment
+06-20 QUIZ AWS Certified Solutions Architect - Professional 2020 - Architecting to Scale Quiz
+CHAPTER 07 Business Continuity
+07-01 Introduction
+07-02 Concepts
+07-03 AWS Continuum of HA
+07-04 Storage HA Options
+07-05 Compute HA Options
+07-06 Database HA Options
+07-07 Network HA Options
+07-08 Exam Tips
+07-09 Pro Tips
+07-10 Challenge 1
+07-11 Challenge 2
+07-12 QUIZ AWS Certified Solutions Architect - Professional 2020 - Business Continuity Quiz
+CHAPTER 08 Deployment and Operations Management
+08-01 Introduction
+08-02 Types of Deployments
+08-03 Continuous Integration and Deployment
+08-04 Elastic Beanstalk
+08-05 CloudFormation
+08-06 HANDS-ON LAB Understanding CloudFormation Template Anatomy
+08-07 Elastic Container Service
+08-08 API Gateway
+08-09 Management Tools
+08-10 AWS System Manager
+08-11 Enterprise Apps
+08-12 Machine Learning Landscape
+08-13 Exam Tips
+08-14 Pro Tips
+08-15 Challenge 1
+08-16 Challenge 2
+08-17 Demo: Zero Downtime Deployments
+08-18 QUIZ AWS Certified Solutions Architect - Professional 2020 - Deployment and Operations Management Quiz
+CHAPTER 09 Cost Management
+09-01 Introduction
+09-02 Concepts
+09-03 Cost Optimization Strategies
+09-04 Tagging and Resource Groups
+09-05 Spot and Reserved Instances
+09-06 Cost Management Tools
+09-07 Exam Tips
+09-08 Pro Tips
+09-09 Challenge 1
+09-10 Challenge 2
+09-11 QUIZ AWS Certified Solutions Architect - Professional 2020 - Cost Management Quiz
+CHAPTER 10 Good Luck!
+10-01 Good Luck!
+10-02 Stay Engaged
+10-03 Keep Going!
+10-04 Keep Up to Date with AWS This Week
+10-05 PRACTICE EXAM AWS Certified Solutions Architect - Professional Exam

@@ -1,0 +1,125 @@
+Which cost management tool gives you the ability to be alerted when the actual or forecasted cost and usage exceeds your desired threshold?
+
+AWS Budgets
+
+Budgets allows you to improve planning and cost control with flexible budgeting and forecasting. You can choose to be alerted when your budget threshold is exceeded.
+
+__________________________________________________________________________________
+
+
+Which service alerts you to events that might impact your AWS environment?
+
+Personal Health Dashboard
+
+Personal Health Dashboard alerts you to events that might impact your AWS environment by providing feedback tailored to your specific environment.
+
+__________________________________________________________________________________
+
+Which service provides the easiest way to set up and govern a secure, multi-account AWS environment?
+
+Control Tower
+
+Control Tower allows you to centrally govern and enforce the best use of AWS services across your accounts.
+
+__________________________________________________________________________________
+
+Which service provides public and private certificates for free?
+
+Certificate Manager
+
+Certificate Manager helps you provision and manage SSL/TLS certificates and provides public and private certificates for free.
+
+__________________________________________________________________________________
+
+Which AWS Trusted Advisor real-time guidance recommendations are available for AWS Basic Support and AWS Developer Support customers?
+
+Service limit checks
+Security Groups - Specific Ports Unrestricted
+Amazon S3 bucket permissions
+
+Basic and Developer Support customers get 50 service limit checks.
+
+Basic and Developer Support customers get security checks for "Specific Ports Unrestricted" on security groups.
+
+Basic and Developer Support customers get security checks on S3 bucket permissions.
+
+__________________________________________________________________________________
+
+Which of the following usage types will always be free even after the 12-month Free Tier plan has expired?
+
+1 million AWS Lambda requests per month
+
+1 million Lambda requests are always free each month.
+
+__________________________________________________________________________________
+
+Which types of issues are covered by AWS Support?
+
+"How to" questions about AWS services and features
+Problems detected by health checks
+
+This type of question is covered under AWS Support.
+
+__________________________________________________________________________________
+
+Which service allows you to select and deploy operating system and software patches automatically across large groups of Amazon EC2 instances?
+
+AWS Systems Manager
+
+Systems Manager allows you to automate operational tasks across your AWS resources.
+
+__________________________________________________________________________________
+
+Which types of support cases are AWS Basic Support customers limited to?
+
+Account and billing
+Service limit increases
+
+__________________________________________________________________________________
+
+Which cost management tool allows you to view costs from the past 12 months, current detailed costs, and forecasts costs for up to 3 months?
+
+AWS Cost Explorer
+
+Cost Explorer allows you to visualize, understand, and manage your AWS costs and usage over time.
+
+__________________________________________________________________________________
+
+Which service reduces the operational overhead of your IT organization?
+
+AWS Managed Services
+
+Managed Services implements best practices to maintain your infrastructure and helps reduce your operational overhead and risk.
+
+__________________________________________________________________________________
+
+Which tool allows you to compare your estimated service costs per Region?
+
+AWS Pricing Calculator
+
+The Pricing Calculator allows you to get an estimate for the cost of AWS services. Comparing service costs per Region is a common use case.
+
+__________________________________________________________________________________
+
+Which API allows you to receive price alerts when prices change?
+
+Price List API
+
+The Price List API allows you to query the price of AWS services.
+
+__________________________________________________________________________________
+
+Which cost management tool allows you to see the most detailed information about your AWS bill?
+
+AWS Cost and Usage Reports
+
+Cost and Usage Reports provides the most detailed and comprehensive report for AWS cost and usage data.
+
+__________________________________________________________________________________
+
+Which service allows you to simplify billing by using a single payment method for all your accounts?
+
+AWS Organizations
+
+Organizations offers consolidated billing that provides 1 bill for all your AWS accounts. This also gives you access to volume discounts.
+

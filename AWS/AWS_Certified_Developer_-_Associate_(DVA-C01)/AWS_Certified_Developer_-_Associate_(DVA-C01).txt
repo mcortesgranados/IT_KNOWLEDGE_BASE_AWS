@@ -1,0 +1,225 @@
+
+CHAPTER 1
+1-01Introduction
+1-02 Introduction
+1-03 What Can I Skip?
+1-04 The DVA-C02 Exam Blueprint
+1-05 Introducing The AWS Cloud Sandbox
+1-06 Introducing Hands-On Labs
+
+CHAPTER 2
+2-01 Beginner's Guide to IAM
+2-02 IAM 101
+2-03 IAM Demo
+2-04 HANDS-ON LAB Introduction to AWS Identity and Access Management (IAM)
+2-05 Testing IAM Policy Permissions
+2-06 IAM 101 Summary
+2-07 QUIZ  AWS Certified Developer - Associate - Beginners Guide to IAM Quiz
+
+CHAPTER 3 Beginner's Guide to EC2
+3-01 Introducing EC2
+3-02 EC2 Pricing Options
+3-03 Exploring EC2 Instance Types
+3-04 Launching an EC2 Instance - Demo
+3-05 How to Use Putty Demo (Windows Users Only)
+3-06 Using EC2 Instance Connect - Demo
+3-07 Understanding EBS Volumes
+3-08 Creating an EBS Volume - Demo
+3-09 Exploring Elastic Load Balancer
+3-10 Route 53 Demo
+3-11 CLI Demo Lab
+3-12 CLI Pagination
+3-13 Working With The AWS CloudShell - Demo
+3-14 EC2 with S3 Role Demo
+3-15 RDS 101
+3-16 RDS Demo
+3-17 RDS Multi-AZ and Read Replicas
+3-18 RDS Backups and Snapshots
+3-19 Increasing Scalability Using RDS Proxy
+3-20 Elasticache 101
+3-21 Introducing MemoryDB For Redis
+3-22 Demo: Systems Manager Parameter Store
+3-23 Demo: Securely Storing Secrets With AWS Secrets Manager
+3-24 Discovering EC2 Image Builder
+3-25 Creating an AMI Using EC2 Image Builder - Demo
+3-26 Using AMIs in a Different Region
+3-27 EC2 Summary - Part 1
+3-28 EC2 Summary - Part 2
+3-29 EC2 Summary - Part 3
+3-30 QUIZ AWS Certified Developer - Associate - Beginner's Guide to EC2 Quiz
+
+CHAPTER 4 S3
+4-01 S3 101
+4-02 Reviewing S3 Storage Classes
+4-03 Securing S3 Buckets
+4-04 S3 Bucket Policies Demo
+4-05 HANDS-ON LAB Create a Static Website Using Amazon S3
+4-06 S3 Encryption
+4-07 Configuring Encryption on an S3 Bucket - Demo
+4-08 CORS Configuration - Demo
+4-09 Overview of CloudFront
+4-10 Configuring Amazon CloudFront Demo
+4-11 Configuring CloudFront With Origin Access Identity
+4-12 Understanding CloudFront AllowedMethods
+4-13 Introducing Athena
+4-14 Demo: Working with Athena
+4-15 S3 Summary
+4-16 QUIZ   AWS Certified Developer - Associate - S3 Quiz
+
+CHAPTER 5 Introduction to Serverless Computing
+5-01 Serverless 101
+5-02 Introducing Lambda
+5-03 HANDS-ON LAB  Creating a Lambda Function Using the AWS Console
+5-04 API Gateway
+5-05 Building a Serverless Website - Demo
+5-06 Version Control With Lambda - Demo
+5-07 Lambda Concurrent Executions Limit
+5-08 Lambda and VPC Access
+5-09 Example Serverless Architectures
+5-10 Functions - Demo
+5-11 HANDS-ON LAB Building a Serverless Application Using Step Functions, API Gateway, Lambda, and S3 in AWS
+5-12 HANDS-ON LAB Building and Troubleshooting a Serverless Web Application
+5-13 Comparing Step Functions Workflows
+5-14 Understanding Ephemeral and Persistent Data Storage Patterns
+5-15 Lambda Environment Variables and Parameters
+5-16 Configuring a Lambda Function Using Environment Variables and Parameters - Demo
+5-17 Handling Lambda Event Lifecycle and Errors
+5-18 Lambda Deployment Packaging Options
+5-19 Lambda Performance Tuning Best Practices
+5-20 Using Lambda Destinations and Dead-Letter Queues - Demo
+5-21 Advanced API Gateway
+5-23 Using API Gateway Mock Endpoints for Integration Testing and Resolving Integration Dependencies
+5-24 Using API Gateway Stages for Testing Deployed Code
+5-25 Creating Dynamic Lambda Deployments Using API Gateway Staging Variables
+5-26 API Response and Request Transformations
+5-27 API Gateway Caching and Throttling
+5-28 Understanding X-Ray
+5-29 X-Ray Configuration
+5-30 Serverless Summary - Part 1
+5-31 Serverless Summary - Part 2
+5-32 Serverless Summary - Part 3
+5-33 QUIZ AWS Certified Developer - Associate - Introduction to Serverless Computing Quiz
+
+CHAPTER 6 DynamoDB
+6-01 Introduction to DynamoDB
+6-02 Creating a DynamoDB Table - Demo
+6-02 DynamoDB Access Control
+6-03 Indexes Deepdive
+6-04 HANDS-ON LAB AWS DynamoDB in the Console - Creating Tables, Items, and Indexes
+6-05 Scan vs Query API Call - Demo
+6-06 Using DynamoDB API Calls
+6-07 DynamoDB Provisioned Throughput
+6-08 DynamoDB On-Demand Capacity
+6-09 DynamoDB Accelerator (DAX)
+6-10 DynamoDB TTL - Demo
+6-11 DynamoDB Streams
+6-12 Provisioned Throughput Exceeded and Exponential Backoff
+6-13 DynamoDB Summary
+6-14 QUIZ AWS Certified Developer - Associate - DynamoDB Quiz
+
+CHAPTER 7 KMS and Encryption on AWS
+7-01 KMS 101
+7-02 Creating A CMK - Demo
+7-03 CMK Summary
+7-04 Understanding KMS API Calls - Demo
+7-05 Exploring Envelope Encryption
+7-06 Enabling and Disabling KMS Key Rotation - Demo
+7-07 Certificate Management in AWS
+7-08 KMS Summary
+7-09 QUIZ AWS Certified Developer - Associate - KMS and Encryption on AWS Quiz
+
+CHAPTER 8
+
+8-01Other AWS Services
+8-02 SQS
+8-03 Understanding SQS Queue Types
+8-04 SQS Settings
+8-05 SQS Delay Queues & Large Messages
+8-06 HANDS-ON LAB Triggering AWS Lambda from Amazon SQS
+8-07 Simple Notification Service
+8-08 SES vs SNS
+8-09 Kinesis 101
+8-10 Setting Up A Kinesis Data Stream - Demo
+8-11 Kinesis Shards and Consumers
+8-12 Introducing Elastic Beanstalk
+8-13 Updating Elastic Beanstalk
+8-14 Deploying An Application With Elastic Beanstalk - Demo
+8-15 Updating An Application In Elastic Beanstalk - Demo
+8-16 Advanced Elastic Beanstalk
+8-17 RDS & Elastic Beanstalk
+8-18 Migrating Applications to Elastic Beanstalk
+8-19 Other AWS Services Summary
+8-20 QUIZ AWS Certified Developer - Associate - Other AWS Services Quiz
+
+CHAPTER 9
+9-01 Developer Theory
+9-02 What is CI/CD?
+9-03 CodeCommit 101
+9-04 CodeCommit Demo
+9-05 HANDS-ON LAB Configure and Work with CodeCommit from the CLI
+9-06 CodeDeploy 101
+9-07 The CodeDeploy AppSpec File
+9-08 CodeDeploy Lifecycle Event Hooks
+9-09 HANDS-ON LAB Deploying an Application Using CodeDeploy
+9-10 CodePipeline 101
+9-11 CodePipeline Demo - Part 1
+9-12 CodePipeline Demo - Part 2
+9-13 HANDS-ON LAB Setting Up a Pipeline with a Manual Approval in AWS CodePipeline
+9-14 HANDS-ON LAB Working with a DevOps CI/CD Pipeline in AWS
+9-15 Introducing CodeArtifact
+9-16 Demo - Creating a CodeArtifact Repository
+9-17 Elastic Container Service
+9-18 Introduction To CloudFormation
+9-19 Provisioning Resources Using CloudFormation Demo
+9-20 HANDS-ON LAB Create a DynamoDB Table Using CloudFormation
+9-21 Exporting CloudFormation Stack Values
+9-22 The Serverless Application Model (SAM)
+9-23 CloudFormation and SAM Demo
+9-24 CloudFormation Nested Stacks
+9-25 HANDS-ON LAB Working with CloudFormation Nested Stacks
+9-26 Introducing The Cloud Development Kit (CDK)
+9-27 CDK Demo
+9-28 Introducing Amplify
+9-29 Amplify Demo
+9-30 Developer Theory Summary - Part 1
+9-31 Developer Theory Summary - Part 2
+9-32 QUIZ AWS Certified Developer - Associate - Developer Theory Quiz
+10-01 Advanced IAM
+10-02 Web Identity Federation
+10-03 Cognito User Pools Demo
+10-04 Cognito Identity Pools Demo - Part 1
+10-05 Cognito Identity Pools Demo - Part 2
+10-06 Inline Policies vs Managed Policies vs Customer Managed Policies
+10-07 Working With AWS Managed Policies, Customer Managed Policies, and Inline Policies
+10-08 STS AssumeRoleWithWebIdentity
+10-09 Configuring Cross Account Access - Demo
+10-10 Advanced IAM Summary
+10-11 AWS Certified Developer - Associate - Advanced IAM Quiz
+
+CHAPTER 11 Monitoring
+11-01 Introduction to CloudWatch
+11-02 CloudWatch Demo
+11-03 Creating CloudWatch Dashboards Demo
+11-04 Understanding CloudWatch Concepts
+11-05 CloudWatch vs CloudTrail
+11-06Using CloudWatch for Resource Monitoring
+11-07 Using CloudWatch Actions
+11-08 Exploring CloudWatch Logs Insights Demo
+11-09 Receiving Notifications with CloudWatch - Demo
+11-10 What is EventBridge?
+11-11 Using EventBridge - Demo
+11-12 Recognizing Common HTTP Error Codes
+11-13 Recognizing Common SDK Exceptions
+11-14 Monitoring Summary
+11-15 QUIZ AWS Certified Developer - Associate - Monitoring Quiz
+
+CHAPTER 12 Additional Resources to Help You Prepare for the Exam
+12-01 Additional Resources
+12-02 Interactive Study Guide
+
+CHAPTER 13 Summary
+13-01 Summary and Next Steps
+13-02 PRACTICE EXAM AWS Certified Developer - Associate (DVA-C02) - Practice Exam 1
+13-03 PRACTICE EXAM AWS Certified Developer - Associate (DVA-C02) - Practice Exam 2
+13-04 PRACTICE EXAM AWS Certified Developer - Associate (DVA-C02) - Practice Exam 3
+13-05 PRACTICE EXAM AWS Certified Developer - Associate (DVA-C02) - Practice Exam 4

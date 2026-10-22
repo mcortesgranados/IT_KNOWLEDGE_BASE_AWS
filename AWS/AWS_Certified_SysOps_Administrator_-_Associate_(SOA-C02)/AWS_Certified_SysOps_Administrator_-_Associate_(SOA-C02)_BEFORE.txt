@@ -1,0 +1,770 @@
+Course Outline
+CHAPTER 1
+
+Introduction
+14:05
+
+Introduction
+02:33
+
+
+
+
+
+
+The Exam Guide
+2 MONTHS AGO
+
+UPDATED
+05:59
+
+
+
+
+Introducing the AWS Cloud Sandbox
+2 MONTHS AGO
+
+UPDATED
+02:51
+
+
+Introducing Hands-On Labs
+01:45
+
+
+Course Updates
+00:57
+
+CHAPTER 2
+
+Supporting Courses
+02:54
+
+Supporting Courses
+02:54
+
+
+
+
+
+
+CHAPTER 3
+
+Deployment, Provisioning, and Automation
+5:05:06
+
+Section Introduction
+00:42
+
+
+Demo: Deploying an Elastic Compute Cloud (EC2) Instance
+2 MONTHS AGO
+
+UPDATED
+08:43
+
+HANDS-ON LAB
+Create and Secure an EC2 Instance
+15:00
+Understanding EBS Volumes
+18:24
+
+
+What Is a Bastion Host?
+02:39
+Exploring Elastic Load Balancer
+10:12
+
+
+
+Understanding Elastic Load Balancer Error Messages
+06:47
+Demo: Deploying an Elastic Load Balancer
+12:02
+
+Demo: Understanding Elastic Load Balancer CloudWatch Metrics
+05:14
+Demo: Working with Elastic Load Balancer Access Logs
+08:05
+
+
+
+Understanding Sticky Sessions
+03:47
+Load Balancing Based on an IP Address
+11:20
+
+Discovering EC2 Image Builder
+04:56
+Demo: Creating an AMI Using EC2 Image Builder
+2 MONTHS AGO
+
+UPDATED
+14:58
+Introducing CloudFormation
+10:25
+
+
+Demo: Provisioning AWS Resources Using CloudFormation
+14:35
+
+HANDS-ON LAB
+Deploying an EC2 Instance with CloudFormation
+45:00
+Troubleshooting CloudFormation
+06:30
+
+Demo: CloudFormation Errors
+07:08
+
+
+Introducing CloudFormation StackSets
+06:00
+CloudFormation Best Practices
+06:12
+
+Exploring Blue/Green Deployments
+03:15
+
+
+Understanding Rolling Deployments
+04:32
+When to Use Canary Deployments
+04:11
+Automating Tasks Using AWS Systems Manager
+04:13
+Demo: Implementing Automated Patching Using AWS Systems Manager
+2 MONTHS AGO
+
+UPDATED
+09:21
+Demo: Using AWS Systems Manager EC2 Run Command
+08:36
+Understanding OpsWorks
+04:40
+Section Review: Deployment, Provisioning, and Automation Summary - Part 1
+09:27
+
+Section Review: Deployment, Provisioning, and Automation Summary - Part 2
+08:12
+
+QUIZ
+Deployment, Provisioning, and Automation Quiz
+30:00
+CHAPTER 4
+
+Monitoring, Logging, and Remediation
+5:05:04
+
+Section Introduction
+00:35
+
+
+Introduction to CloudWatch
+05:11
+Demo: Creating CloudWatch Dashboards
+09:06
+Exploring CloudWatch Logs
+05:00
+Demo: Collecting Metrics and Logs Using the CloudWatch Agent
+2 MONTHS AGO
+
+UPDATED
+14:53
+
+Demo: Creating CloudWatch Metric Filters
+10:26
+Demo: Exploring CloudWatch Logs Insights
+07:05
+HANDS-ON LAB
+Using CloudWatch for Resource Monitoring
+30:00
+Receiving Notifications with CloudWatch
+06:35
+Demo: Creating CloudWatch Alarms
+2 MONTHS AGO
+
+UPDATED
+07:24
+
+
+Introduction to CloudTrail
+06:47
+
+Demo: Working with CloudTrail
+07:17
+AWS Config 101
+06:45
+Demo: Using AWS Config
+2 MONTHS AGO
+
+UPDATED
+06:06
+HANDS-ON LAB
+Auditing Resource Compliance with AWS Config
+1:45:00
+Remediation Using AWS Systems Manager and AWS Config
+06:26
+Demo: Configuring Automatic Remediation Using AWS Systems Manager and AWS Config
+11:52
+
+What Is EventBridge?
+05:25
+Demo: Using Amazon EventBridge
+09:29
+Demo: Scheduling Automated Tasks Using EventBridge and AWS Config
+11:09
+
+Demo: Exploring Health Dashboards
+04:49
+
+Section Review: Monitoring, Logging, and Remediation Summary - Part 1
+07:01
+
+Section Review: Monitoring, Logging, and Remediation Summary - Part 2
+05:43
+
+QUIZ
+Monitoring, Logging, and Remediation Quiz
+15:00
+CHAPTER 5
+
+Storage and Data Management
+3:57:04
+
+Section Introduction
+00:29
+
+
+S3 101
+09:52
+Reviewing S3 Storage Classes
+2 MONTHS AGO
+
+UPDATED
+08:09
+
+Demo: Creating an S3 Bucket
+2 MONTHS AGO
+
+UPDATED
+13:03
+
+
+Working with S3 Lifecycle Policies
+03:57
+
+Protecting Data from Accidental Deletion Using S3 Versioning
+03:30
+Protecting Data from Accidental Deletion with MFA Delete
+02:22
+
+
+S3 Encryption
+2 MONTHS AGO
+
+UPDATED
+04:07
+Demo: Configuring Encryption on an S3 Bucket
+2 MONTHS AGO
+
+UPDATED
+04:43
+Demo: Configuring Static Website Hosting Using S3
+07:19
+
+Introduction to Elastic File System (EFS)
+07:14
+Demo: Working with EFS
+2 MONTHS AGO
+
+UPDATED
+11:57
+
+
+
+
+Advanced EFS
+07:16
+
+EFS and Multi-AZ Applications
+02:55
+Introducing Athena
+02:39
+Demo: Working with Athena
+09:21
+
+Introducing Amazon OpenSearch Service (Formerly Amazon Elasticsearch Service)
+05:39
+
+OpenSearch Deployment Best Practices
+04:10
+
+
+
+Demo: Creating an Amazon OpenSearch Service Domain
+2 MONTHS AGO
+
+UPDATED
+09:55
+HANDS-ON LAB
+Create a Static Website Using Amazon S3
+30:00
+Demo: Leveraging Presigned URLs with S3
+04:08
+
+Restricting S3 Accessibility with IP Addresses
+03:03
+Introducing S3 Inventory
+04:21
+Demo: Using S3 Inventory
+1 MONTH AGO
+
+UPDATED
+06:05
+
+Demo: Using AWS Config with S3
+04:00
+Overview of Storage Gateway
+08:12
+Introducing AWS Backup
+04:44
+
+Demo: Using AWS Backup
+09:05
+Section Review: Storage and Data Management Summary - Part 1
+07:53
+
+Section Review: Storage and Data Management Summary - Part 2
+06:56
+
+QUIZ
+Storage and Data Management Overview Quiz
+30:00
+CHAPTER 6
+
+Reliability and Business Continuity
+4:42:26
+
+Section Introduction
+01:10
+
+
+Elasticity and Scalability 101
+05:53
+Introducing AWS Auto Scaling
+05:06
+Demo: Creating Auto Scaling Plans
+09:34
+Troubleshooting Auto Scaling Issues
+02:28
+Vertical Scaling vs. Horizontal Scaling
+04:04
+Using AWS ElastiCache
+06:40
+
+
+Aurora 101
+06:01
+
+HANDS-ON LAB
+Creating an Amazon Aurora RDS Database (MySQL Compatible)
+1:00:00
+Understanding Aurora Auto Scaling Options
+04:35
+RDS and Multi-AZ Failover
+04:33
+RDS and Read Replicas
+06:09
+
+
+
+
+HANDS-ON LAB
+Deploy an Amazon RDS Multi-AZ and Read Replica in AWS
+1:00:00
+Demo: Creating and Encrypting RDS Snapshots
+1 MONTH AGO
+
+UPDATED
+09:04
+Differentiating Single Availability Zones vs. Multi-AZ Deployments
+03:38
+Implementing Fault Tolerant Workloads Using Amazon Elastic File System (EFS)
+06:51
+
+
+
+Building Fault Tolerance Using Elastic IPs
+03:34
+Readying for Disaster Recovery
+07:27
+
+AWS Service Maintenance Windows
+01:32
+Configuring S3 Cross-Region Replication
+03:17
+Implementing Loosely Coupled Architectures with SQS
+06:23
+Demo: Automating EBS Snapshots Using Data Lifecycle Manager
+1 MONTH AGO
+
+UPDATED
+09:38
+Using DynamoDB Streams for Backing Up Your Table to Another Region
+1 MONTH AGO
+
+UPDATED
+08:20
+Section Review: Reliability and Business Continuity Summary - Part 1
+08:12
+
+Section Review: Reliability and Business Continuity Summary - Part 2
+08:17
+
+QUIZ
+Reliability and Business Continuity Quiz
+30:00
+CHAPTER 7
+
+Security and Compliance
+4:46:11
+
+Section Introduction
+02:19
+
+
+Compliance on AWS
+10:23
+
+Understanding Distributed Denial of Service (DDoS)
+07:00
+
+AWS Marketplace Security Products
+06:01
+IAM Refresh
+04:20
+HANDS-ON LAB
+Introduction to AWS Identity and Access Management (IAM)
+45:00
+Demo: Creating Custom IAM Policies and Roles
+2 MONTHS AGO
+
+UPDATED
+09:23
+Demo: Enabling MFA and Reporting with IAM
+2 MONTHS AGO
+
+UPDATED
+07:24
+Introducing AWS Identity Center
+1 MONTH AGO
+
+UPDATED
+07:03
+Auditing and Troubleshooting Access Issues
+12:37
+AWS Inspector vs. Trusted Advisor
+08:28
+Introducing AWS Organizations
+1 MONTH AGO
+
+UPDATED
+08:23
+Service Control Policies
+07:12
+Securing Multiple Accounts with AWS Control Tower and Organizations
+10:08
+Security Token Service (STS)
+07:30
+AWS Key Management Service (KMS)
+06:45
+AWS Certificate Manager
+04:34
+AWS Web Application Firewall (WAF)
+03:39
+Demo: Configuring AWS Web Application Firewall (WAF)
+07:20
+Differentiating Dedicated Instances vs. Dedicated Hosts
+03:53
+Using AWS Systems Manager Parameter Store
+03:59
+Understanding AWS Service Quotas
+06:30
+Reviewing the AWS Shared Responsibility Model
+08:07
+Protecting Logs within CloudTrail
+05:37
+Demo: Introducing AWS Security Hub
+1 MONTH AGO
+
+UPDATED
+11:18
+
+Exploring Amazon GuardDuty
+05:18
+Demo: Working with Amazon GuardDuty
+07:16
+Demo: Securely Storing Secrets Using AWS Secrets Manager
+1 MONTH AGO
+
+UPDATED
+11:56
+Section Review: Security and Compliance Summary - Part 1
+1 MONTH AGO
+
+UPDATED
+07:58
+
+
+
+Section Review: Security and Compliance Summary - Part 2
+2 MONTHS AGO
+
+UPDATED
+08:50
+
+QUIZ
+Security and Compliance Quiz
+30:00
+CHAPTER 8
+
+Networking and Content Delivery
+8:11:41
+
+Section Introduction
+00:50
+
+
+Virtual Private Cloud (VPC) Overview
+10:01
+
+Demo: Building Your Own Custom VPC - Part 1
+09:11
+Demo: Building Your Own Custom VPC - Part 2
+09:30
+Demo: Building Your Own Custom VPC - Part 3
+11:32
+HANDS-ON LAB
+Creating a Basic VPC and Associated Components in AWS
+45:00
+Demo: Configuring Network ACLs - Part 1
+07:29
+Demo: Configuring Network ACLs - Part 2
+10:20
+
+Demo: Connecting to an EC2 Instance Using Systems Manager Session Manager
+12:29
+Demo: Introducing VPC Endpoints
+10:38
+HANDS-ON LAB
+Create a VPC Endpoint and S3 Bucket in AWS
+30:00
+Understanding VPC Peering
+05:10
+Securely Connecting to a VPC Using a Virtual Private Network (VPN)
+03:41
+What Is Direct Connect?
+06:18
+
+
+Understanding VPC Flow Logs
+05:32
+Demo: Using VPC Flow Logs
+1 MONTH AGO
+
+UPDATED
+07:51
+
+
+
+HANDS-ON LAB
+Work with AWS VPC Flow Logs for Network Monitoring
+1:30:00
+Introducing Domain Name System (DNS)
+06:41
+Introducing Route 53
+12:38
+Exploring Route 53 Resolver
+03:45
+Understanding Route 53 Routing Policies
+07:40
+Demo: Route 53 Simple Routing Policy
+07:46
+
+Demo: Route 53 and Weighted Routing Policy
+08:59
+
+Demo: Route 53 Failover Routing Policy
+14:26
+
+Demo: Route 53 Geolocation Routing Policy
+09:56
+
+Demo: Configuring Route 53 Alias
+10:56
+
+Understanding Route 53 Failover Alias Records
+03:02
+Demo: Configuring Route 53 Failover Alias Records
+12:57
+
+Overview of CloudFront
+08:50
+Demo: Configuring Amazon CloudFront
+16:25
+
+
+
+Demo: Configuring Amazon CloudFront with Origin Access Control
+10:43
+
+
+Demo: Interpreting CloudFront Logs
+06:35
+
+Identifying CloudFront Caching Errors
+10:33
+CloudFront Cache Hit Ratio
+05:07
+Advanced CloudFront
+04:29
+Improving CloudFront Cache Hit Ratio When Forwarding Request Headers and Cookies
+05:05
+
+Section Review: Networking and Content Delivery Summary - Part 1
+2 MONTHS AGO
+
+UPDATED
+08:49
+Section Review: Networking and Content Delivery Summary - Part 2
+10:47
+
+QUIZ
+Networking and Content Delivery Overview Quiz
+30:00
+CHAPTER 9
+
+Cost and Performance Optimization
+2:47:40
+
+Section Introduction
+01:05
+
+AWS Cost Explorer and Cost Allocation Tags
+10:12
+HANDS-ON LAB
+Creating AWS Tags and Resource Groups
+6 DAYS AGO
+
+NEW
+45:00
+Improving Costs with AWS Budgets
+08:16
+Demo: Creating an AWS Budget and Billing Alarm
+07:52
+Reducing Cost through Managed Services
+06:43
+AWS Compute Optimizer
+04:45
+Using Metrics to Improve Performance and Costs
+05:44
+Increasing S3 Transfer Speeds with Transfer Acceleration
+03:19
+Enhancing S3 Performance with Multipart Upload
+02:59
+Using Placement Groups to Increase TCP/IP Traffic Flow
+05:42
+
+Identifying Underutilized Resources Using Trusted Advisor
+02:28
+Demo: Performance Analysis Using RDS Performance Insights
+11:33
+
+
+Increasing Scalability with RDS Proxy
+04:41
+Enhancing EC2 Performance Using Instance Store
+06:04
+Section Review: Cost and Performance Optimization Summary
+11:17
+
+QUIZ
+Cost and Performance Optimization Quiz
+30:00
+CHAPTER 10
+
+Additional Resources to Help You Prepare for the Exam
+07:33
+
+Additional Resources to Help You Pass the Exam
+06:34
+
+
+
+
+
+
+
+
+
+
+Interactive Study Guide
+00:59
+
+CHAPTER 11
+
+Challenge Labs
+6:31:46
+
+Introducing Challenge Labs
+01:46
+
+HANDS-ON LAB
+Configure an Application Load Balancer and Auto Scaling Group
+1:30:00
+HANDS-ON LAB
+Configure a CloudFormation Template
+1:00:00
+HANDS-ON LAB
+Create a Highly Available VPC
+1:00:00
+HANDS-ON LAB
+Configuring S3 Buckets for Versioning and Deletion Protection
+45:00
+HANDS-ON LAB
+Configure an Alert Based on Logging Content
+1:30:00
+HANDS-ON LAB
+Configure At Rest Encryption for EFS
+45:00
+CHAPTER 12
+
+Practice Exam
+13:00:00
+
+PRACTICE EXAM
+AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam - 1
+3:00:00
+PRACTICE EXAM
+AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam - 2
+2:00:00
+PRACTICE EXAM
+AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam - 3
+2:00:00
+PRACTICE EXAM
+AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam - 4
+2:00:00
+PRACTICE EXAM
+AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam - 5
+2:00:00
+PRACTICE EXAM
+AWS Certified SysOps Administrator - Associate (SOA-C02) - Practice Exam - 6
+2:00:00
+CHAPTER 13
+
+Good Luck and What's Next
+03:20
+
+Summary and Next Steps
+03:20

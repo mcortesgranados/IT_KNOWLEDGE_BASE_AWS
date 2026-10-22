@@ -1,0 +1,525 @@
+Course Outline
+CHAPTER 1
+
+Introduction
+20:14
+
+Course Introduction
+03:11
+
+Exam Guide
+08:43
+
+
+
+About This Course
+06:47
+
+Let's Dive In!
+00:33
+Course Updates and Changelogs
+01:00
+
+CHAPTER 2
+
+Data Stores
+6:14:21
+
+Introduction
+02:14
+Concepts
+04:26
+S3
+08:21
+
+Managing Permissions in S3
+06:54
+Glacier
+04:40
+Elastic Block Storage
+07:19
+Elastic File System
+04:19
+FSx
+05:28
+Storage Gateway
+04:35
+
+EC2 Databases
+01:28
+RDS
+04:32
+HANDS-ON LAB
+Deploy an Amazon RDS Multi-AZ and Read Replica in AWS
+1:00:00
+Aurora
+09:44
+DynamoDB
+13:29
+
+DocumentDB
+04:39
+Redshift
+02:31
+Preparing Data for Analysis
+07:17
+Neptune
+01:07
+HANDS-ON LAB
+Deploying an Aurora Cluster with Multiple Readers
+30:00
+Elasticache
+04:24
+Other Datastore Options
+08:29
+
+
+Comparing DB Options
+01:17
+Exam Tips
+05:29
+
+
+
+
+
+
+
+
+
+Pro Tips
+03:46
+Challenge 1
+02:53
+HANDS-ON LAB
+Querying Data in Amazon S3 with Amazon Athena
+1:00:00
+HANDS-ON LAB
+Loading Data into a Redshift Cluster
+1:30:00
+QUIZ
+AWS Certified Solutions Architect Professional - SAP-C02 - Data Stores Quiz
+15:00
+CHAPTER 3
+
+Networking
+7:01:40
+
+Introduction
+02:28
+Concepts
+13:21
+
+Network to VPC Connectivity
+09:05
+
+VPC-to-VPC Networking
+09:28
+
+Internet Gateways
+06:24
+Routing
+04:51
+
+Enhanced Networking
+07:02
+Hybrid and Cross-Account Networking
+09:43
+
+PrivateLink
+03:26
+Global Accelerator
+04:58
+Route 53
+09:18
+
+
+Cross-Account Route 53
+03:39
+CloudFront
+03:55
+HANDS-ON LAB
+Creating a CloudFront Distribution with Regional S3 Origins
+1:00:00
+Elastic Load Balancers
+06:34
+
+Exam Tips
+02:46
+
+
+
+
+
+
+
+Pro Tips
+01:16
+Challenge 1
+04:48
+Challenge 2
+03:38
+HANDS-ON LAB
+Creating a Multi-Region Network with VPC Peering Using SGs, IGW, and RTs
+30:00
+HANDS-ON LAB
+Creating and Configuring a Network Load Balancer in AWS
+1:45:00
+HANDS-ON LAB
+Troubleshooting Amazon EC2 Network Connectivity
+1:00:00
+HANDS-ON LAB
+Troubleshooting VPC Networking
+30:00
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 - Networking Quiz
+30:00
+CHAPTER 4
+
+Security
+3:35:14
+
+Introduction
+02:36
+The Core Principles of Cloud Security
+06:19
+Exploring Organizations
+06:29
+
+Controlling Access in Your Organization
+07:39
+Understanding User Access to Your Organization
+06:11
+Network Controls and Security Groups
+01:47
+HANDS-ON LAB
+Troubleshooting AWS Network Connectivity: Security Groups and NACLs
+1:00:00
+AWS Directory Services
+02:29
+Credentials and Access Management
+04:26
+Sharing Roles across Accounts
+04:07
+Sharing Resources across Accounts
+04:44
+HANDS-ON LAB
+Creating an IAM Role with a Trust Policy
+30:00
+Encryption
+06:20
+Secrets Manager
+04:44
+Distributed Denial of Service Attacks
+06:42
+Exploring Managed Security Services
+06:11
+IDS and IPS
+03:38
+
+Service Catalog
+07:06
+Exam Tips
+03:09
+
+
+
+
+
+
+
+
+Pro Tips
+02:29
+Challenge 1
+03:17
+
+
+Challenge 2
+04:51
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 -Security Quiz
+30:00
+CHAPTER 5
+
+Migrations
+3:16:12
+
+Introduction
+01:58
+Migration Strategies
+02:08
+Cloud Adoption Framework
+05:43
+Hybrid Architecture
+02:50
+Migrating Applications
+09:16
+Migrating Data
+05:57
+HANDS-ON LAB
+Using DMS to Migrate MySQL to Amazon Aurora
+1:00:00
+Network Migrations and Cutovers
+02:04
+Snow Family
+04:33
+Exam Tips
+01:47
+
+
+
+
+
+
+
+Pro Tips
+01:56
+Challenge 1
+04:23
+Challenge 2
+03:37
+HANDS-ON LAB
+Migrating from a Relational Database to DynamoDB
+1:00:00
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 - Migration Quiz
+30:00
+CHAPTER 6
+
+Architecting to Scale
+3:50:48
+
+Introduction
+02:01
+Scaling in the Cloud
+05:09
+Auto-Scaling
+10:41
+Compute Optimizer
+02:40
+Kinesis
+03:44
+
+DynamoDB Scaling
+08:23
+
+CloudFront Part 2
+02:46
+Event-Driven Architecture
+07:49
+
+HANDS-ON LAB
+Triggering a Lambda Function in Response to a CloudTrail Log Event
+45:00
+SNS
+01:46
+SQS
+05:50
+HANDS-ON LAB
+Scaling EC2 Using SQS
+45:00
+Lambda, Serverless Application Model and EventBridge
+08:32
+Scaling Containers in AWS
+09:20
+Step Functions and Batch
+08:09
+Elastic MapReduce
+04:32
+
+Monitoring and Visualizing Data at Scale
+06:19
+Exam Tips
+04:44
+
+
+
+
+
+
+
+
+
+Pro Tips
+01:23
+Challenge 1
+03:34
+Challenge 2
+03:19
+Demo: Auto-Scale Experiment
+10:07
+
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 - Architecting to Scale Quiz
+30:00
+CHAPTER 7
+
+Business Continuity
+1:49:05
+
+Introduction
+01:44
+Concepts
+07:31
+AWS Continuum of HA
+04:08
+Storage HA Options
+06:21
+Compute HA Options
+01:32
+Database HA Options
+10:01
+Network HA Options
+01:38
+HANDS-ON LAB
+Connect Multiple VPCs with Transit Gateway
+30:00
+Exam Tips
+02:01
+
+
+
+
+
+
+Pro Tips
+05:27
+Challenge 1
+03:59
+Challenge 2
+04:43
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 - Business Continuity Quiz
+30:00
+CHAPTER 8
+
+Deployment and Operations Management
+4:34:41
+
+Introduction
+01:53
+Types of Deployments
+06:25
+
+Continuous Integration and Deployment
+07:38
+Elastic Beanstalk
+02:15
+CloudFormation
+06:08
+Deploying Infrastructure across Accounts
+06:00
+HANDS-ON LAB
+Understanding CloudFormation Template Anatomy
+1:15:00
+Elastic Container Service
+03:16
+API Gateway
+02:19
+HANDS-ON LAB
+Deploying an API Gateway as a Proxy for Amazon Kinesis
+45:00
+Management Tools
+03:44
+AWS System Manager
+09:25
+Enterprise Apps
+06:57
+Machine Learning Landscape
+05:42
+
+IoT Landscape
+07:17
+Exam Tips
+03:08
+
+
+
+
+
+
+Pro Tips
+01:41
+Challenge 1
+04:08
+Challenge 2
+01:45
+HANDS-ON LAB
+Blue/Green Deployments with Elastic Beanstalk
+45:00
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 - Deployment and Operations Management Quiz
+30:00
+CHAPTER 9
+
+Cost Management
+2:04:14
+
+Introduction
+02:16
+Concepts
+07:02
+Cost Optimization Strategies
+04:44
+Tagging and Resource Groups
+02:15
+Managing Costs across Accounts
+04:40
+
+HANDS-ON LAB
+Monitoring Utilization of Resource Groups
+45:00
+Spot and Reserved Instances
+09:28
+
+
+Cost Management Tools
+02:13
+Exam Tips
+01:41
+
+
+
+
+
+
+Pro Tips
+03:05
+Challenge 1
+03:58
+Challenge 2
+03:28
+Challenge 3
+04:24
+QUIZ
+AWS Certified Solutions Architect - Professional SAP-C02 - Cost Management Quiz
+30:00
+CHAPTER 10
+
+Good Luck!
+9:05:02
+
+Good Luck!
+04:18
+
+
+
+
+
+
+
+
+Never Stop Learning!
+00:44
+
+
+PRACTICE EXAM
+AWS Certified Solutions Architect - Professional Exam (SAP-C02) - Exam 1
+3:00:00
+PRACTICE EXAM
+AWS Certified Solutions Architect - Professional Exam (SAP-C02) - Exam 2
+3:00:00
+PRACTICE EXAM
+AWS Certified Solutions Architect - Professional Exam (SAP-C02) - Exam 3
+3:00:00

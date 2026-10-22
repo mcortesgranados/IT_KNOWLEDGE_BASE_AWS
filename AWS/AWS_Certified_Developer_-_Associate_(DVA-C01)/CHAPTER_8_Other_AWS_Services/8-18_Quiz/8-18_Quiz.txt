@@ -1,0 +1,209 @@
+1. You can subscribe endpoints that vary by protocol (http, email, sms, etc.) to an Amazon SNS topic.
+
+True
+
+Good work!
+Amazon SNS supports a number of protocols, e.g. HTTP, HTTPS, email, email-json, etc. --> Amazon SNS API Reference
+https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html
+_________________________________________________________________
+2. How large can an SQS message be, without referencing to a message payload in Amazon S3?
+
+256KB
+
+Amazon SQS messages can contain up to 256 KB of text data, including XML, JSON and unformatted text. If you want to send messages larger than 256 KB, you need to use the Amazon SQS Extended Client Library for Java. This library lets you send an Amazon SQS message that contains a reference to a message payload in Amazon S3 that can be as large as 2 GB.
+_________________________________________________________________
+3. What is the maximum retention period for an SQS message?
+
+14 days
+
+You can configure the Amazon SQS message retention period to a value from 1 minute to 14 days. The default is 4 days.
+_________________________________________________________________
+4. True or False. Elastic Beanstalk charges you both for the resources you deploy and a separate cost for deploying them.
+
+False
+
+Elastic Beanstalk is free to use, just like CloudFormation. You only pay for the resources which are deployed as part of it
+_________________________________________________________________
+5. Which Amazon service can you use in conjunction with SQS to "fan out" SQS messages to multiple queues?
+
+Correct. Amazon SNS provides developers with a highly scalable, flexible, and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or other applications. It can be used with SQS to fan out messages to multiple queues. Send Fanout Event Notifications
+https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/
+_________________________________________________________________
+6. Which is generally preferred: SQS long polling or SQS short polling?
+
+SQS Long Polling
+Long polling is preferred reduces the number of empty ReceiveMessageResponse returned which leads to lower cost and higher performance in most cases.
+_________________________________________________________________
+7. You have been asked to suggest a solution for storing large SQS messages. Which of the following is the most suitable?
+
+S3
+You can use Amazon S3 and the Amazon SQS Extended Client Library for Java to manage Amazon SQS messages. This is especially useful for storing and consuming messages up to 2 GB in size. Unless your application requires repeatedly creating queues and leaving them inactive or storing large amounts of data in your queue, consider using Amazon S3 for storing your data. This cannot be done natively with any of the other listed services.
+_________________________________________________________________
+8. You have a fleet of EC2 instances that are constantly polling empty SQS queues, burning CPU cycles and costing your company money. What should you do?
+
+Enable SQS Long Polling.
+_________________________________________________________________
+9. What languages and development stacks are not currently supported by AWS Elastic Beanstalk?
+
+Jetty for JBoss applications
+
+10. A FIFO SQS message can be delivered multiple times.
+
+False
+AWS - 'Unlike standard queues, FIFO queues don't introduce duplicate messages'
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html#FIFO-queues-exactly-once-processing
+
+_________________________________________________________________
+
+11. What is an SQS Delay Queue?
+
+A Delay Queue is a queue that lets you postpone the delivery of new messages for a number of seconds or minutes.
+A Delay Queue is a queue that lets you postpone the delivery of new messages to a queue for a number of seconds. Delay queues let you postpone the delivery of new messages to a queue for a number of seconds. If you create a delay queue, any messages that you send to the queue remain invisible to consumers for the duration of the delay period. The default minimum delay for a queue is 0 seconds. The maximum is 15 minutes.
+
+_________________________________________________________________
+
+12. SNS is pull-based rather than push-based
+
+False
+Correct. Amazon SNS offers instantaneous, push-based delivery (no polling). --> Amazon SNS FAQs
+https://aws.amazon.com/sns/faqs/
+
+_________________________________________________________________
+
+
+13. Which of these is a protocol NOT supported by SNS:
+
+FTP
+Correct. FTP protocol is NOT supported by Amazon SNS. Reference: Amazon SNS API Reference
+https://docs.aws.amazon.com/sns/index.html
+
+_________________________________________________________________
+
+
+14. You run a video-hosting website with two types of members: premium, fee-paying members; and free members. Each video that is uploaded is processed by a fleet of EC2 instances, which poll an SQS queue as videos are uploaded. However, you need to ensure that the videos uploaded by your premium, fee-paying members have a higher priority than those of your free members. How might you work with SQS to ensure priority treatment of the premium members' videos?
+
+Create two SQS queues — one for premium members, and one for free members. Program your EC2 fleet to poll the premium queue first and, if empty, to then poll your free members SQS queue.
+https://aws.amazon.com/sqs/features/
+
+15. You can use SNS in conjunction with SQS to fan a single message out to multiple SQS queues.
+
+Correct Answer
+Using Amazon SNS and Amazon SQS together, messages can be delivered to applications that require immediate notification of an event, and also persisted in an Amazon SQS queue for other applications to process at a later time. Fanout to Amazon SQS queues
+https://docs.aws.amazon.com/sns/latest/dg/sns-sqs-as-subscriber.html
+
+16. You have been asked to decouple an application by utilising SQS. The application dictates that messages on the queue can be delivered more than once, but must be delivered in the order that they have arrived. You also need to reduce the cost of using Amazon SQS by eliminating the number of empty responses. Which of the following options are most suitable?
+
+Configure a FIFO SQS queue and enable long polling
+This question has two parts which need to be considered, the type of queue and the type of polling. The question states that messages, "CAN be delivered more than once" but, "MUST be delivered in the order that they have arrived". MUST is mandatory, while CAN is optional. Since you cannot accommodate both, you address the Mandatory requirements 1st. and then try to accommodate the Optional after. A FIFO queue is required for the Mandatory requirement as it is the only SQS type which will deliver messages in order. The question also states that the queue, "MUST allow for efficient polling" and in this case long polling is the most efficient and cost effective option in situations where the queue will be polled constantly. The correct answer is therefore to configure a FIFO SQS queue with long polling enabled.
+
+17. What is the default visibility timeout for a message in an SQS queue?
+
+30 seconds
+While a message is being processed it is hidden from other Workers.
+
+18. Your application is running on EC2 and consuming click stream data from a Kinesis stream, using the Kinesis Client Library. You have recently increased the number of shards in your Kinesis stream. When should you consider increasing the number of EC2 instances consuming the stream?
+
+You should base scaling decisions on appropriate metrics for your application, like CPU utilization.
+When resharding increases the number of shards in the stream, the corresponding increase in the number of record processors increases the load on the EC2 instances that are hosting them. If the instances are part of an Auto Scaling group, and the load increases sufficiently, the Auto Scaling group adds more instances to handle the increased load. You should configure Auto Scaling to automatically scale your instances based on appropriate metrics, e.g. CPU utilization.
+
+19. What is the maximum visibility timeout of an SQS message in a queue?
+
+12 hours
+While a message is being processed it is hidden from other Workers. This can be set or reset to a maximum of 12 hours
+
+
+20. You are designing a new application that processes payments and delivers promotional emails to customers. You need to ensure that the payment process takes priority over the creation and delivery of emails. How might you use SQS to achieve this?
+
+Use 2 SQS queues for the platform. Have the EC2 fleet poll the payment SQS queue first. If this queue is empty, then poll the promotional emails queue.
+That's correct. Use separate queues to provide prioritization of work. Poll the payment queue first and if it's empty, poll the promotional emails queue.
+
+
+21. You have a list of email addresses to which you need to push emails on a periodic basis. To which Amazon SNS resource can you subscribe the emails?
+
+A topic
+Clients can subscribe to the SNS topic and receive published messages using a supported protocol, such as Amazon SQS, AWS Lambda, HTTP, email, mobile push notifications, and mobile text messages (SMS). Reference: What is Amazon SNS?
+https://docs.aws.amazon.com/sns/latest/dg/welcome.html
+
+_________________________________________________________________
+
+
+22. Your EC2 instances download jobs from an SQS queue. However, they are taking too long to process the messages. What API call can you use to extend the length of time to process the jobs?
+
+ChangeMessageVisibility
+Changes the visibility timeout of a specified message in a queue to a new value. The maximum allowed timeout value is 12 hours.
+
+23. Elastic Beanstalk is object-based storage.
+
+False
+AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+
+_________________________________________________________________
+
+What is the Windows Web Application Migration Assistant for Elastic Beanstalk used for?
+
+Migrating .NET applications from Windows servers to AWS Elastic Beanstalk
+
+_________________________________________________________________
+
+You can use SNS in conjunction with SQS to fan a single message out to multiple SQS queues.
+
+True
+
+Using Amazon SNS and Amazon SQS together, messages can be delivered to applications that require immediate notification of an event, and also persisted in an Amazon SQS queue for other applications to process at a later time. Fanout to Amazon SQS queues
+https://docs.aws.amazon.com/sns/latest/dg/sns-sqs-as-subscriber.html
+
+_________________________________________________________________
+
+Which of the following can be used to migrate .NET applications from Windows servers to AWS Elastic Beanstalk?
+
+Windows Web Application Migration Assistant for Elastic Beanstalk
+
+The Windows Web Application Migration Assistant for Elastic Beanstalk is an open-source PowerShell utility that migrates .NET applications from Windows servers to AWS Elastic Beanstalk. It was formerly named the .NET Migration Assistant.
+
+_________________________________________________________________
+
+Which of the following is a way that you can customize your Elastic Beanstalk Amazon Linux 1 environment?
+
+.ebextensions
+
+Correct Answer
+The .ebextensions folder is a folder located in the top-level directory of your application source code bundle containing .config files used to customize Amazon Linux 1 environments. The use of .ebextensions is only supported for Amazon Linux 1 environments.
+
+_________________________________________________________________
+
+Which of the following are ways that you can customize your Elastic Beanstalk Amazon Linux 2 environment?
+
+
+Platform Hooks
+Buildfile
+Procfile
+
+Correct Answer
+Platform hooks can be used to define custom scripts or executables that run at various stages when EC2 instances are provisioned. They are supported for Amazon Linux 2 environments.
+
+A Buildfile can be used to define commands that exit upon completion (e.g., shell scripts) for Amazon Linux 2 environments.
+
+A Procfile can be used to define long-running processes (e.g., custom commands to start your application) for Amazon Linux 2 environments.
+
+_________________________________________________________________
+
+Which Amazon service can you use in conjunction with SQS to "fan out" SQS messages to multiple queues?
+
+SNS
+
+Correct. Amazon SNS provides developers with a highly scalable, flexible, and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or other applications. It can be used with SQS to fan out messages to multiple queues. Send Fanout Event Notifications
+
+_________________________________________________________________
+
+Which of the following is used to capture and store streaming video and data for real-time processing and analysis?
+
+Kinesis Streams
+
+Kinesis Streams is used to capture and store streaming video and data for real-time processing and analysis. Consumer applications process and analyze the data in real-time.
+
+_________________________________________________________________
+
+Your EC2 instances download jobs from an SQS queue. However, they are taking too long to process the messages. What API call can you use to extend the length of time to process the jobs?
+
+
+

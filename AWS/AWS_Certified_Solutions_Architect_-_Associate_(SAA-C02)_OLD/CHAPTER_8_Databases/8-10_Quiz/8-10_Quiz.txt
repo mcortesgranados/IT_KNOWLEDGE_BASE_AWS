@@ -1,0 +1,124 @@
+True or False? RDS Multi-AZ creates an exact copy of your database in all AZs in the selected Region.
+
+false
+
+Correct Answer
+A copy of your data is stored in one backup AZ, not in all AZs. Reference Documentation: Multi-AZ
+
+____________________________________________________________________________________
+
+
+True or False? DynamoDB lives in your VPC.
+
+False
+
+Good work!
+DynamoDB is not deployed into your VPC. Your VPC must have an internet gateway or a VPC endpoint configured to access resources such as Amazon DynamoDB. Using Amazon VPC Endpoints to Access DynamoDB.
+
+____________________________________________________________________________________
+
+True or False? Amazon VPC enables you to launch Amazon RDS DB instances into a virtual private cloud (VPC).
+
+True
+
+Correct Answer
+Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources, such as Amazon RDS DB instances, into a virtual private cloud (VPC). Amazon Virtual Private Cloud VPCs and Amazon RDS.
+
+____________________________________________________________________________________
+
+Which of the following is NOT a supported RDS database engine?
+
+IBM Db2
+
+Correct Answer
+IBM Db2 is not a supported database engine. Reference Documentation: RDS
+
+____________________________________________________________________________________
+
+Choose three features Amazon Aurora supports from the options below.
+
+Automatic Backups
+Aurora Serverless
+Multiple AZ data storage copies
+
+Correct Answer
+Automatic Backups is a supported feature of Aurora. Reference Documentation: Aurora
+
+Aurora Serverless is a supported feature of Aurora. Reference Documentation: Aurora
+
+Aurora stores copies of the data across multiple Availability Zones in a single AWS Region.
+
+____________________________________________________________________________________
+
+True or False? You may use an Amazon RDS read replica for disaster recovery purposes in a different AWS Region from the source DB instance.
+
+True
+
+Good work!
+This is true! You may use a read replica for disaster recovery of the source DB instance, either in the same AWS Region or in another Region. Reference Documentation: Read Replicas
+
+____________________________________________________________________________________
+
+True or False? RDS read replicas have their own endpoints.
+
+true
+
+Good work!
+Read replicas have their own endpoints. Reference Documentation: User Read Replicas
+
+____________________________________________________________________________________
+
+Fill in the blank: DynamoDB is a ____ database.
+
+Non-Relational
+
+Good work!
+DynamoDB is a non-relational database. Reference Documentation: Dynamo DB
+
+____________________________________________________________________________________
+
+True or False? RDS is patched and updated by AWS.
+
+true
+
+AWS patches and updates your RDS databases. Reference Documentation: Maintaining a DB Instance
+
+____________________________________________________________________________________
+
+True or False? Amazon VPC enables you to launch Amazon RDS DB instances into a virtual private cloud (VPC).
+
+True
+
+Correct Answer
+Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources, such as Amazon RDS DB instances, into a virtual private cloud (VPC). Amazon Virtual Private Cloud VPCs and Amazon RDS.
+
+____________________________________________________________________________________
+
+True or False? DynamoDB supports the ability to back up and restore your data.
+
+true
+
+Correct Answer
+DynamoDB supports backup and restore. Reference Documentation: Backup and Restore
+
+____________________________________________________________________________________
+
+Which of the following is NOT a benefit of using RDS Multi-AZ?
+
+Your secondary copy is automatically used as a read replica for your database. This allows you to double your read performance automatically.
+
+Good work!
+Multi-AZ does not provide a read replica. Reference Documentation: Multi-AZ
+
+____________________________________________________________________________________
+
+What type of read would you use with DynamoDB if you can't have stale data in your application?
+
+
+Strongly Consistent
+
+Good work!
+Strongly consistent reads would ensure you don't have stale data. Reference Documentation: Read Consistency
+
+____________________________________________________________________________________
+

@@ -1,0 +1,16 @@
+CHAPTER 7 Databases
+Relational Database Service (RDS) Overview
+Increasing Read Performance with Read Replicas
+What Is Amazon Aurora?
+DynamoDB Overview
+When Do We Use DynamoDB Transactions?
+Saving Your Data with DynamoDB Backups
+Taking Your Data Global with DynamoDB Streams and Global Tables
+Operating MongoDB-Compatible Databases in Amazon DocumentDB
+Running Apache Cassandra Workloads with Amazon Keyspaces
+Implementing Graph Databases Using Amazon Neptune
+Leveraging Amazon Quantum Ledger Database (Amazon QLDB) for Ledger Databases
+Analyzing Time-Series Data with Amazon Timestream
+Databases Exam Tips
+HANDS-ON LAB Set Up a WordPress Site Using EC2 and RDS
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Databases Quiz

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>03-43 Enabling Enhanced Networking on Amazon EC2 (JPG)</title>
+<style>
+  body { padding-top: 58px; }
+  #nav-toolbar {
+    position: fixed; top: 0; left: 0; right: 0; height: 46px; z-index: 9999;
+    display: flex; align-items: center; gap: 10px; padding: 0 14px;
+    background: #1b1f24; color: #e8eaed; box-shadow: 0 2px 6px rgba(0,0,0,.35);
+    font: 14px/1.2 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  #nav-toolbar button {
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 30px; padding: 0 12px; border-radius: 6px; cursor: pointer;
+    border: 1px solid #3a4149; background: #2a3038; color: #e8eaed; font: inherit;
+  }
+  #nav-toolbar button:hover:not(:disabled) { background: #353d47; border-color: #4a5560; }
+  #nav-toolbar button:disabled { opacity: .4; cursor: default; }
+  #nav-counter { margin-left: auto; color: #aab4c0; font-variant-numeric: tabular-nums; }
+  img { scroll-margin-top: 58px; }
+</style>
+</head>
+<body>
+<h1>03-43 Enabling Enhanced Networking on Amazon EC2 (JPG)</h1>
+<ul>
+<li>03-43-001.jpg</li>
+<img src="03-43-001.jpg" width="1344" height="756" /><li>03-43-006.jpg</li>
+<img src="03-43-006.jpg" width="1344" height="756" /><li>03-43-013.jpg</li>
+<img src="03-43-013.jpg" width="1344" height="756" /><li>03-43-027.jpg</li>
+<img src="03-43-027.jpg" width="1344" height="756" /><li>03-43-046.jpg</li>
+<img src="03-43-046.jpg" width="1344" height="756" /><li>03-43-047.jpg</li>
+<img src="03-43-047.jpg" width="1344" height="756" /><li>03-43-048.jpg</li>
+<img src="03-43-048.jpg" width="1344" height="756" /><li>03-43-057.jpg</li>
+<img src="03-43-057.jpg" width="1344" height="756" /><li>03-43-060.jpg</li>
+<img src="03-43-060.jpg" width="1344" height="756" /><li>03-43-061.jpg</li>
+<img src="03-43-061.jpg" width="1344" height="756" /><li>03-43-080.jpg</li>
+<img src="03-43-080.jpg" width="1344" height="756" /><li>03-43-081.jpg</li>
+<img src="03-43-081.jpg" width="1344" height="756" /><li>03-43-082.jpg</li>
+<img src="03-43-082.jpg" width="1344" height="756" /><li>03-43-109.jpg</li>
+<img src="03-43-109.jpg" width="1344" height="756" /><li>03-43-146.jpg</li>
+<img src="03-43-146.jpg" width="1344" height="756" /></ul>
+<div id="nav-toolbar">
+  <button id="nav-prev" type="button" title="Imagen anterior (flecha izquierda)">&#8592; Anterior</button>
+  <button id="nav-next" type="button" title="Imagen siguiente (flecha derecha)">Siguiente &#8594;</button>
+  <span id="nav-counter"></span>
+</div>
+<script>
+(function () {
+  var imgs = Array.prototype.slice.call(document.querySelectorAll('img'));
+  var prev = document.getElementById('nav-prev');
+  var next = document.getElementById('nav-next');
+  var counter = document.getElementById('nav-counter');
+  var index = 0;
+  var OFFSET = 58;
+
+  function anchorOf(img) {
+    var prev = img.previousElementSibling;
+    return (prev && prev.tagName === 'LI') ? prev : img;
+  }
+
+  function paint() {
+    counter.textContent = 'Imagen ' + (index + 1) + ' de ' + imgs.length;
+    prev.disabled = index <= 0;
+    next.disabled = index >= imgs.length - 1;
+  }
+
+  function goTo(n, smooth) {
+    index = Math.max(0, Math.min(imgs.length - 1, n));
+    var el = anchorOf(imgs[index]);
+    var top = el.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+    window.scrollTo({ top: top, behavior: smooth === false ? 'auto' : 'smooth' });
+    paint();
+  }
+
+  function syncFromScroll() {
+    var best = 0, bestDist = Infinity;
+    for (var i = 0; i < imgs.length; i++) {
+      var d = Math.abs(anchorOf(imgs[i]).getBoundingClientRect().top - OFFSET);
+      if (d < bestDist) { bestDist = d; best = i; }
+    }
+    if (best !== index) { index = best; paint(); }
+  }
+
+  prev.addEventListener('click', function () { goTo(index - 1); });
+  next.addEventListener('click', function () { goTo(index + 1); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(index - 1); }
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); goTo(index + 1); }
+    if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+    if (e.key === 'End') { e.preventDefault(); goTo(imgs.length - 1); }
+  });
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) { return; }
+    ticking = true;
+    window.requestAnimationFrame(function () { syncFromScroll(); ticking = false; });
+  }, { passive: true });
+
+  paint();
+})();
+</script>
+</body>
+</html>

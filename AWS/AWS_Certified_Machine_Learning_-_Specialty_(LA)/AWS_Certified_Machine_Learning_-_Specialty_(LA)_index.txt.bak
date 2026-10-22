@@ -1,0 +1,130 @@
+https://learn.acloud.guru/course/61c352d7-57f6-4b6b-ab2a-08dea94735ac/overview
+
+CHAPTER 01 Getting Started
+01-01 An Important Note About A Cloud Guru and Linux Academy Courses
+01-02 Course Introduction
+01-03 About the Training Architect
+01-04 About the Exam
+CHAPTER 02 Machine Learning Fundamentals
+02-01 Artificial Intelligence
+02-02 What Is Machine Learning?
+02-03 What Is Deep Learning?
+CHAPTER 03 Machine Learning Concepts
+03-01 Section Introduction
+03-02 Machine Learning Lifecycle
+03-03 Supervised, Unsupervised, and Reinforcement
+03-04 Optimization
+03-05 Regularization
+03-06 Hyperparameters
+03-07 Validation
+CHAPTER 04 Data
+04-01 Section Introduction
+04-02 Feature Selection and Engineering
+04-03 Principal Component Analysis (PCA)
+04-04 Missing and Unbalanced Data
+04-05 Label and One Hot Encoding
+04-06 Splitting and Randomization
+04-07 RecordIO Format
+CHAPTER 05 Machine Learning Algorithms
+05-01 Section Introduction
+05-02 Logistical Regression
+05-03 Linear Regression
+05-04 Support Vector Machines
+05-05 Decision Trees
+05-06 Random Forests
+05-07 K-Means
+05-08 K-Nearest Neighbour
+05-09 Latent Dirichlet Allocation (LDA) Algorithm
+CHAPTER 06 Deep Learning Algorithms
+06-01 Section Introduction
+06-02 Neural Networks
+06-03 Convolutional Neural Networks (CNN)
+06-04 Recurrent Neural Networks (RNN)
+CHAPTER 07 Model Performance and Optimization
+07-01 Section Introduction
+07-02 Confusion Matrix
+07-03 Sensitivity and Specificity
+07-04 Accuracy and Precision
+07-05 ROC/AUC
+07-06 Gini Impurity
+07-07 F1 Score
+CHAPTER 08 Machine Learning Tools and Frameworks
+08-01 Section Introduction
+08-02 Introduction to Jupyter Notebooks
+08-03 ML and DL Frameworks
+08-04 TensorFlow
+08-05 PyTorch
+08-06 MXNet
+08-07 Scikit-learn
+08-08 HANDS-ON LAB Introduction to Jupyter Notebooks (AWS SageMaker)
+08-09 HANDS-ON LAB Creating a TensorFlow Image Classifier in AWS SageMaker
+08-10 HANDS-ON LAB Creating an MXNet Image Classifier in AWS SageMaker
+08-11 HANDS-ON LAB Creating a scikit-learn Random Forest Classifier in AWS SageMaker
+CHAPTER 9 AWS Services
+09-01 Section Introduction
+09-02 S3
+09-03 Glue
+09-04 Athena
+09-05 QuickSight
+09-06 Kinesis, Streams, Firehose, Video, and Analytics
+09-07 EMR with Spark
+09-08 EC2 for ML
+09-09 Amazon ML
+09-10 HANDS-ON LAB Perform Real-Time Data Analysis with Kinesis
+CHAPTER 10 AWS Application Services AI/ML
+10-01 Section Introduction
+10-02 Amazon Rekognition (Images) Part 1
+10-03 Amazon Rekognition (Images) Part 2 - the API
+10-04 Amazon Rekognition (Video) 
+10-05 Amazon Polly
+10-06 Amazon Transcribe
+10-07 HANDS-ON LAB Automatically Process Data in S3 Using Lambda
+10-08 Amazon Translate
+10-09 Amazon Comprehend
+10-10 Amazon Lex
+10-11 Amazon Service Chaining with AWS Step Functions
+10-12 HANDS-ON LAB Categorizing Uploaded Data Using AWS Step Functions
+10-13 HANDS-ON LAB Coordinating AI Services with Step Functions
+CHAPTER 11 Introduction
+11-01 Section Introduction
+11-02 What is Amazon SageMaker?
+11-03 The Three Stages
+11-04 Control (Console/SDK/Notebooks)
+11-06 SageMaker Notebooks
+CHAPTER 12 Build
+12-01 Data Preprocessing
+12-02 Ground Truth
+12-03 Preprocessing Image Data (Pinehead, NotPinehead)
+12-04 Algorithms
+CHAPTER 13 Train
+13-01 SageMaker Algorithms - Architecture 1
+13-02 SageMaker Algorithms - Architecture 2
+13-03 SageMaker Algorithms - Architecture 3
+13-04 Training an Image Classifier - Part 1 (Pinehead, NotPinehead)
+13-05 Training an Image Classifier - Part 2 (Pinehead, NotPinehead)
+13-06 Hyperparameter Tuning
+CHAPTER 14 Deploy
+14-01 Inference Pipelines
+14-02 Real-Time and Batch Inference
+14-03 Deploy an Image Classifier (Pinehead, NotPinehead)
+14-04 Accessing Inference from Apps
+14-05 Create a Custom API for Inference - Part 1 (Pinehead, NotPinehead)
+14-06 Create a Custom API for Inference - Part 2 (Pinehead, NotPinehead)
+CHAPTER 15
+Security
+Securing SageMaker Notebooks
+SageMaker and the VPC
+CHAPTER 16
+Other AWS Services
+Section Introduction
+DeepLens - Part 1
+DeepLens - Part 2
+DeepRacer - Part 1
+DeepRacer - Part 2
+CHAPTER 17 The Exam
+How to Answer Questions
+How to Prepare
+PRACTICE EXAM
+AWS Certified Machine Learning–Specialty (MLS-C01) Final Practice Exam
+CHAPTER 18 Thank You
+Goodbye!

@@ -1,0 +1,108 @@
+https://learn.acloud.guru/course/312375cd-c136-4f1c-81dc-dbdcfff2d06b/overview
+
+CHAPTER 01 Introduction
+01-01 Welcome to the Course!
+01-02 Prerequisites and Course Overview
+01-03 Exam Overview
+01-04 What is Data Analytics?
+CHAPTER 02 Amazon Simple Storage Service
+02-01 Introduction to S3
+02-02 Getting Data Into S3 - Concepts, AWS Management Console, AWS CLI (Part 1)
+02-03 Getting Data Into S3 - Boto3 (Part 2)
+02-04 S3 Multipart Upload (Part 1)
+02-05 S3 Multipart Upload (Part 2)
+02-06 S3 Storage Classes
+02-07 S3 Lifecycle Policies
+02-08 S3 Security and Encryption
+02-09 Checkpoint
+02-10 HANDS-ON LAB Programmatically Utilizing Data From S3
+CHAPTER 03 Databases In AWS
+03-01 Introduction to Databases In AWS
+03-02 Database Engine Types
+03-03 Relational Database Service (RDS)
+03-04 Neptune
+03-05 DocumentDB
+03-06 Serverless Options
+03-07 Checkpoint
+03-08 HANDS-ON LAB Programmatically Utilizing S3 Select
+CHAPTER 04 Collecting Streaming Data
+04-01 Introduction to Collecting Streaming Data
+04-02 The Kinesis Family
+04-03 Kinesis Data Streams (Part 1)
+04-04 Kinesis Data Streams (Part 2)
+04-05 Kinesis Data Firehose (Part 1)
+04-06 Kinesis Data Firehose (Part 2)
+04-07 Kinesis Video Streams
+04-08 Kinesis Data Analytics (Part 1)
+04-09 Kinesis Data Analytics (Part 2)
+04-10 Amazon Managed Service for Kafka (MSK)
+04-11 Checkpoint
+04-12 HANDS-ON LAB Joining, Enriching, and Transforming Streaming Data With Amazon Kinesis
+CHAPTER 05 Data Collection and Getting Data Into AWS
+05-01 Introduction to Data Collection and Getting Data Into AWS
+05-02 Direct Connect, Snowball, Snowball Edge, Snowmobile
+05-03 Database Migration Service
+05-04 Data Pipeline
+05-05 Lambda, API Gateway, and CloudFront (Part 1)
+05-06 Lambda, API Gateway, and CloudFront (Part 2)
+05-07 Comparing Our Options
+05-08 Checkpoint
+CHAPTER 06 Amazon Elastic Map Reduce (EMR)
+06-01 Introduction to Amazon Elastic Map Reduce (EMR)
+06-02 Apache Hadoop and EMR Software Collection
+06-03 EMR Architecture
+06-04 EMR Operations - Transient vs Long-Running
+06-05 EMR Operations - Choosing an Instance Type
+06-06 EMR Operations - Choosing the Right Number of Instances
+06-07 EMR Operations - On-Demand and Spot Instances
+06-08 EMR Operations - Monitoring and Resizing Clusters
+06-09 EMR File Storage and Compression
+06-10 Checkpoint
+06-11 HANDS-ON LAB Data Analytics with Spark and EMR
+CHAPTER 07 Using Redshift
+07-01 Introduction to Using Redshift
+07-02 Redshift Architecture
+07-03 Redshift in the AWS Service Ecosystem
+07-04 Redshift Use Cases
+07-05 Redshift Table Design
+07-06 Redshift Spectrum
+07-07 HANDS-ON LAB Querying Data from Multiple Redshift Spectrum Tables
+CHAPTER 08 Redshift Maintenance and Operations
+08-01 Launching a Redshift Cluster
+08-02 Resizing a Redshift Cluster
+08-03 Utilizing Vacuum and Deep Copy
+08-04 Backup and Restore
+08-05 Monitoring
+08-06 Checkpoint
+08-07 HANDS-ON LAB Manually Migrating Data Between Redshift Clusters
+CHAPTER 09 AWS Glue, Athena, and QuickSight
+09-01 Introduction to AWS Glue, Athena, and QuickSight
+09-02 Glue Data Catalog (Part 1)
+09-03 Glue Data Catalog (Part 2)
+09-04 Glue Jobs (Part 1)
+09-05 Glue Job Demo (Part 2)
+09-06 Glue Jobs (Part 3)
+09-07 Job Bookmarks
+09-08 Getting Started with Athena
+09-09 Athena Demo
+09-10 When To Use Athena
+09-11 QuickSight Visualizations and Dashboards
+09-12 QuickSight Security and Authentication
+09-13 Checkpoint
+CHAPTER 10 Elasticsearch
+10-01 Introduction to Elasticsearch
+10-02 Using Elasticsearch
+10-03 Visualizing Elasticsearch Data
+10-04 Checkpoint
+10-05 HANDS-ON LAB Implementing an Elasticsearch Backed Search Microservice
+CHAPTER 11 AWS Security Services
+11-01 Introduction to AWS Security Services
+11-02 IAM
+11-03 KMS
+11-04 Secrets Manager
+11-05 VPC Network Security Features
+11-06 Checkpoint
+11-07 HANDS-ON LAB Advanced S3 Security Configuration
+CHAPTER 12 Wrap-Up
+12-01 Congratulations
+12-02 PRACTICE EXAM AWS Certified Data Analytics Specialty - Practice Exam

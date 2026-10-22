@@ -1,0 +1,11 @@
+CHAPTER 14 Big Data
+Exploring Large Redshift Databases
+Processing Data with EMR (Elastic MapReduce)
+Streaming Data with Kinesis
+Amazon Athena and AWS Glue
+Visualizing Data with QuickSight
+Moving Transformed Data Using AWS Data Pipeline
+Implementing Amazon Managed Streaming for Apache Kafka (Amazon MSK)
+Analyzing Data with Amazon OpenSearch Service
+Big Data Exam Tips
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Big Data Quiz

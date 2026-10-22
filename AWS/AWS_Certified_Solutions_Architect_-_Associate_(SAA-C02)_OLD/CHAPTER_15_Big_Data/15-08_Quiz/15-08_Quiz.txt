@@ -1,0 +1,88 @@
+Which service provides the easiest way to run ad-hoc queries across multiple objects in S3 without the need to setup or manage any servers?
+
+Athena
+
+Correct Answer
+Yes! Athena lets you query data stored in S3. Reference Documentation: Amazon Athena
+https://aws.amazon.com/athena/
+
+
+____________________________________________________________________________________
+
+
+What type of database is Redshift?
+
+Relational
+
+Correct Answer
+Yes! Redshift is a relational database. Reference Documentation: Data warehouse system architecture
+https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html
+
+
+____________________________________________________________________________________
+
+How long are automatic Redshift backups retained by default?
+
+1 day
+
+Correct Answer
+Exactly! Backups are kept for 1 day by default, but this can be raised up to 35 days at most. Reference Documentation: Amazon Redshift FAQs
+https://aws.amazon.com/redshift/faqs/
+
+
+____________________________________________________________________________________
+
+How much data can a Redshift database hold per cluster?
+
+16PB
+
+Good work!
+Exactly! Redshift can hold up to 16 Petabytes of data per cluster. Reference Documentation: Amazon Redshift FAQ
+https://aws.amazon.com/redshift/faqs/
+
+
+____________________________________________________________________________________
+
+What is a valid use case for Amazon EMR?
+
+Extract, transform, and load (ETL) jobs.
+
+Good work!
+Yes! EMR excels at extract, transform, and load (ETL) jobs. Reference Documentation: Amazon EMR > Use cases.
+https://aws.amazon.com/emr/#Use_cases
+
+
+____________________________________________________________________________________
+
+_____ allows you to transform data using SQL as it's being passed through Kinesis.
+
+
+Kinesis Data Analytics
+
+Good work!
+Yes! Kinesis Data Analytics allows you to transform data using SQL. Reference Documentation: Amazon Kinesis Data Analytics
+https://aws.amazon.com/kinesis/data-analytics/
+
+____________________________________________________________________________________
+
+What service allows you to directly visualize your data in AWS?
+
+QuickSight
+
+Correct Answer
+Yes! QuickSight allows you to create dashboards and visualize your data. Reference Documentation: Amazon QuickSight
+https://aws.amazon.com/quicksight/
+
+
+____________________________________________________________________________________
+
+True or False? Redshift supports multi-AZ deployments.
+
+false
+
+Good work!
+Yes! At this time, Redshift does not support multi-AZ deployments. Reference Documentation: Amazon Redshift FAQs
+https://aws.amazon.com/redshift/faqs/
+
+____________________________________________________________________________________
+

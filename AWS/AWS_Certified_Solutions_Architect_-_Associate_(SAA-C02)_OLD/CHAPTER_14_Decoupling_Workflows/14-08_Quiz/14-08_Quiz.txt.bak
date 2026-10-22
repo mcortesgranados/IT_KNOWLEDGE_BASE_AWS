@@ -1,0 +1,85 @@
+What is the maximum length of time a message may remain in an SQS queue?
+
+14 Days
+
+Good work!
+Yes! SQS can retain messages up to 14 days. Reference Documentation: Amazon SQS FAQs
+https://aws.amazon.com/sqs/faqs/
+
+___________________________________________________________________________________
+
+
+If the visibility timeout on a message in an SQS queue expires, what happens to the message?
+
+It's now available in the queue to be retrieved.
+
+Correct Answer
+Yes! If the timeout expires, the message will again be available in the queue for processing. Reference Documentation: Amazon SQS visibility timeout
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html
+
+
+___________________________________________________________________________________
+
+
+Which layers of our applications need to be loosely coupled?
+
+Internal and external
+
+Correct Answer
+Yes! All levels of your architecture need to be loosely coupled! Reference Documentation: Loosely Coupled Scenarios
+https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/loosely-coupled-scenarios.html
+
+___________________________________________________________________________________
+
+If your application needs to process 5,000 messages per second, which type of SQS queue would you use?
+
+SQS Standard
+
+Correct Answer
+Yes! SQS Standard gives you a nearly unlimited number of transactions per second. Reference Documentation: Amazon SQS features
+https://aws.amazon.com/sqs/features/
+
+___________________________________________________________________________________
+
+Which of the following endpoints can use a custom delivery policy to define how Amazon SNS retries the delivery of messages when server-side errors occur?
+
+HTTP/S
+
+Good work!
+Amazon SNS defines a delivery policy for each delivery protocol. The delivery policy defines how Amazon SNS retries the delivery of messages when server-side errors occur (when the system that hosts the subscribed endpoint becomes unavailable). You can use a delivery policy and its four phases to define how Amazon SNS retries the delivery of messages to HTTP/S endpoints. With the exception of HTTP/S, you can't change Amazon SNS-defined delivery policies. Only HTTP/S supports custom policies. Creating an HTTP/S delivery policy.
+https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.html#creating-delivery-policy
+
+___________________________________________________________________________________
+
+SNS is a _____-based messaging service.
+
+Push
+
+Good work!
+Exactly! SNS is a push-based notification service. Reference Documentation: Amazon Simple Notification Service
+https://aws.amazon.com/sns/
+
+___________________________________________________________________________________
+
+What type of firewall can be used in conjunction with API Gateway to help prevent DDoS attacks?
+
+Web Application Firewall (WAF)
+
+Good work!
+Yes! API Gateway and WAF help protect you from a DDoS attack. Reference Documentation: Using AWS WAF to protect your APIs
+https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html
+
+___________________________________________________________________________________
+
+Which tool can be used to monitor the queue depth of a DLQ?
+
+CloudWatch
+
+Good work!
+Yes! CloudWatch is the go-to tool for any sort of monitoring in AWS. Reference Documentation: Monitoring Amazon SQS queues using CloudWatch
+https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-monitoring-using-cloudwatch.html
+
+___________________________________________________________________________________
+
+
+

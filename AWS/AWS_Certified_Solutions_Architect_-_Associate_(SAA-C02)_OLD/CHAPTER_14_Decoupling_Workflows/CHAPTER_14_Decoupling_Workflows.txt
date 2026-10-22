@@ -1,0 +1,13 @@
+CHAPTER 13 Decoupling Workflows
+Decoupling Workflows Overview
+Messaging with SQS
+Sidelining Messages with Dead-Letter Queues
+Ordered Messages with SQS FIFO
+Delivering Messages with SNS
+Fronting Applications with API Gateway
+Executing Batch Workloads Using AWS Batch
+Brokering Messages with Amazon MQ
+Coordinating Distributed Apps with AWS Step Functions
+Ingesting Data from SaaS Applications to AWS with Amazon AppFlow
+Decoupling Workflows Exam Tips
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Decoupling Workflows Quiz

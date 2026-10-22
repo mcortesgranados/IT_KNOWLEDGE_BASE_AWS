@@ -1,0 +1,106 @@
+https://learn.acloud.guru/course/aws-certified-devops-engineer-professional/overview
+
+CHAPTER 1 Introduction
+01-01 An Important Note About A Cloud Guru and Linux Academy Courses
+01-02 Course Introduction
+01-03 What is DevOps
+01-04 Assumed Knowledge
+CHAPTER 2 SDLC Automation
+02-01 Introduction
+02-02 What is CI/CD?
+02-03 AWS CodeCommit
+02-04 AWS CodeBuild
+02-05 AWS CodeDeploy
+02-06 AWS CodePipeline
+02-07 Testing
+02-08 Artifacts
+02-09 Deployment Strategies
+02-10 QUIZ AWS Certified DevOps Engineer - Professional 2020 - SDLC Automation Quiz
+02-11 HANDS-ON LAB Creating an AWS CodeCommit Repository That Triggers Email Notifications
+02-12 HANDS-ON LAB Configure and Work with CodeCommit from the CLI
+02-13 HANDS-ON LAB Setting Up an AWS CodePipeline with a Manual Approval
+CHAPTER 3 Configuration Management and Infrastructure as Code
+03-01 Introduction 
+03-02 AWS CloudFormation
+03-03 AWS CloudFormation Lab
+03-04 AWS CloudFormation Intrinsic Functions
+03-05 AWS CloudFormation Wait Conditions
+03-05 AWS CloudFormation Nested Stacks
+03-06 AWS CloudFormation Deletion Policies
+03-07 AWS CloudFormation Stack Updates
+03-08 AWS CloudFormation Change Sets
+03-09 AWS CloudFormation Custom Resources
+03-10 AWS CloudFormation Custom Resources Lab
+03-11 AWS Elastic Beanstalk
+03-12 AWS Elastic Beanstalk Lab
+03-13 AWS Elastic Beanstalk ebextensions
+03-14 AWS Config
+03-15 AWS Config Lab
+03-16 Amazon ECS
+03-17 Amazon ECS Lab
+03-18 AWS Managed Services
+03-19 AWS Lambda
+03-20 AWS Lambda Lab
+03-21 AWS Lambda Step Functions
+03-22 AWS OpsWorks
+03-23 AWS OpsWorks Lab
+03-24 QUIZ AWS Certified DevOps Engineer - Professional 2020 - Configuration Management and Infrastructure as Code Quiz
+03-25 HANDS-ON LAB Working with CloudFormation Condition Functions
+03-26 HANDS-ON LAB Working with CloudFormation Nested Stacks
+03-27 HANDS-ON LAB Updating CloudFormation Stacks with Direct Updates and Change Sets
+CHAPTER 4 Monitoring and Logging
+04-01 Introduction
+04-02 CloudWatch Overview
+04-03 CloudWatch Lab
+04-04 CloudWatch Custom Metrics
+04-05 CloudWatch Events Lab
+04-06  CloudWatch Logs Lab
+04-07 AWS X-Ray and Lab
+04-08 QUIZ AWS Certified DevOps Engineer - Professional 2020 - Monitoring and Logging Quiz
+04-09 HANDS-ON LAB Monitoring AWS CodePipeline Changes Through AWS CloudWatch Events Rules
+CHAPTER 5 Policies and Standards Automation
+05-01 Introduction
+05-02 AWS Service Catalog
+05-03 AWS Trusted Advisor
+05-04 AWS Systems Manager
+05-05 AWS Organizations
+05-06 AWS Secrets Manager
+05-07  Amazon Macie
+05-08 AWS Certificate Manager
+05-09 QUIZ AWS Certified DevOps Engineer - Professional 2020 - Policies and Standards Automation Quiz
+05-10 HANDS-ON LAB Creating an IAM Role and Configuring an EC2 Instance for AWS Systems Manager via the AWS Management Console
+CHAPTER 6 Incident and Event Response
+06-01 Introduction
+06-02 Amazon GuardDuty
+06-03 Amazon Inspector
+06-04 Amazon Kinesis
+06-05 QUIZ AWS Certified DevOps Engineer - Professional 2020 - Incident and Event Response Quiz
+CHAPTER 7 High Availability, Fault Tolerance and Disaster Recovery
+07-01 Introduction
+07-02 AWS Single Sign-On
+07-03 Amazon CloudFront
+07-04 AutoScaling and Lifecycle hooks
+07-05 Amazon Route53
+07-06 Amazon RDS
+07-07 Amazon Aurora
+07-08 Amazon DynamoDB
+07-09 Amazon DynamoDB Keys and Streams
+07-10 QUIZ AWS Certified DevOps Engineer - Professional 2020 - High Availability, Fault Tolerance and Disaster Recovery Quiz
+07-11 HANDS-ON LAB Deploying an EC2 Instance Using Cross-Stack References
+CHAPTER 8 Other Services You Need to Know About
+08-01 Introduction
+08-02 Tagging
+08-03 Amazon Elastic File System
+08-04 Amazon ElastiCache
+08-05 Amazon S3 Glacier
+08-06 AWS Direct Connect
+08-07 AWS Lambda Function Dead Letter Queues
+08-08 Amazon CloudSearch
+08-09 Amazon Elasticsearch Service
+08-10 Amazon DynamoDB Accelerator
+08-11 AWS Server Migration Service
+CHAPTER 9 Conclusion
+09-01 Whitepapers
+09-02 Thank you
+09-03 Keep Up to Date with AWS This Week
+09-04 PRACTICE EXAM AWS Certified DevOps Engineer - Professional

@@ -1,0 +1,11 @@
+CHAPTER 22 Machine Learning
+Machine Learning Overview
+Analyzing Text Using Amazon Comprehend, Amazon Kendra, and Amazon Textract
+Predicting Time-Series Data Using Amazon Forecast
+Protecting Accounts with Amazon Fraud Detector
+Working with Text and Speech Using Amazon Polly, Amazon Transcribe, and Amazon Lex
+Analyzing Images via Amazon Rekognition
+Leveraging Amazon SageMaker to Train Learning Models
+Translating Content into Different Languages with Amazon Translate
+Machine Learning Exam Tips
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Machine Learning Quiz

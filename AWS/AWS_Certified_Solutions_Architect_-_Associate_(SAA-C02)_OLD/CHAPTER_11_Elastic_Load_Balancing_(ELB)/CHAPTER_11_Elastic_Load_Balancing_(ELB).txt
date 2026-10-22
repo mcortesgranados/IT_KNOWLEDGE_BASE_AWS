@@ -1,0 +1,10 @@
+CHAPTER 10 Elastic Load Balancing (ELB)
+ELB Overview
+Using Application Load Balancers
+Extreme Performance with Network Load Balancers
+Using the Classic Load Balancer
+Getting "Stuck" with Sticky Sessions
+Leaving the Load Balancer with Deregistration Delay
+ELB Exam Tips
+HANDS-ON LAB Use Application Load Balancers for Web Servers
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Load Balancing Quiz

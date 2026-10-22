@@ -1,0 +1,74 @@
+Which of the following is NOT an AWS ELB load balancer?
+
+Service Load Balancer (SLB)
+Geolocation Load Balancer (GLB)
+
+
+Correct Answer
+This is not a type of ELB load balancer. Reference Documentation: What Is Elastic Load Balancing?
+https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html
+
+________________________________________________________________________________
+
+
+If you're building an application that needs to support an extreme level of networking traffic, which type of ELB load balancer would you pick?
+
+Network Load Balancer (NLB)
+
+Correct Answer
+NLBs excel when you need extreme levels of performance. Reference Documentation: Network Load Balancer
+https://aws.amazon.com/elasticloadbalancing/network-load-balancer/
+
+________________________________________________________________________________
+
+What instance will a NLB load balancer send traffic to if no hosts are healthy?
+
+It will try to send traffic to all the instances.
+
+Correct Answer
+It will send traffic to all the instances, hoping one is online. Reference Documentation: Health Checks for Your Target Groups
+https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-health-checks.html
+
+________________________________________________________________________________
+
+What kind of ELB load balancer would you select if you need to route traffic based on the contents of the request?
+
+Application Load Balancer (ALB)
+
+Correct Answer
+ALBs allow you to route traffic based on the contents of the requests. Reference Documentation: Application Load Balancer
+https://aws.amazon.com/elasticloadbalancing/application-load-balancer/
+
+________________________________________________________________________________
+
+Which ELB setting would you enable to ensure each subsequent connection after the initial connection was routed to the same EC2 instance?
+
+Sticky sessions
+
+Good work!
+Sticky sessions allow this to happen. Reference Documentation: Sticky Sessions for Your Application Load Balancer
+https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html
+
+________________________________________________________________________________
+
+
+True or False? By default, Application Load Balancers use static IPs and these will not change.
+
+False
+
+Correct Answer
+IPs will change unless you specifically configure static IPs. Reference Documentation: Using Static IP Addresses for Application Load Balancers
+https://aws.amazon.com/blogs/networking-and-content-delivery/using-static-ip-addresses-for-application-load-balancers/
+
+________________________________________________________________________________
+
+
+Which kind of ELB load balancer would you use if you need extreme levels of performance?
+
+
+Network Load Balancer (NLB)
+
+Good work!
+NLBs offer extreme levels of networking performance. Reference Documentation: What Is a Network Load Balancer?
+https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html
+

@@ -1,0 +1,166 @@
+What service does Macie monitor once you've enabled it?
+
+S3
+
+Good work!
+Exactly! Macie can monitor your S3 buckets. Reference Documentation: Amazon Macie
+https://aws.amazon.com/macie/
+
+__________________________________________________________________________
+
+
+True or False? Amazon Inspector requires an agent for host assessment rules packages.
+
+True
+
+Good work!
+Yes! The agent is required for host assessment rules packages. Reference Documentation: Amazon Inspector FAQs.
+https://aws.amazon.com/inspector/faqs/
+
+__________________________________________________________________________
+
+
+What kind of findings can AWS Inspector discover?
+
+Insufficient patching of applications on an EC2 instance.
+
+Correct Answer
+Correct! Inspector could find this. Reference Documentation: Amazon Inspector
+https://aws.amazon.com/inspector/
+
+__________________________________________________________________________
+
+
+What is the easiest way to ensure your CloudTrail logs haven't been tampered with?
+
+Enable log file validation in your trail.
+
+Correct Answer
+Exactly! CloudTrail offers this as a feature, but you must enable it. Reference Documentation: Validating CloudTrail Log File Integrity
+https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html
+
+__________________________________________________________________________
+
+
+What is the minimum length of time before you can schedule a KMS key to be deleted?
+
+7 days
+
+Correct Answer
+Yes! You need to wait at least 7 days. Reference Documentation: Deleting customer master keys
+https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html
+
+__________________________________________________________________________
+
+Which of the following is NOT a data source for GuardDuty?
+
+RDS event history
+
+Correct Answer
+Exactly! GuardDuty would not be able to monitor this. Reference Documentation: How Amazon GuardDuty uses its data sources
+https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html
+
+__________________________________________________________________________
+
+True or False? You must explicitly deny all IAM policy API calls that a user shouldn't be able to make.
+
+false
+
+Correct Answer
+Yes! All calls are denied by default and must be allowed. Reference Documentation: Policies and permissions in IAM
+
+__________________________________________________________________________
+
+Which AWS service supports automatic rotation of RDS security credentials?
+
+
+Secrets Manager
+
+Correct Answer
+Yes! Only Secrets Manager supports credential rotation. Reference Documentation: How to use AWS Secrets Manager to rotate credentials
+https://aws.amazon.com/blogs/security/how-to-use-aws-secrets-manager-rotate-credentials-amazon-rds-database-types-oracle/
+
+__________________________________________________________________________
+
+What is the easiest way to log API calls in AWS?
+
+Enable CloudTrail and pick an S3 bucket to store the logs in.
+
+Correct Answer
+Correct! CloudTrail is the best way to log API calls in AWS. Reference Documentation: AWS CloudTrail
+https://aws.amazon.com/cloudtrail/
+
+__________________________________________________________________________
+
+What does DDoS stand for?
+
+Distributed Denial of Service
+
+Good work!
+Yes! DDoS stands for Distributed Denial of Service. Reference Documentation: What is a DDoS Attack?
+https://aws.amazon.com/shield/ddos-attack-protection/
+
+__________________________________________________________________________
+
+True or False? For customers on Business or Enterprise support plans, AWS Shield Advanced provides access to a 24/7 support team to help with DDoS issues.
+
+True
+
+Correct Answer
+Yes! AWS Shield Advanced offers a 24/7 support help line. Reference Documentation: AWS Shield Features.
+https://aws.amazon.com/shield/features/
+
+__________________________________________________________________________
+
+What kind of data can Macie identify?
+
+All of the other answers
+
+Correct Answer
+Yes! Macie can detect all of these types of data. Reference Documentation: Amazon Macie
+https://aws.amazon.com/macie/
+
+__________________________________________________________________________
+
+In general, what does a DDoS attack entail?
+
+A large number of connections overwhelms your architecture. Your application is unable to answer the legitimate requests that are sent to it.
+
+Correct Answer
+Exactly! This describes what a DDoS attack looks like. Reference Documentation: What is a DDoS Attack?
+https://aws.amazon.com/shield/ddos-attack-protection/
+
+__________________________________________________________________________
+
+What kind of protection are you adding to your AWS account when you enable GuardDuty?
+
+Intelligent threat detection
+
+Correct Answer
+Amazon GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity and delivers detailed security findings for visibility and remediation. Amazon GuardDuty.
+https://aws.amazon.com/guardduty/
+
+__________________________________________________________________________
+
+Which Layers does WAF provide protection on?
+
+Layer 7
+
+Good work!
+Yes! AWS WAF operates at Layer 7. Reference Documentation: Step 3: Configure layer 7 DDoS mitigation
+https://docs.aws.amazon.com/waf/latest/developerguide/ddos-get-started-rate-based-rules.html
+
+
+__________________________________________________________________________
+
+What three components are required in all IAM policy documents?
+
+Effect, Action, Resource
+
+Correct Answer
+Exactly! Effect, Action, and Resource are the only required parts. Reference Documentation: Using presigned URLs
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html
+
+__________________________________________________________________________
+
+

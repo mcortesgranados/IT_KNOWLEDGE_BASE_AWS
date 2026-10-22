@@ -1,0 +1,23 @@
+CHAPTER 16 Security
+16-01 DDoS Overview
+16-02 Logging API Calls with CloudTrail
+16-03 Protecting Applications with Shield
+16-04 Filtering Traffic with AWS WAF
+16-05 Guarding Your Network with GuardDuty
+16-06 Centralizing WAF Management via AWS Firewall Manager
+16-07 Monitoring S3 Buckets with Macie
+16-08 Securing Operating Systems with Inspector
+16-09 Managing Encryption Keys with KMS and CloudHSM
+16-10 Storing Your Secrets in Secrets Manager
+16-11 Storing Your Secrets in Parameter Store
+16-12 Temporarily Sharing S3 Objects Using Presigned URLs or Cookies
+16-13 Advanced IAM Policy Documents
+16-14 AWS Certificate Manager
+16-15 Auditing Continuously with AWS Audit Manager
+16-16 Downloading Compliance Documents from AWS Artifact
+16-17 Authenticating Access with Amazon Cognito
+16-18 Analyzing Root Cause Using Amazon Detective
+16-19 Protecting VPCs with AWS Network Firewall
+16-20 Leveraging AWS Security Hub for Collecting Security Data
+16-21 Security Exam Tips
+16-22 QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Security Quiz

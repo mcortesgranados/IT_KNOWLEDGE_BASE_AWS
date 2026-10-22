@@ -1,0 +1,370 @@
+Which of the following is not true of Route 53?
+
+
+Route 53 does not support hybrid cloud architectures.
+
+___________________________________________________________________
+
+Which of the following are true statements about Simple Queue Service (SQS)?
+
+Choose 2
+
+
+
+SQS FIFO queues always preserve the exact order.
+
+
+Standard queues provide a loose-FIFO capability.
+
+___________________________________________________________________
+
+Which migration service allows you to migrate databases to or within AWS over the internet easily and securely?
+
+AWS DMS
+
+AWS Database Migration Service (AWS DMS) helps you migrate databases to AWS quickly and securely over the internet. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. The AWS Database Migration Service can migrate your data to and from the most widely used commercial and open-source databases.
+
+___________________________________________________________________
+
+Amazon S3 offers multiple storage classes. Which storage class is best for archiving data when you want the cheapest cost and don’t mind long retrieval times?
+
+S3 Glacier Deep Archive
+
+S3 Glacier Deep Archive offers the lowest cost and is used to archive data. You can retrieve objects within 12 hours.
+
+___________________________________________________________________
+
+Which service is used to allow resources in your VPC to access the internet?
+
+Internet Gateway
+
+An internet gateway allows traffic to or from the internet for instances in a subnet in a VPC.
+
+___________________________________________________________________
+
+Objects stored in S3 are stored in a single, central location within AWS.
+
+False
+
+Objects stored in S3 are stored in multiple servers, in multiple facilities across AWS.
+
+___________________________________________________________________
+
+Which service enables you to centralize and automate data protection across AWS services?
+
+AWS Backup
+
+AWS Backup helps you manage data backups across multiple AWS services. You're able to create a backup plan that includes frequency and retention.
+
+___________________________________________________________________
+
+Which service is a data warehousing solution?
+
+Amazon Redshift
+
+Redshift is a data warehouse solution that improves the speed and efficiency of accessing different datasets and has unlimited storage.
+
+___________________________________________________________________
+
+When launching an EC2 instance, you’re able to select the tenancy model. Which tenancy models allow you to bring your own licenses?
+
+Dedicated Hosts
+Dedicated Instances
+
+Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses to help maintain license compliance. This is similar to Dedicated Instances, but Dedicated Hosts provide more restrictive control over the server.
+
+Dedicated Instances ensure your instance will run on a dedicated physical server due to licensing restrictions that don't allow for software to run on a shared tenancy model.
+
+___________________________________________________________________
+
+Which monitoring service helps you observe your cloud resources and provides actionable insights?
+
+CloudWatch
+
+CloudWatch is a monitoring and management service that provides data and actionable insights for your applications and infrastructure resources.
+
+___________________________________________________________________
+
+Which of the following EC2 options is best for long-term workloads with predictable usage patterns?
+
+Reserved Instances
+
+Reserved Instances are the most economical option for long-term workloads with predictable usage patterns.
+
+___________________________________________________________________
+
+Which service can you use to deploy applications both on-premises or in the cloud, using Chef or Puppet?
+
+OpsWorks
+
+OpsWorks allows you to deploy applications either on-premises or on EC2 instances in AWS cloud, and it also automates infrastructure management using Chef or Puppet.
+
+___________________________________________________________________
+
+
+Which compute service allows you to run code without managing servers and pay only when your code is running?
+
+AWS Lambda
+
+AWS Lambda runs your code without requiring you to manage infrastructure or provision servers.
+
+___________________________________________________________________
+
+
+What AWS services are used for notifications and messaging?
+
+
+Simple Email Service (SES)
+Simple Notification Service (SNS)
+
+SES is an email service that can send HTML-formatted messages from applications.
+
+SNS is a service that allows applications to send email and text messages.
+
+___________________________________________________________________
+
+What service could you recommend to a developer to automate the software release process?
+
+CodePipeline
+
+CodePipeline is a developer tool that allows you to continuously automate the software release process.
+
+
+___________________________________________________________________
+
+Which storage service is a scalable file system that only works with Linux-based workloads?
+
+Amazon Elastic File System (EFS)
+
+EFS is an elastic file system for Linux-based workloads.
+
+___________________________________________________________________
+
+Which method of accessing an EC2 instance requires both a private key and a public key?
+
+Secure Shell (SSH)
+
+SSH allows you to access an EC2 instance from your local laptop using a key pair, which consists of a private key and a public key.
+
+___________________________________________________________________
+
+Which EC2 pricing option is best for short-term, irregular workloads that should not be interrupted?
+
+On-Demand
+
+On-Demand is best for applications with short-term, spiky, or unpredictable workloads.
+
+___________________________________________________________________
+
+Which service helps you process big data workloads?
+
+Elastic MapReduce (EMR)
+
+EMR helps you process large amounts of data.
+
+___________________________________________________________________
+
+Which analytics service allows you to query data in Amazon S3 using Structured Query Language (SQL)?
+
+Amazon Athena
+
+Athena is a query service that makes it easy to analyze data in Amazon S3 using SQL.
+
+___________________________________________________________________
+
+Which AWS service is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure application programming interfaces at any scale?
+
+API Gateway
+
+API Gateway is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure application programming interfaces at any scale. It acts as a “front door” for applications to access data, business logic, or functionality from your back-end services.
+
+___________________________________________________________________
+
+Which service allows you to host virtual desktops in the cloud?
+
+Amazon WorkSpaces
+
+Amazon WorkSpaces allows you to host virtual desktops in the cloud.
+
+___________________________________________________________________
+
+Which database services make it easy for you to set up, operate, and scale relational databases in the cloud?
+
+Amazon Relational Database Service (RDS)
+
+Amazon Aurora
+
+RDS allows you to set up relational databases in the cloud and provides you with several database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+
+Amazon Aurora is a MySQL- and PostgreSQL-compatible relational database engine.
+
+___________________________________________________________________
+
+Which services allow you to run containerized applications without having to manage servers or clusters?
+
+Amazon Elastic Kubernetes Service (EKS)
+
+
+AWS Fargate
+
+
+Amazon Elastic Container Service (Amazon ECS)
+
+EKS lets you run your containerized Kubernetes applications on both Amazon EC2 and AWS Fargate.
+
+Fargate removes the need for you to interact with servers or clusters as it provisions, configures, and scales clusters of virtual machines to run containers for you.
+
+ECS lets you run your containerized Docker applications on both Amazon EC2 and AWS Fargate.
+
+___________________________________________________________________
+
+Which services allow you to build hybrid environments by connecting on-premises infrastructure to AWS?
+
+
+Site-to-Site VPN
+
+
+AWS Direct Connect
+
+Site-to-Site VPN allows you to establish a secure connection between your on-premises equipment and the VPCs in your AWS account.
+
+Direct Connect allows you to establish a dedicated network connection between your on-premises network and AWS.
+
+___________________________________________________________________
+
+Amazon EC2 offers a variety of pricing options. Which of the following EC2 pricing options is the cheapest?
+
+Spot Instances
+
+Spot Instances allow you to request unused EC2 instances, which reduces your EC2 costs. Spot Instances are 90% cheaper than On-Demand.
+
+___________________________________________________________________
+
+Which service allows you to track the name of the user making changes in your AWS account?
+
+AWS CloudTrail
+
+CloudTrail tracks user activity and API calls in your account, which includes identity information (the user's name, source IP address, etc.) about the API caller.
+
+___________________________________________________________________
+
+Which EC2 storage mechanism is recommended when running a database on an EC2 instance?
+
+Amazon Elastic Block Storage (EBS)
+
+EBS is a storage device you can attach to your instances and is a recommended storage option when you run databases on an instance.
+
+___________________________________________________________________
+
+Which AWS service can send both text and email messages from your applications?
+
+Simple Notification Service (SNS)
+
+SNS allows you to send emails and text messages from your distributed applications.
+
+___________________________________________________________________
+
+Which service allows developers to track issues on development projects via a dashboard?
+
+CodeStar
+
+CodeStar helps developers collaboratively work on development projects and track issues via a dashboard.
+
+___________________________________________________________________
+
+Which service routes user traffic through AWS's global network infrastructure to ensure low latency for your gaming application?
+
+AWS Global Accelerator
+
+Global Accelerator improves the availability of your applications by sending user traffic through AWS's global network.
+
+___________________________________________________________________
+
+Which service supports workloads that need to remain on-premises due to latency or data sovereignty needs?
+
+AWS Outposts
+
+With AWS Outposts, AWS delivers and installs servers in your internal data center, which allows you to support data sovereignty requirements.
+
+___________________________________________________________________
+
+
+Which AWS networking service enables you to provision a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define?
+
+Virtual Private Cloud (VPC)
+
+VPC is a foundational service that allows you to create a logically isolated virtual network in the AWS cloud where you launch your resources.
+
+___________________________________________________________________
+
+Which AWS service provides a secure and resizable compute platform with choice of processor, storage, networking, operating system, and purchase model?
+
+Amazon Elastic Compute Cloud (EC2)
+
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. Amazon EC2 offers the broadest and deepest compute platform with choice of processor, storage, networking, operating system, and purchase model. Amazon EC2.
+
+___________________________________________________________________
+
+Which machine learning service allows you to add image analysis to your applications?
+
+Amazon Rekognition
+
+Rekognition is a service that makes it easy to add image analysis to your applications.
+
+___________________________________________________________________
+
+Which machine learning service helps you build, train, and deploy models quickly?
+
+SageMaker
+
+SageMaker helps you build, train, and deploy machine learning models quickly.
+
+___________________________________________________________________
+
+What data transport solution allows you to move petabytes of data and natively supports EC2 and Lambda?
+
+Snowball Edge
+
+Snowball Edge is a petabyte-scale data transport solution that natively supports EC2 and Lambda.
+
+___________________________________________________________________
+
+Which developer tool allows you to write code within your web browser?
+
+Cloud9
+
+Cloud9 is an integrated development environment (IDE) that allows you to write code within your web browser.
+
+
+___________________________________________________________________
+
+What is CloudWatch?
+
+It is a collection of services designed to monitor and observe cloud resources.
+
+CloudWatch is a collection of services you can use to monitor your cloud resources.
+
+___________________________________________________________________
+
+Which services allow you to send emails from your applications?
+
+
+Amazon Simple Email Service (SES)
+
+
+Amazon Simple Notification Service (SNS)
+
+Good work!
+SES allows you to send plaintext and HTML-formatted emails from your applications. It is ideal for marketing campaigns and professional emails.
+
+SNS allows you to send plaintext emails, text messages, and more from your applications.
+
+___________________________________________________________________
+
+
+
+
+
+
+
+

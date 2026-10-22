@@ -1,0 +1,828 @@
+Course Outline
+CHAPTER 1
+
+Introduction
+37:46
+
+Introduction
+03:19
+Course Overview
+07:47
+
+Demo: Playing in the Cloud Playground
+04:21
+Using the AWS CLI, Boto3 SDK, and CLI Tools
+03:37
+
+
+
+
+Reviewing the Shared Responsibility Model
+03:20
+
+Leverage the Code Templates
+01:46
+Exam Overview
+11:48
+
+
+A Note About Demo Lessons
+00:54
+Course Updates and Changelogs
+00:54
+
+CHAPTER 2
+
+Design and Implement AWS Networks
+12:54:52
+
+Introduction
+04:30
+
+AWS Global Infrastructure
+08:38
+
+
+
+What Are Private and Public AWS Services?
+02:49
+
+Breaking Down Disaster Recovery and High Availability
+07:01
+
+
+VPC Basic Networking Design
+12:41
+
+Demo: Default VPC
+06:06
+
+
+Subnets, VPC Routers, and Route Tables Part 1
+13:24
+
+
+
+
+Subnets, VPC Routers, and Route Tables Part 2
+13:54
+
+
+Demo: Subnets, VPC Routers, and Route Tables
+15:52
+
+
+
+
+
+IP Party: BYOIP
+10:14
+
+
+Elastic Network Interface, Elastic IP, and Internet Gateway Part 1
+08:54
+
+
+Elastic Network Interface, Elastic IP, and Internet Gateway Part 2
+13:39
+
+
+
+Demo: Elastic Network Interface, Elastic IP, and Internet Gateway
+13:03
+
+
+
+
+Traffic Control: Network Access Control Lists and Security Groups Part 1
+09:31
+
+
+
+Traffic Control: Network Access Control Lists and Security Groups Part 2
+21:47
+
+
+
+
+
+NAT Gateways
+11:29
+
+
+Demo: NAT Gateway
+10:45
+
+When to Use Private NAT Gateways
+05:48
+
+
+
+VPC Endpoints
+14:52
+
+
+
+
+
+Demo: VPC Endpoints
+2 WEEKS AGO
+
+UPDATED
+13:31
+
+
+
+
+VPC Peering
+11:31
+
+
+
+Demo: VPC Peering
+15:19
+
+
+
+
+Demo: Peering Complex VPCs
+11:50
+
+
+Jumping Into VPCs with Jump Server or Session Manager
+10:12
+
+
+
+Consideration for IPv6 in AWS VPCs
+09:44
+
+
+
+Demo: Assess Connectivity Using Reachability Analyzer
+10:41
+
+
+
+Creating VPC Flow Logs
+11:13
+
+
+Viewing VPC Flow Logs
+04:36
+
+
+Demo: Define and View VPC Flow Logs
+15:23
+Network Performance
+12:13
+
+
+
+
+
+
+Managing Global Networks with AWS Cloud WAN
+04:54
+
+
+
+Exam Tips
+07:16
+
+
+
+
+
+Exam Tips: Part 2
+11:32
+HANDS-ON LAB
+Troubleshooting AWS Network Connectivity: Security Groups and NACLs
+1:00:00
+HANDS-ON LAB
+BCreate a Multi-Subnet VPC with Secure Access to Private Servers with Outbound Internet Access
+30:00
+HANDS-ON LAB
+Implementing VPC Peering on AWS
+1:30:00
+HANDS-ON LAB
+Work with AWS VPC Flow Logs for Network Monitoring
+1:30:00
+HANDS-ON LAB
+Logging VPCs in Near Real Time with Amazon Kinesis Data Firehose
+1:15:00
+HANDS-ON LAB
+Troubleshooting Amazon EC2 Network Connectivity
+1:00:00
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - Design and Implement AWS Networks Quiz
+15:00
+CHAPTER 3
+
+Configure Network Integration with Application Services
+12:29:40
+
+Introduction
+04:08
+
+Domain Name System
+12:56
+
+
+
+Route 53 Hosted Zonesand Zone Records – Part 1
+12:43
+
+
+Route 53 Hosted Zonesand Zone Records – Part 2
+13:05
+
+
+
+Route 53 Demo: Hosted Zones and Zone Records
+10:01
+Route 53 Subdomain Delegation
+09:47
+Route 53 Demo: Subdomain Delegation
+04:14
+Route 53 Routing Policies Part 1
+11:06
+
+
+Route 53 Routing Policies Part 2
+14:57
+
+
+
+Route 53 Health Checks
+11:10
+
+
+
+
+Route 53 Demo:Health Checks and DNS Failover
+11:56
+Route 53 Demo:Routing Policies and DNS Failover
+12:38
+Route 53 Private Hosted Zones
+06:30
+
+
+
+Route 53 Demo:VPC DNS
+12:05
+Exploring the Route 53 Resolver (+2 Address)
+08:59
+
+
+Elastic Load BalancerOverview
+14:18
+
+
+ELB Target Groups
+14:10
+
+Application Load Balancers
+11:54
+
+Network Load Balancers
+09:24
+
+Classic Load Balancers
+03:19
+
+VPCEndpoint Services
+10:37
+
+
+Gateway Load Balancers
+10:53
+
+
+Load Balancing with Amazon ECS
+07:41
+
+
+
+Hosting CDNs with Amazon CloudFront
+09:10
+
+
+
+S3 Origins, Custom Origins, and Origin Access Identities in CloudFront
+07:35
+
+
+Demo: Restricting Amazon S3 Access with OACs
+08:48
+Securing CloudFront with TLS/SSL
+10:00
+
+
+Private Viewer Access in Amazon CloudFront
+06:07
+
+Protect Sensitive Data with CloudFront Field-level Encryption
+05:42
+
+
+
+Demo: Georestricting Viewer Access in Amazon CloudFront
+07:35
+Invalidating and Expiring Files within CloudFront
+07:39
+
+
+Customizing Requests Using Lambda@Edge and CloudFront Functions
+06:59
+
+Demo: Viewing Custom Headers from Lambda@Edge
+08:13
+
+
+
+Optimizing CloudFront Distributions - Part 1
+08:44
+
+
+Optimizing CloudFront Distributions - Part 2
+09:32
+
+
+
+Accelerating Workloads Using AWS Global Accelerator
+08:32
+
+
+
+Lambda within a VPC
+08:16
+
+
+
+
+Running Kubernetes in AWS
+07:38
+
+
+
+
+Amazon WorkSpaces
+18:14
+
+
+
+
+Amazon AppStream 2.0
+08:36
+
+
+App Networking via AWS App Mesh
+03:02
+
+
+
+Securing API Gateway
+05:04
+
+
+
+
+Enabling Enhanced Networking on Amazon EC2
+09:58
+
+
+
+
+
+
+High-Performance Computing with Elastic Fabric Adapter (EFA)
+08:01
+
+
+Demo: Configure Network Integration with Application Services Part 1
+2 WEEKS AGO
+
+UPDATED
+47:55
+
+
+
+Demo: Configure Network Integration with Application Services Part 2 - Cleanup
+02:21
+
+Improving Networking Using Placement Groups
+06:13
+
+Exam Tips
+14:02
+
+
+
+
+
+Exam Tips: Part 2
+12:13
+HANDS-ON LAB
+Create a VPC Endpoint and S3 Bucket in AWS
+30:00
+HANDS-ON LAB
+Creating and Configuring a Network Load Balancer in AWS
+1:45:00
+HANDS-ON LAB
+Configuring Network Integration with Application Services
+45:00
+HANDS-ON LAB
+Setting Up AWS CloudFront as an HTTPS Endpoint for S3
+1:00:00
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - Configure Network Integration with Application Services Quiz
+15:00
+CHAPTER 4
+
+Hybrid Networking Basics and VPNs in AWS
+4:15:48
+
+Introduction
+03:31
+
+Virtual Private Gateway
+08:33
+
+AWS Hybrid Route Learning
+16:35
+
+Border Gateway Protocol (BGP)
+08:37
+
+BGP Prefix Preference - Part 1
+09:44
+BGP Prefix Preference - Part 2
+09:06
+BGP Prefix Preference - Part 3
+14:36
+VPN and IPSec Overview
+18:42
+
+
+
+Customer Gateways
+09:04
+
+
+
+AWS Site-to-Site VPN Configuration
+15:21
+
+
+
+Demo: AWS VPN Connection - Part 1
+16:28
+
+
+
+Demo: AWS VPN Connection - Part 2
+17:26
+
+Demo: AWS VPN Connection - Part 3
+01:23
+
+
+Faster VPNs with Accelerated Site-to-Site VPN
+07:40
+
+AWS VGW and VPN Limitations
+13:14
+VPN Anywhere with AWS Client VPN
+09:56
+
+
+
+Hub-and-Spoke VPN with AWS VPN CloudHub
+05:40
+
+
+Third-Party VPN Solutions
+07:51
+
+
+
+
+AWS VPN Monitoring and Optimization
+13:25
+
+
+
+
+
+
+
+AWS VPN Cost Optimization
+10:27
+
+Exam Tips
+08:29
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - Hybrid Networking Basics and VPNs in AWS Quiz
+30:00
+CHAPTER 5
+
+AWS Direct Connect and Hybrid DNS
+3:04:08
+
+Introduction
+04:03
+
+Direct Connect Locations & Hardware
+05:32
+
+
+DX Connections
+06:52
+
+
+Demo: DX Connections
+14:35
+
+Virtual Interfaces (VIFs)
+09:09
+
+Demo: Virtual Interfaces
+07:20
+Virtual LANs (VLANs)
+18:57
+
+Virtual Interfaces & BGP
+08:07
+
+Link Aggregation Groups (LAGs)
+06:09
+
+Demo: Link Aggregation Groups
+01:59
+Direct Connect Gateways
+10:54
+
+Demo: DX Gateway
+06:12
+Direct Connection Security MACsec
+06:05
+
+
+Well-Architected Direct Connect
+23:42
+
+Hybrid DNS
+15:11
+
+
+DNS Using Route 53 Resolver Endpoints (Inbound and Outbound)
+12:32
+
+Exam Tips
+06:33
+Exam Tips: Part 2
+05:16
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - AWS Direct Connect and Hybrid DNS Quiz
+15:00
+CHAPTER 6
+
+Transitive Networking
+2:58:16
+
+Introduction
+06:31
+
+Inter-VPC Connectivity
+10:38
+
+
+Transit VPCs and Hybrid Connectivity
+08:07
+
+Transit Gateway Configuration
+12:58
+
+
+Transit Gateway Routing
+08:08
+
+Network Size Limits
+06:38
+
+Demo: Transit Gateway Part 1
+20:29
+
+
+Demo: Transit Gateway Part 2
+24:32
+
+
+Exam Tips
+05:15
+HANDS-ON LAB
+Configure Transit Gateway for a Multi-VPC Environment
+1:00:00
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - Transitive Networking Quiz
+15:00
+CHAPTER 7
+
+Design and Implement for Security and Compliance
+4:33:36
+
+Introduction
+06:01
+
+
+Traffic Control
+23:12
+
+Demo: Web Application Firewall
+12:31
+Traffic Protection
+23:28
+
+
+
+Demo: AWS Certificate Manager
+14:59
+Traffic Awareness
+10:03
+Copying Network Traffic with VPC Traffic Mirroring
+10:19
+
+
+
+
+Managed IDS with Amazon GuardDuty
+03:20
+
+
+
+Inspecting Compute Networking with Amazon Inspector
+03:49
+
+
+
+Demo: AWS Guard Duty & AWS Inspector
+13:42
+DDoS Protection Using AWS Shield
+05:26
+
+
+
+
+
+VPC Perimeter Protection via AWS Network Firewall
+09:47
+
+
+
+
+
+Networking Considerations with AWS CloudHSM
+04:31
+
+
+
+Central Firewall Management with AWS Firewall Manager
+04:55
+
+
+
+Governance & Compliance
+14:14
+
+Exam Tips
+08:19
+HANDS-ON LAB
+Creating and Configuring a WAF
+45:00
+HANDS-ON LAB
+Filter Traffic Using AWS Network Firewall
+45:00
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - Design and Implement for Security and Compliance Quiz
+15:00
+CHAPTER 8
+
+Automate AWS Tasks
+1:13:25
+
+Introduction
+02:40
+
+Infrastructure as Code
+08:30
+
+CloudFormation Part 1
+17:23
+
+
+
+
+
+
+
+CloudFormation Part 2
+10:49
+
+
+
+Demo: CloudFormation
+06:35
+Using the Amazon CDK
+02:02
+
+
+Troubleshooting AWS CloudFormation
+03:44
+
+Dynamically Mapping Resources with AWS Cloud Map
+2 MONTHS AGO
+
+UPDATED
+03:22
+
+Exam Tips
+03:20
+
+
+
+QUIZ
+AWS Certified Advanced Networking - Specialty 2023 - Automate AWS Tasks Quiz
+15:00
+CHAPTER 9
+
+Conclusion
+7:39:40
+
+Final Words
+05:39
+
+Conclusion and What's Next
+THIS MONTH
+
+UPDATED
+04:01
+PRACTICE EXAM
+AWS Certified Advanced Networking - Specialty (ANS-C01) - Exam 1
+THIS MONTH
+
+NEW
+2:30:00
+PRACTICE EXAM
+AWS Certified Advanced Networking - Specialty (ANS-C01) - Exam 2
+THIS MONTH
+
+NEW
+2:30:00
+PRACTICE EXAM
+AWS Certified Advanced Networking - Specialty (ANS-C01) - Exam 3
+THIS MONTH
+
+NEW
+2:30:00
+Your Progress
+0%
+
+COMPLETE
+
+Lesson Completion
+
+0%
+
+Lab Completion
+
+0 of 13
+
+Quiz Completion
+
+0 of 7
+
+NEW
+
+Learning Scheduler
+Tell us how many hours per week you can study.
+
+4
+17 Dec.
+HRS PER WEEKCOMPLETION DATE
+MEMBERS ONLY
+
+Practice Exams
+This course has multiple practice exams, giving you more opportunity to build your confidence.
+
+MEMBERS ONLY
+
+Cloud Playground
+Cloud along in real time. This course supports Cloud Playground sandbox environments, so you can learn by doing in a real cloud environment.
+
+Certificate of Completion
+Complete at least 80% of the course before you can request a certificate of completion.
+
+Rate this course
+Loved it? Room for improvement? Let us know!
+

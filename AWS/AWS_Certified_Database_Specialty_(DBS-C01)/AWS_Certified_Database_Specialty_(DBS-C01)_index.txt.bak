@@ -1,0 +1,99 @@
+https://learn.acloud.guru/course/aws-certified-database-speciality-dbs-c01/overview
+
+CHAPTER 01 Introduction
+01-01 Course Introduction
+01-02 Prerequisites and Course Overview
+CHAPTER 02 AWS Databases
+02-01 Purpose-Built Databases
+02-02 Understanding RTO and RPO
+02-03 AWS Database Services Overview
+CHAPTER 03 Relational Database Service
+03-01 Overview of Amazon RDS
+03-02 Understanding Read Replicas
+03-03 Understanding Multi-AZ
+03-04 Using Backup and Restore
+03-05 Monitoring in RDS
+03-06 Working with RDS Logs
+03-07 Security in RDS
+03-08 Working with RDS in a VPC
+03-09 Managing RDS Resources
+03-10 Understanding RDS Maintenance
+03-11 Troubleshooting RDS
+03-12 Pricing Models in RDS
+03-13 HANDS-ON LAB Deploying an Amazon RDS Multi-AZ and Read Replica
+03-14 HANDS-ON LAB Restoring an Amazon RDS Instance Using Snapshots
+CHAPTER 04 Amazon DynamoDB
+04-01 DynamoDB Architecture
+04-02 DynamoDB Items
+04-03 Using the AWS Management Console
+04-04 HANDS-ON LAB Creating a DynamoDB Table
+04-05 Console Metrics and CloudWatch
+04-06 Alerts and Alarms
+04-07 Errors and Codes
+04-08 Partitions, Partition Keys, and Sort Keys
+04-09 Performance Units: RCU and WCU
+04-10 Consistency Model (Strongly vs. Eventual)
+04-11 Scans and Queries
+04-12 PutItem
+04-13 Batch Operations
+04-14 Provisioned vs. On-Demand Capacity Modes
+04-15 Auto Scaling
+04-16 Indexes: Part 1
+04-17 Indexes: Part 2
+04-18 HANDS-ON LAB Working with DynamoDB Local and Global Indexes
+04-19 Importing Tables Using AWS Database Migration Service
+04-20 On-Demand vs. Continuous (PITR) Backup
+04-21 Offloading Large Attribute Values to S3
+04-22 Transactions
+04-23 Time to Live (TTL)
+04-24 DynamoDB Accelerator (DAX) Architecture
+04-25 Global Tables
+04-26 Encryption
+04-26 DynamoDB VPC Endpoints
+CHAPTER 05 Amazon Aurora
+05-01 Understanding Aurora Architecture
+05-02 Getting Started with Amazon Aurora
+05-03 Working with Aurora Replicas
+05-04 Managing an Aurora Cluster
+05-05 Common Backup and Restore Methods
+05-06 Working with Aurora in a VPC
+05-07 How to Use Aurora Global Database
+05-08 Using Aurora Serverless
+05-09 Understanding Aurora Security
+05-10 Using Aurora Cloning
+05-11 Troubleshooting Aurora
+05-12 HANDS-ON LAB Creating an Amazon Aurora RDS Database (MySQL Compatible)
+05-13 HANDS-ON LAB Creating and Connecting to an Aurora Serverless Database via CLI
+CHAPTER 06 Additional Database Services
+06-01 Overview of Neptune, DocumentDB, and QLDB
+06-02 Understanding Redshift Architecture
+06-03 Loading and Unloading Data with Redshift
+06-04 HANDS-ON LAB Loading and Retrieving Data in Neptune
+06-05 HANDS-ON LAB Loading Data into a Redshift Cluster
+CHAPTER 07 Migrating Data to AWS Databases
+07-01 Picking the Right Migration Tool
+07-02 Introduction to Database Migration Service
+07-03 DMS Data Migration Sources and Targets
+07-04 Using the Schema Conversion Tool
+07-05 Migrating Using DMS with Data Validation
+07-06 Using AWS Glue
+07-07 Large Migrations Using Snowball Edge
+07-08 Using DMS for Cross-Account Migration
+07-09 Investigating DMS Tasks
+07-10 HANDS-ON LAB Using the AWS DMS to Migrate Data to an Aurora Database
+07-11 HANDS-ON LAB Migrating from a Relational Database to DynamoDB
+CHAPTER 08 Monitoring and Optimization
+08-01 Improving Database Performance Using ElastiCache
+08-02 Leveraging Performance Insights
+08-03 CloudWatch Logs
+08-04 Working with Trusted Advisor
+08-05 CloudWatch Application Insights
+08-06 Advanced Audit Logging
+08-07 Deploying with CloudFormation
+08-08 HANDS-ON LAB Using Elasticache to Improve Database Performance
+08-09 PRACTICE EXAM AWS Certified Database - Specialty
+CHAPTER 09
+09-01 Conclusion
+09-02 Review Checklist
+09-03 Useful Resources
+09-04 What's Next

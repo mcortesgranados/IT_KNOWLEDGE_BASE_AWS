@@ -1,0 +1,97 @@
+Using Route 53, how would you direct example.com traffic to various IPs based on the country the user was sending traffic from?
+
+Use a geolocation routing policy.
+
+Good work!
+A geolocation policy would solve this for you. Reference Documentation: Choosing a Routing Policy
+
+_____________________________________________________________________________________
+
+Using Route 53, how would you direct example.com traffic to 2 different IPs based on which one is most performant for a user?
+
+Use a latency routing policy.
+
+Correct Answer
+A latency routing policy will find the most performant endpoint. Reference Documentation: Choosing a Routing Policy
+
+_____________________________________________________________________________________
+
+True or False? With DNS failover, if a record set fails a health check, it will be removed from the Route 53 response until it passes the health check.
+
+True
+
+Correct Answer
+DNS Failover consists of two components: health checks and failover. Health checks are automated requests sent over the Internet to your application to verify that your application is reachable, available, and functional. With DNS failover, if a record set fails a health check, it will be removed from the Route 53 response until it passes the health check. Health Checks & DNS Failover.
+https://aws.amazon.com/route53/faqs/#Health_Checks_.26_DNS_Failover
+
+_____________________________________________________________________________________
+
+True or False? Route 53 allows you to register domain names.
+
+true
+
+Correct Answer
+Route 53 allows you to register domain names. Reference Documentation: Registering a New Domain
+
+_____________________________________________________________________________________
+
+Using Route 53, how would you direct example.com to 2 different IPs with different distribution levels of traffic?
+
+Use a weighted routing policy.
+
+Correct Answer
+A weighted routing policy will allow you to split the traffic evenly or in different levels of distribution. Reference Documentation: Choosing a Routing Policy
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+
+_____________________________________________________________________________________
+
+
+Route 53 is a managed __ service.
+
+DNS
+
+Correct Answer
+Route 53 is a DNS service. Reference Documentation: Amazon Route 53
+https://aws.amazon.com/route53/
+
+_____________________________________________________________________________________
+
+
+Using Route 53, how would you direct example.com traffic to 1 primary IP with a second one for backup?
+
+Use a failover routing policy.
+
+Correct Answer
+A failover routing policy would allow you to have a backup endpoint. Reference Documentation: Choosing a Routing Policy
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+
+_____________________________________________________________________________________
+
+What does the TTL control?
+
+This is the time to live, and it controls how long a DNS record will be cached.
+
+Correct Answer
+This is exactly what the TTL controls.
+
+_____________________________________________________________________________________
+
+What type of DNS record does Route 53 NOT support?
+
+AAAAA (IPv5 address record)
+
+Correct Answer
+This is not a supported record type.
+
+_____________________________________________________________________________________
+
+True or False? Route 53 only provides DNS for public IPs.
+
+False
+
+Correct Answer
+Route 53 allows you to host both public and private zones. In terms of IP addresses, public zones should be used for public IPs and private zones should be used for private IPs. Reference Documentation: Working with Private Hosted Zones
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html
+
+_____________________________________________________________________________________
+

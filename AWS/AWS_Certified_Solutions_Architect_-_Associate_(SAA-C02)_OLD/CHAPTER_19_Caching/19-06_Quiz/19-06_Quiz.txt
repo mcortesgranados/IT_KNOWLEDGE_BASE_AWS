@@ -1,0 +1,72 @@
+DAX is designed to sit in front of what AWS data service?
+
+Good work!
+DAX is designed to front DynamoDB. Reference Documentation: Amazon DynamoDB Accelerator (DAX)
+https://aws.amazon.com/dynamodb/dax/
+
+_______________________________________________________________________________________
+
+
+What AWS service allows you to easily deal with public IP caching issues?
+
+Global Accelerator
+
+Correct Answer
+Global Accelerator can help deal with IP caching issues by providing static IPs. Reference Documentation: AWS Global Accelerator
+https://aws.amazon.com/global-accelerator/
+
+
+_______________________________________________________________________________________
+
+
+What type of physical AWS architecture does CloudFront use to improve performance?
+
+Edge Locations
+
+Good work!
+CloudFront uses Edge Locations to speed up the delivery of your content. Reference Documentation: Locations and IP Address Ranges of CloudFront Edge Servers
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html
+
+
+_______________________________________________________________________________________
+
+What's the place where caches can be best used?
+
+Anywhere possible!
+
+Correct Answer
+Caches allow you to increase your application performance and are usually a great idea everywhere!
+
+_______________________________________________________________________________________
+
+
+True or False? Global Accelerator is the only AWS service that allows you to create weights for your application endpoints.
+
+false
+
+Good work!
+Route 53 can also do this. Reference Documentation: Values for Weighted Records
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html
+
+_______________________________________________________________________________________
+
+What 2 types of caches are supported by ElastiCache?
+
+Redis and Memcached
+
+Good work!
+ElastiCache is a managed version of Redis and Memcached. Reference Documentation: Amazon ElastiCache
+https://aws.amazon.com/elasticache/
+
+_______________________________________________________________________________________
+
+CloudFront is commonly used to front ____.
+
+S3 buckets
+
+Correct Answer
+CloudFront commonly fronts S3 buckets. Reference Documentation: How Do I Use CloudFront to Serve a Static Website Hosted on Amazon S3?
+https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/
+
+_______________________________________________________________________________________
+

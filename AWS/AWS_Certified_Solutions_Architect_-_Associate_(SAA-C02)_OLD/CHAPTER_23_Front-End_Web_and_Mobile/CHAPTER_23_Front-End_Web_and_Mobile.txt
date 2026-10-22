@@ -1,0 +1,7 @@
+CHAPTER 21 Front-End Web and Mobile
+Front-End Web and Mobile Overview
+Quickly Deploying Web Apps with AWS Amplify
+Testing App Services Using AWS Device Farm
+Engaging Customers with Amazon Pinpoint
+Front-End Web and Mobile Exam Tips
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Front-End Web and Mobile Quiz

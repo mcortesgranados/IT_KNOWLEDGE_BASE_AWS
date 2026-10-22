@@ -1,0 +1,7 @@
+CHAPTER 2 AWS Fundamentals
+The Building Blocks of AWS: Availability Zones and Regions
+Who Owns What in the Cloud?
+Compute, Storage, Databases, and Networking
+What Is the Well-Architected Framework?
+AWS Fundamentals Exam Tips
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - AWS Fundamental Building Blocks Quiz

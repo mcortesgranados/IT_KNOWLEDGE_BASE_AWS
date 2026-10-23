@@ -1,0 +1,17 @@
+CHAPTER 6 DynamoDB
+
+Introduction to DynamoDB
+Creating a DynamoDB Table - Demo
+DynamoDB Access Control
+Indexes Deepdive
+HANDS-ON LAB AWS DynamoDB in the Console - Creating Tables, Items, and Indexes
+Scan vs Query API Call - Demo
+Using DynamoDB API Calls
+DynamoDB Provisioned Throughput
+DynamoDB On-Demand Capacity
+DynamoDB Accelerator (DAX)
+DynamoDB TTL - Demo
+DynamoDB Streams
+Provisioned Throughput Exceeded and Exponential Backoff
+DynamoDB Summary
+QUIZ AWS Certified Developer - Associate - DynamoDB Quiz

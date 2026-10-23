@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5-11 HANDS-ON LAB Building a Serverless Application Using Step Functions, API Gateway, Lambda, and S3 in AWS</title>
+</head>
+
+<body>
+<p><img src="5-11-02-001.jpg" width="1722" height="955"></p>
+<p><img src="5-11-02-002.jpg" width="1728" height="968"></p>
+<p><img src="5-11-02-003.jpg" width="1727" height="977"></p>
+<p><img src="5-11-02-004.jpg" width="1695" height="957"></p>
+<p><img src="5-11-02-006.jpg" width="1724" height="972"></p>
+<p><img src="5-11-02-007.jpg" width="1726" height="977"></p>
+<p><img src="5-11-02-008.jpg" width="1730" height="948"></p>
+<p><img src="5-11-02-009.jpg" width="1728" height="971"></p>
+<p><img src="5-11-02-010.jpg" width="1727" height="567"></p>
+<p>&nbsp;</p>
+<p src="5-11-02-011.jpg"><img src="5-11-02-011.jpg" width="1729" height="932"></p>
+<p><img src="5-11-02-012.jpg" width="1728" height="151"><img src="5-11-02-013.jpg" width="1670" height="474"></p>
+<p><img src="5-11-02-014.jpg" width="1729" height="934"><img src="5-11-02-015.jpg" width="1729" height="210"></p>
+<p>&nbsp;</p>
+<p><img src="5-11-02-016.jpg" width="1729" height="226"></p>
+<p>&nbsp;</p>
+<p><img src="5-11-02-017.jpg" width="1731" height="898"></p>
+<p><img src="5-11-02-018.jpg" width="1729" height="347"></p>
+<p><img src="5-11-02-019.jpg" width="1731" height="751"></p>
+<p><img src="5-11-02-020.jpg" width="1731" height="926"></p>
+<p><img src="5-11-02-021.jpg" width="1726" height="917"></p>
+<p><img src="5-11-02-022.jpg" width="1728" height="924"></p>
+<p><img src="5-11-02-023.jpg" width="1727" height="932"></p>
+<p><img src="5-11-02-024.jpg" width="1729" height="978"></p>
+<p><img src="5-11-02-025.jpg" width="1729" height="930"></p>
+<p><img src="5-11-02-026.jpg" width="1728" height="932"></p>
+<p><img src="5-11-02-027.jpg" width="1728" height="924"></p>
+<p><img src="5-11-02-028.jpg" width="1730" height="747"></p>
+<p><img src="5-11-02-029.jpg" width="1729" height="936"></p>
+<p><img src="5-11-02-030.jpg" width="1729" height="929"></p>
+<p><img src="5-11-02-031.jpg" width="1724" height="907"></p>
+<p><img src="5-11-02-032.jpg" width="1730" height="526"></p>
+<p><img src="5-11-02-033.jpg" width="1729" height="902"><img src="5-11-02-034.jpg" width="1731" height="247"></p>
+<p><img src="5-11-02-035.jpg" width="1728" height="642"></p>
+<p><img src="5-11-02-036.jpg" width="1733" height="397"></p>
+<p><img src="5-11-02-037.jpg" width="1730" height="898"></p>
+<p><img src="5-11-02-038.jpg" width="1730" height="876"></p>
+<p><img src="5-11-02-039.jpg" width="1730" height="702"></p>
+<p><img src="5-11-02-040.jpg" width="1721" height="209"></p>
+<p><img src="5-11-02-041.jpg" width="1727" height="572"></p>
+<p>&nbsp;</p>
+<p><img src="5-11-02-042.jpg" width="1729" height="936"></p>
+<p><img src="5-11-02-043.jpg" width="1732" height="969"></p>
+<p><img src="5-11-02-044.jpg" width="1731" height="888"><img src="5-11-02-045.jpg" width="1732" height="517"></p>
+<p><img src="5-11-02-046.jpg" width="1731" height="897"><img src="5-11-02-047.jpg" width="1731" height="269"></p>
+<p><img src="5-11-02-048.jpg" width="1731" height="486"></p>
+<p>&nbsp;</p>
+<p><img src="5-11-02-049.jpg" width="1729" height="216"></p>
+<p><img src="5-11-02-050.jpg" width="1727" height="875"></p>
+<p><img src="5-11-02-051.jpg" width="1732" height="975"></p>
+<p><img src="5-11-02-052.jpg" width="1728" height="934"></p>
+<p><img src="5-11-02-053.jpg" width="1730" height="972"></p>
+<p><img src="5-11-02-054.jpg" width="1732" height="822"></p>
+<p><img src="5-11-02-055.jpg" width="1730" height="967"></p>
+<p><img src="5-11-02-056.jpg" width="1731" height="973"></p>
+<p><img src="5-11-02-056.jpg" width="1731" height="973"></p>
+<p><img src="5-11-02-057.jpg" width="1726" height="970"></p>
+<p><img src="5-11-02-058.jpg" width="1729" height="968"></p>
+<p><img src="5-11-02-059.jpg" width="717" height="272"></p>
+<p><img src="5-11-02-060.jpg" width="1724" height="971"></p>
+<p><img src="5-11-02-061.jpg" width="1727" height="842"><img src="5-11-02-062.jpg" width="1729" height="788"></p>
+<p><img src="5-11-02-063.jpg" width="1729" height="921"></p>
+<p><img src="5-11-02-064.jpg" width="1729" height="808"></p>
+<p><img src="5-11-02-065.jpg" width="1727" height="834"></p>
+<p><img src="5-11-02-066.jpg" width="1731" height="930"></p>
+<p><img src="5-11-02-067.jpg" width="1726" height="970"></p>
+<p><img src="5-11-02-068.jpg" width="1278" height="678"></p>
+<p><img src="5-11-02-069.jpg" width="1275" height="680"></p>
+<p><img src="5-11-02-071.jpg" width="1729" height="833"></p>
+<p><img src="5-11-02-072.jpg" width="1729" height="907"></p>
+<p><img src="5-11-02-073.jpg" width="1728" height="381"></p>
+<p><img src="5-11-02-074.jpg" width="1730" height="934"></p>
+<p><img src="5-11-02-076.jpg" width="1279" height="682"></p>
+<p><img src="5-11-02-077.jpg" width="1280" height="739"></p>
+<p><img src="5-11-02-078.jpg" width="1282" height="752"></p>
+<p><img src="5-11-02-079.jpg" width="1730" height="883"><img src="5-11-02-080.jpg" width="1730" height="615"></p>
+<p><img src="5-11-02-081.jpg" width="1726" height="965"></p>
+<p><img src="5-11-02-082.jpg" width="1728" height="869"></p>
+<p><img src="5-11-02-083.jpg" width="1729" height="456"></p>
+<p src="5-11-02-084.jpg">&nbsp;</p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-084.jpg" width="1724" height="898"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-085.jpg" width="1730" height="969"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-086.jpg" width="1730" height="895"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-087.jpg" width="1728" height="857"><img src="5-11-02-088.jpg" width="1730" height="768"></p>
+<p src="5-11-02-084.jpg">&nbsp;</p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-089.jpg" width="1729" height="904"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-090.jpg" width="1730" height="822"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-091.jpg" width="1728" height="817"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-092.jpg" width="1727" height="820"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-093.jpg" width="1727" height="817"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-094.jpg" width="1732" height="497"></p>
+<p src="5-11-02-084.jpg">&nbsp;</p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-095.jpg" width="1731" height="405"></p>
+<p src="5-11-02-084.jpg">&nbsp;</p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-096.jpg" width="1730" height="815"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-097.jpg" width="1032" height="298"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-098.jpg" width="1728" height="820"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-099.jpg" width="685" height="446"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-100.jpg" width="1727" height="821"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-101.jpg" width="1729" height="969"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-102.jpg" width="1729" height="977"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-103.jpg" width="1731" height="843"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-104.jpg" width="1730" height="675"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-105.jpg" width="1729" height="807"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-106.jpg" width="1730" height="892"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-107.jpg" width="1728" height="736"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-108.jpg" width="1728" height="575"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-109.jpg" width="1730" height="977"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-110.jpg" width="1729" height="713"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-111.jpg" width="1728" height="970"></p>
+<p src="5-11-02-084.jpg"><img src="5-11-02-112.jpg" width="1729" height="974"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-113.jpg" width="1715" height="845"><img src="5-11-02-115.jpg" width="797" height="690"><img src="5-11-02-116.jpg" width="806" height="608"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-117.jpg" width="1728" height="726"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-118.jpg" width="1727" height="734"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-119.jpg" width="1730" height="806"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-120.jpg" width="800" height="579"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-121.jpg" width="797" height="683"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-122.jpg" width="1731" height="831"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-123.jpg" width="1724" height="970"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-124.jpg" width="1729" height="971"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-125.jpg" width="1729" height="549"><img src="5-11-02-126.jpg" width="799" height="477"></p>
+<p src="5-11-02-113.jpg"><img src="5-11-02-127.jpg" width="1730" height="832"></p>
+<p src="5-11-02-113.jpg">&nbsp;</p>
+<p><img src="5-11-02-128.jpg" width="1731" height="935"></p>
+<p><img src="5-11-02-129.jpg" width="1728" height="935"></p>
+<p><img src="5-11-02-130.jpg" width="1728" height="578"></p>
+<p><img src="5-11-02-131.jpg" width="1728" height="604"></p>
+<p><img src="5-11-02-132.jpg" width="1727" height="968"></p>
+<p><img src="5-11-02-133.jpg" width="1733" height="934"></p>
+<p><img src="5-11-02-134.jpg" width="1728" height="790"><img src="5-11-02-135.jpg" width="1730" height="738"></p>
+<p>&nbsp;</p>
+</body>
+</html>

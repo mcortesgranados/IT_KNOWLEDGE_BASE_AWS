@@ -1,0 +1,68 @@
+5-01 Serverless 101
+5-02 Introducing Lambda
+5-03 HANDS-ON LAB Creating a Lambda Function Using the AWS Console
+5-04 API Gateway
+5-05 Building a Serverless Website - Demo
+5-06 Version Control With Lambda - Demo
+5-07 Lambda Concurrent Executions Limit
+5-08 Lambda and VPC Access
+5-09 Example Serverless Architectures
+5-10 Step Functions - Demo
+5-11 HANDS-ON LAB Building a Serverless Application Using Step Functions, API Gateway, Lambda, and S3 in AWS
+5-12 HANDS-ON LAB Building and Troubleshooting a Serverless Web Application
+5-13 Comparing Step Functions Workflows
+5-14 Understanding Ephemeral and Persistent Data Storage Patterns
+5-15 Lambda Environment Variables and Parameters
+5-16 Configuring a Lambda Function Using Environment Variables and Parameters - Demo
+5-17 Handling Lambda Event Lifecycle and Errors
+5-18 Lambda Deployment Packaging Options
+5-19 Lambda Performance Tuning Best Practices
+5-20 Using Lambda Destinations and Dead-Letter Queues - Demo
+5-21 Advanced API Gateway
+5-22 Using API Gateway Mock Endpoints for Integration Testing and Resolving Integration Dependencies
+5-23 Using API Gateway Stages for Testing Deployed Code
+5-24 Creating Dynamic Lambda Deployments Using API Gateway Staging Variables
+5-25 API Response and Request Transformations
+5-26 API Gateway Caching and Throttling
+5-27 Understanding X-Ray
+5-28 X-Ray Configuration
+5-29 Serverless Summary - Part 1
+5-30 Serverless Summary - Part 2
+5-31 Serverless Summary - Part 3
+5-32 AWS Certified Developer - Associate - Introduction to Serverless Computing Quiz
+
+5 jul 2023
+
+CHAPTER 5 Introduction to Serverless Computing
+Serverless 101
+Introducing Lambda
+HANDS-ON LAB Creating a Lambda Function Using the AWS Console
+API Gateway
+Building a Serverless Website - Demo
+Version Control With Lambda - Demo
+Lambda Concurrent Executions Limit
+Lambda and VPC Access
+Example Serverless Architectures
+Step Functions - Demo
+HANDS-ON LAB Building a Serverless Application Using Step Functions, API Gateway, Lambda, and S3 in AWS
+HANDS-ON LAB Building and Troubleshooting a Serverless Web Application
+Comparing Step Functions Workflows
+Understanding Ephemeral and Persistent Data Storage Patterns
+Lambda Environment Variables and Parameters
+Configuring a Lambda Function Using Environment Variables and Parameters - Demo
+Handling Lambda Event Lifecycle and Errors
+Lambda Deployment Packaging Options
+Lambda Performance Tuning Best Practices
+Using Lambda Destinations and Dead-Letter Queues - Demo
+Advanced API Gateway
+Using API Gateway Mock Endpoints for Integration Testing and Resolving Integration Dependencies
+Using API Gateway Stages for Testing Deployed Code
+Creating Dynamic Lambda Deployments Using API Gateway Staging Variables
+API Response and Request Transformations
+API Gateway Caching and Throttling
+Understanding X-Ray
+X-Ray Configuration
+Serverless Summary - Part 1
+Serverless Summary - Part 2
+Serverless Summary - Part 3
+QUIZ AWS Certified Developer - Associate - Introduction to Serverless Computing Quiz

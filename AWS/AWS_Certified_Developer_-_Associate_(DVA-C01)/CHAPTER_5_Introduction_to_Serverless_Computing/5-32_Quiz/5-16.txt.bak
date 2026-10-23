@@ -1,0 +1,151 @@
+1. Which of the following services does X-Ray integrate with?
+
+Amazon S3
+API Gateway
+AWS Lambda
+Elastic Load Balancer
+
+Good work!
+The following services provide X-Ray integration: AWS Lambda, Amazon API Gateway, Elastic Load Balancing, AWS Elastic Beanstalk, Amazon Simple Notification Service, and Amazon Simple Queue Service. Reference: AWS X-Ray Supported AWS Services.
+
+AWS X-Ray integrates with Amazon S3 to trace upstream requests to update your application's S3 buckets. If a service traces requests by using the X-Ray SDK, Amazon S3 can send the tracing headers to downstream event subscribers such as AWS Lambda, Amazon SQS, and Amazon SNS. X-Ray enables trace messages for Amazon S3 event notifications. Reference: Amazon S3 and AWS X-Ray.
+
+______________________________________________________________________________
+
+2. You have created a simple serverless website using S3, Lambda, API Gateway and DynamoDB. Your website will process the contact details of your customers, predict an expected delivery date of their order and store their order in DynamoDB. You test the website before deploying it in to production and you notice that although the page executes, and the lambda function is triggered, it is unable to write to DynamoDB. What could be the cause of this issue?
+
+Your lambda function does not have the sufficient Identity Access Management (IAM) permissions to write to DynamoDB.
+
+Good work!
+Correct. A Lambda function also has a policy, called an execution role, that grants it permission to access AWS services and resources. It needs permission to write to DynamoDB in this case.
+______________________________________________________________________________
+3. You work for a gaming company that has built a serverless application on AWS using Lambda, API Gateway and DynamoDB. They release a new version of the Lambda function and the application stops working. You need to get the application up and back online as fast as possible. What should you do?
+
+Roll your Lambda function back to the previous version.
+______________________________________________________________________________
+4. You have created an application using serverless architecture using Lambda, Api Gateway, S3 and DynamoDB. Your boss asks you to do a major upgrade to API Gateway and you do this and deploy it to production. Unfortunately something has gone wrong and now your application is offline. What should you do to bring your application up as quickly as possible?
+
+Rollback your API Gateway to the previous stage.
+
+Good work!
+Correct. You can easily restore your AWS API Gateway from a previous deployment by selecting a stage that has the last version of your deployment.
+______________________________________________________________________________
+5. You have an internal API that you use for your corporate network. Your company has decided to go all in on AWS to reduce their data center footprint. They will need to leverage their existing API within AWS. What is the most efficient way to do this.
+
+Use an OpenAPI definition file to import your API in to API Gateway.
+
+Good work!
+Correct. You can use API Gateway to import a REST API from an external definition file into API Gateway. Currently, API Gateway supports OpenAPI v2.0 and OpenAPI v3.0 definition files. You can update an API by overwriting it with a new definition, or you can merge a definition with an existing API. You specify the options by using a mode query parameter in the request URL.
+
+Reference: Configuring a REST API using OpenAPI
+______________________________________________________________________________
+6. You have created a serverless application which converts text into speech using a combination of S3, API Gateway, Lambda, Polly, DynamoDB and SNS. Your users complain that only some text is being converted, whereas longer amounts of text do not get converted. What could be the cause of this problem?
+
+Your Lambda function needs a longer execution time. You should check how long is needed in the fringe cases and increase the timeout inside the function to slightly longer than that.
+
+Good work!
+Correct. To fix Lambda timeout issues, review the logs of the API call to find the problem. Then, change the timeout settings as needed.
+______________________________________________________________________________
+7. You have launched a new web application on AWS using API Gateway, Lambda, and S3. Someone posts a thread on Reddit about your application and it goes viral. You start receiving 10,000 requests every second, and you notice that most types of requests are similar. Because of this, your web application begins to struggle. What can you do to optimize your application performance?
+
+Enable API Gateway caching to cache frequent requests.
+
+Good work!
+Since these requests are similar, you can enable API caching in Amazon API Gateway to cache your endpoint's responses. With caching, you can reduce the number of calls made to your endpoint and also improve the latency of requests to your API.
+______________________________________________________________________________
+8. You are trying to configure X-Ray to monitor Java applications running on your EC2 instances. Which of the following will be required in order to get X-Ray working?
+
+The X-Ray daemon will need to be installed and running on your EC2 instances.
+Use X-Ray SDK for Java to generate and send trace data to the X-Ray daemon.
+
+Both the X-Ray SDK and X-Ray Daemon, and you need to Instrument your application. Your application will need to be deployed with the additional code, specifying the details you want AWS X-Ray to capture. This is done using the X-Ray SDK, which provides a programmatic interface for your application to send information to the X-Ray Daemon. Once the X-Ray Daemon has received the information, it will send the information to AWS X-Ray to be reviewed. This requires both the X-Ray SDK and X-Ray Daemon to be installed. You will not need to restart your instance, since any additional IAM Roles can be added without shutting down the instance. You may not need to restart your application, depending on its architecture. CloudWatch is a separate service, and it's agent is not required for X-Ray.
+______________________________________________________________________________
+9. How does API Gateway help to deal with legacy SOAP applications?
+
+Provides web service passthrough for SOAP applications
+Converts the response from the application to JSON
+
+Good work!
+When a method request carries a payload and either the Content-Type header does not match any specified mapping template or no mapping template is defined, you can choose to pass the client-supplied request payload through the integration request to the backend without transformation. The process is known as integration passthrough.
+
+References:
+
+Integration passthrough behaviors
+How to configure Amazon API Gateway as a SOAP webservice passthrough in minutes
+API Gateway guide to SOAP
+If your existing services return XML-style data, you can use the API Gateway to transform the output to JSON as part of your modernization effort.
+
+References:
+
+Enhancing Legacy Services
+API Gateway guide to SOAP
+______________________________________________________________________________
+10. Your application relies on a number of Lambda functions. During testing, you would like to make sure you are always using the latest version of the function. How can you ensure that your application always launches the very latest version of your code?
+
+Reference the function using the $LATEST suffix.
+
+Good work!
+When you create a Lambda function, there is only one version—the $LATEST version. You can use either the qualified or unqualified ARN in your event source mapping to invoke the $LATEST version. If you always want to use the latest version of code, avoid using your own alias or any specific Lambda version as these will not be updated when new code is uploaded to Lambda.
+______________________________________________________________________________
+11. You have designed a serverless learning management system and you are ready to deploy your code into a test/dev environment. The system uses a combination of Lambda, API Gateway, S3 and CloudFront and is designed to be highly available, fault-tolerant and scalable. What are the three different ways you can deploy your code to Lambda?
+
+Zip your code into a zip file and upload it via the Lambda console.
+Copy and paste your code in to the integrated development environment (IDE) inside Lambda.
+Write a CloudFormation template that will deploy your environment including your code.
+
+Good work!
+Correct. A deployment package is a ZIP archive that contains your function code and dependencies. You can upload the package directly to Lambda, or you can use an Amazon S3 bucket, and then upload it to Lambda. If the deployment package is larger than 50 MB, you must use Amazon S3.
+
+Correct. The code editor in the AWS Lambda console enables you to write, test, and view the execution results of your Lambda function code.
+
+Correct. The CloudFormation AWS::Lambda::Function resource creates a Lambda function. To create a function, you need a deployment package and an execution role.
+______________________________________________________________________________
+12. You are a developer for a busy real estate company and you want to enable other real estate agents to the ability to show properties on your books, but skinned so that it looks like their own website. You decide the most efficient way to do this is to expose your API to the public using API Gateway. The project works well, however one of your competitors starts abusing this, sending your API tens of thousands of requests per second. This generates an HTTP 429 error. Each agent connects to your API using individual API keys. What actions can you take to stop this behavior?
+
+Throttle the agent's API access using the individual API Keys
+
+Good work!
+Correct. To prevent your API from being overwhelmed by too many requests, Amazon API Gateway throttles requests to your API using the token bucket algorithm, where a token counts for a request. You can enable usage plans to restrict client request submissions to within specified request rates and quotas. This restricts the overall request submissions so that they don't go significantly past the account-level throttling limits in a Region. Amazon API Gateway provides Per-client throttling limits that are applied to clients that use API keys associated with your usage policy as client identifier.
+______________________________________________________________________________
+13. You would like to use X-Ray to monitor your application which runs on a number of Docker containers. Where should you deploy and run the X-Ray daemon?
+
+Use a dedicated Docker container build from an image which includes the X-Ray daemon.
+
+Sorry!
+The X-Ray daemon should not be installed on the underlying EC2 instance. It is best practice to use a dedicated Docker container and X-Ray provides a Docker container image that you can deploy alongside your application. For custom configurations, you may need to define your own Docker image.
+
+Correct Answer
+X-Ray provides a Docker container image that you can deploy alongside your application. For custom configurations, you may need to define your own Docker image.
+______________________________________________________________________________
+14. You are developing a new application using serverless infrastructure and are using services such as S3, DynamoDB, Lambda, API Gateway, CloudFront, CloudFormation and Polly. You deploy your application to production and your end users begin complaining about receiving a HTTP 429 error. What could be the cause of the error?
+
+You enabled API throttling for a rate limit of 1000 requests per second while in development and now that you have deployed to production your API Gateway is being throttled.
+
+Good work!
+Correct. When request submissions exceed the steady-state request rate and burst limits, API Gateway fails the limit-exceeding requests and returns 429 Too Many Requests error responses to the client. Upon catching such exceptions, the client can resubmit the failed requests in a way that is rate limiting, while complying with the API Gateway throttling limits.
+______________________________________________________________________________
+15. Your web application is running on Lambda, API Gateway, DynamoDB and S3 and you have recently seen a significant increase in traffic to your website. The application support team are now reporting that Lambda invocations are being rejected with a 429 HTTP status code. What is the most likely cause of this issue that you would check first?
+
+You have reached the default concurrent executions limit for Lambda.
+
+Sorry!
+Since your Lambda invocations are being rejected with a 429 HTTP status code and the quota of API Gateway requests per second is much higher than the default quota of Lambda concurrent executions, you first need to check the ConcurrentExecutions metrics for your function in the AWS Region where you see throttling. A service quota increase request can be submitted to AWS once the root cause of the issue is confirmed.
+
+Correct Answer
+AWS Lambda limits the amount of compute and storage resources that you can use to run and store functions, including a Concurrent Executions limit, which is set to 1000 per region, by default. To request an increase, use the Support Center console.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

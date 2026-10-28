@@ -1,0 +1,39 @@
+# ============================================================================
+# IT_KNOWLEDGE_BASE_AWS — .gitignore
+# Evita subir al repositorio (y por tanto al build de GitHub Pages) archivos
+# temporales, de construcción, scripts de un solo uso y logs.
+# ============================================================================
+
+# Logs y reportes de build/maintenance
+*.log
+*.err.log
+*build*.log
+*build*.err.log
+spanish_copy_build*
+build_angular_es*
+
+# Scripts de un solo uso (Python / PowerShell)
+*.py
+*.ps1
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Backups
+*.bak
+reporte_jpg_huerfanos.html
+
+# Capturas de pantalla temporales
+shots/
+
+# Archivos temporales de generación
+enforce_minimum_answer_length.py
+generate_angular_es_1120.ps1
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

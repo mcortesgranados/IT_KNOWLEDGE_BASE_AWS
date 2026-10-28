@@ -119,6 +119,17 @@ main > h3 + dl dd { margin-left: 20px; }
 .jd-preferred { border-left-color: #ef6c00 !important; background: #fff3e0 !important; color: #e65100 !important; }
 @media (max-width: 600px) { .container { padding: 10px 8px; } .collapsible-summary { padding: 10px; font-size: 1rem; } .collapsible-section > :not(summary) { margin-left: 8px; margin-right: 8px; } main > h2.phase + p, main > h2.phase + .note, main > h2.phase + .important, main > h2.phase + .params, main > h2.phase + .row, main > h3 { margin-left: 8px; } main > h3 + p, main > h3 + dl, main > h3 + ol, main > h3 + ul, main > h3 + .params, main > h3 + .row { margin-left: 16px; } .candidate-sticky-header { grid-template-columns: auto minmax(0, 1fr); gap: 3px 6px; padding: 4px 5px; } .candidate-photo { width: 52px; height: 52px; } .candidate-identity { justify-content: flex-start; flex-wrap: wrap; gap: 3px; } .candidate-identity strong { font-size: 1.05rem; } .candidate-identity span, .candidate-basic-data a, .candidate-basic-data span { font-size: 0.7rem; } .candidate-basic-data { grid-column: 1 / -1; justify-content: center; gap: 2px; }
 }
+
+.slide-nav { display: flex; justify-content: space-between; margin: 14px 0 0 0; padding: 10px 14px; background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; }
+.slide-nav a { color: #1565c0; text-decoration: none; font-weight: 800; padding: 7px 14px; border: 1px solid #1565c0; border-radius: 6px; font-size: 0.95rem; }
+.slide-nav a:hover { background: #e3f2fd; }
+.slide-nav a.disabled { opacity: 0.45; cursor: not-allowed; border-color: #cbd5e1; color: #94a3b8; }
+.slide-nav a.disabled:hover { background: #fff; }
+.slide-nav .nav-label { font-size: 0.78rem; color: #64748b; display: block; margin-bottom: 2px; }
+.aws-doc-link { font-size: 0.82rem; color: #1565c0; }
+.aws-doc-link a { color: #1565c0; text-decoration: underline; }
+.aws-doc-link a:hover { color: #0d47a1; }
+
 /* Slide layout: image reduced 25% on the left, exam notes on the right */
 .slide { display: flex; gap: 24px; margin: 28px 0; align-items: flex-start; flex-wrap: wrap; padding: 16px; border: 1px solid #e3f2fd; border-radius: 10px; background: #fff; box-shadow: 0 6px 16px rgba(21,101,192,.06); }
 .slide-img { flex: 0 0 auto; width: 75%; max-width: 1008px; }
@@ -146,8 +157,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Topic: Enabling Enhanced Networking on Amazon EC2.</li>
       <li>Exam tip: Enhanced networking uses SR-IOV; it is <strong>free</strong> to enable and lowers CPU while raising PPS/bandwidth and lowering latency.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Memorize the two adapter families (ENA, Intel 82599 VF), their max speeds, drivers and supported instance types.</p>
+    <p class="exam-tip">Exam tip: Memorize the two adapter families (ENA, Intel 82599 VF), their max speeds, drivers and supported instance types. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena.html" target="_blank" rel="noopener">AWS ENA docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><span class="disabled"><span class="nav-label">&#8592; Previous</span>Start</span><a href="#slide-006"><span class="nav-label">Next &#8594;</span>Slide 006</a></div>
 </section>
 <section class="slide" id="slide-006">
   <div class="slide-img"><img src="03-43-006.jpg" width="1008" height="567" alt="Slide 006 diagram" loading="lazy" /></div>
@@ -158,8 +170,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Traditional: all traffic flows through hypervisor software &rarr; higher CPU, variable latency.</li>
       <li>Enhanced: SR-IOV gives the VM direct access to a slice of the physical NIC.</li>
     </ul>
-    <p class="exam-tip">Exam tip: If a question asks how enhanced networking reduces CPU, answer SR-IOV bypass of the hypervisor.</p>
+    <p class="exam-tip">Exam tip: If a question asks how enhanced networking reduces CPU, answer SR-IOV bypass of the hypervisor. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html" target="_blank" rel="noopener">AWS Enhanced Networking docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-001"><span class="nav-label">&#8592; Previous</span>Slide 001</a><a href="#slide-013"><span class="nav-label">Next &#8594;</span>Slide 013</a></div>
 </section>
 <section class="slide" id="slide-013">
   <div class="slide-img"><img src="03-43-013.jpg" width="1008" height="567" alt="Slide 013 overview" loading="lazy" /></div>
@@ -172,8 +185,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Enhanced Networking Interface Types (ENA, Intel 82599 VF)</li>
       <li>Multi-Flow vs. Single-Flow Traffic</li>
     </ul>
-    <p class="exam-tip">Exam tip: These four topics are exactly the exam's enhanced-networking question clusters.</p>
+    <p class="exam-tip">Exam tip: These four topics are exactly the exam's enhanced-networking question clusters. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html" target="_blank" rel="noopener">AWS Enhanced Networking docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-006"><span class="nav-label">&#8592; Previous</span>Slide 006</a><a href="#slide-027"><span class="nav-label">Next &#8594;</span>Slide 027</a></div>
 </section>
 <section class="slide" id="slide-027">
   <div class="slide-img"><img src="03-43-027.jpg" width="1008" height="567" alt="Slide 027 traditional networking" loading="lazy" /></div>
@@ -184,8 +198,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Early passthrough tied a VM to a specific NIC &mdash; inflexible.</li>
       <li>Hypervisor mediation costs CPU and adds latency.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Contrast with enhanced networking (no hardware tie-in, better performance, no extra cost).</p>
+    <p class="exam-tip">Exam tip: Contrast with enhanced networking (no hardware tie-in, better performance, no extra cost). <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html" target="_blank" rel="noopener">AWS Enhanced Networking docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-013"><span class="nav-label">&#8592; Previous</span>Slide 013</a><a href="#slide-046"><span class="nav-label">Next &#8594;</span>Slide 046</a></div>
 </section>
 <section class="slide" id="slide-046">
   <div class="slide-img"><img src="03-43-046.jpg" width="1008" height="567" alt="Slide 046 SR-IOV" loading="lazy" /></div>
@@ -197,8 +212,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Benefits: higher bandwidth, higher PPS, consistently lower inter-instance latency.</li>
       <li><strong>No additional charge to enable.</strong></li>
     </ul>
-    <p class="exam-tip">Exam tip: "No additional charge" is a common distractor answer &mdash; enhanced networking is free.</p>
+    <p class="exam-tip">Exam tip: "No additional charge" is a common distractor answer &mdash; enhanced networking is free. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html" target="_blank" rel="noopener">AWS Enhanced Networking docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-027"><span class="nav-label">&#8592; Previous</span>Slide 027</a><a href="#slide-047"><span class="nav-label">Next &#8594;</span>Slide 047</a></div>
 </section>
 <section class="slide" id="slide-047">
   <div class="slide-img"><img src="03-43-047.jpg" width="1008" height="567" alt="Slide 047 SR-IOV repeat" loading="lazy" /></div>
@@ -209,8 +225,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>SR-IOV = the technology behind enhanced networking.</li>
       <li>Lower CPU, higher bandwidth/PPS, lower latency, free.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Don't confuse SR-IOV (mechanism) with ENA/Intel VF (adapter implementations).</p>
+    <p class="exam-tip">Exam tip: Don't confuse SR-IOV (mechanism) with ENA/Intel VF (adapter implementations). <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena.html" target="_blank" rel="noopener">AWS ENA docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-046"><span class="nav-label">&#8592; Previous</span>Slide 046</a><a href="#slide-048"><span class="nav-label">Next &#8594;</span>Slide 048</a></div>
 </section>
 <section class="slide" id="slide-048">
   <div class="slide-img"><img src="03-43-048.jpg" width="1008" height="567" alt="Slide 048 support" loading="lazy" /></div>
@@ -221,8 +238,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>T2 instances do not support enhanced networking.</li>
       <li>Most modern families (M5/M6, C5/C6, R5/R6, etc.) support ENA.</li>
     </ul>
-    <p class="exam-tip">Exam tip: If enhanced networking is unavailable, check the instance family (T2 excluded).</p>
+    <p class="exam-tip">Exam tip: If enhanced networking is unavailable, check the instance family (T2 excluded). <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html" target="_blank" rel="noopener">AWS Instance Types docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-047"><span class="nav-label">&#8592; Previous</span>Slide 047</a><a href="#slide-057"><span class="nav-label">Next &#8594;</span>Slide 057</a></div>
 </section>
 <section class="slide" id="slide-057">
   <div class="slide-img"><img src="03-43-057.jpg" width="1008" height="567" alt="Slide 057 interface types" loading="lazy" /></div>
@@ -233,8 +251,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li><strong>ENA</strong>: up to 100 Gbps.</li>
       <li><strong>Intel 82599 VF</strong>: up to 10 Gbps.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Speed ceiling is the fastest way to distinguish ENA (100 Gbps) from Intel VF (10 Gbps).</p>
+    <p class="exam-tip">Exam tip: Speed ceiling is the fastest way to distinguish ENA (100 Gbps) from Intel VF (10 Gbps). <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena.html" target="_blank" rel="noopener">AWS ENA docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-048"><span class="nav-label">&#8592; Previous</span>Slide 048</a><a href="#slide-060"><span class="nav-label">Next &#8594;</span>Slide 060</a></div>
 </section>
 <section class="slide" id="slide-060">
   <div class="slide-img"><img src="03-43-060.jpg" width="1008" height="567" alt="Slide 060 ENA" loading="lazy" /></div>
@@ -245,8 +264,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Primary adapter for current-generation instances.</li>
       <li>Supports higher throughput and PPS than Intel VF.</li>
     </ul>
-    <p class="exam-tip">Exam tip: When you see "100 Gbps" or "current generation", think ENA.</p>
+    <p class="exam-tip">Exam tip: When you see "100 Gbps" or "current generation", think ENA. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena.html" target="_blank" rel="noopener">AWS ENA docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-057"><span class="nav-label">&#8592; Previous</span>Slide 057</a><a href="#slide-061"><span class="nav-label">Next &#8594;</span>Slide 061</a></div>
 </section>
 <section class="slide" id="slide-061">
   <div class="slide-img"><img src="03-43-061.jpg" width="1008" height="567" alt="Slide 061 ENA details" loading="lazy" /></div>
@@ -257,8 +277,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Most common implementation for the current generation of instances.</li>
       <li><strong>ENA Express</strong>: high-performance communication between instances in the <strong>same subnet</strong>.</li>
     </ul>
-    <p class="exam-tip">Exam tip: ENA Express (SRD protocol) reaches up to 25 Gbps instance-to-instance in the same subnet &mdash; use for low-latency east-west traffic.</p>
+    <p class="exam-tip">Exam tip: ENA Express (SRD protocol) reaches up to 25 Gbps instance-to-instance in the same subnet &mdash; use for low-latency east-west traffic. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena.html" target="_blank" rel="noopener">AWS ENA & ENA Express docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-060"><span class="nav-label">&#8592; Previous</span>Slide 060</a><a href="#slide-080"><span class="nav-label">Next &#8594;</span>Slide 080</a></div>
 </section>
 <section class="slide" id="slide-080">
   <div class="slide-img"><img src="03-43-080.jpg" width="1008" height="567" alt="Slide 080 speed limit" loading="lazy" /></div>
@@ -269,8 +290,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>ENA: up to 100 Gbps.</li>
       <li>Intel VF: up to 10 Gbps.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Always pick the adapter whose ceiling meets the stated bandwidth requirement.</p>
+    <p class="exam-tip">Exam tip: Always pick the adapter whose ceiling meets the stated bandwidth requirement. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html" target="_blank" rel="noopener">AWS Enhanced Networking docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-061"><span class="nav-label">&#8592; Previous</span>Slide 061</a><a href="#slide-081"><span class="nav-label">Next &#8594;</span>Slide 081</a></div>
 </section>
 <section class="slide" id="slide-081">
   <div class="slide-img"><img src="03-43-081.jpg" width="1008" height="567" alt="Slide 081 Intel VF" loading="lazy" /></div>
@@ -281,8 +303,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Used by older instance families.</li>
       <li>Lower ceiling than ENA.</li>
     </ul>
-    <p class="exam-tip">Exam tip: 10 Gbps + older families (C3/C4, M4, etc.) &rarr; Intel 82599 VF.</p>
+    <p class="exam-tip">Exam tip: 10 Gbps + older families (C3/C4, M4, etc.) &rarr; Intel 82599 VF. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html" target="_blank" rel="noopener">AWS Instance Types docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-080"><span class="nav-label">&#8592; Previous</span>Slide 080</a><a href="#slide-082"><span class="nav-label">Next &#8594;</span>Slide 082</a></div>
 </section>
 <section class="slide" id="slide-082">
   <div class="slide-img"><img src="03-43-082.jpg" width="1008" height="567" alt="Slide 082 Intel VF driver" loading="lazy" /></div>
@@ -292,8 +315,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Uses the <strong>Intel ixgbevf</strong> driver.</li>
       <li>Supported instance types: C3, C4, D2, I2, M4 (excluding m4.16xlarge), R3.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Remember the ixgbevf driver and the m4.16xlarge exclusion for Intel VF.</p>
+    <p class="exam-tip">Exam tip: Remember the ixgbevf driver and the m4.16xlarge exclusion for Intel VF. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html" target="_blank" rel="noopener">AWS Instance Types docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-081"><span class="nav-label">&#8592; Previous</span>Slide 081</a><a href="#slide-109"><span class="nav-label">Next &#8594;</span>Slide 109</a></div>
 </section>
 <section class="slide" id="slide-109">
   <div class="slide-img"><img src="03-43-109.jpg" width="1008" height="567" alt="Slide 109 multi vs single flow" loading="lazy" /></div>
@@ -307,8 +331,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Single-flow = 5-tuple (src IP, src port, dst IP, dst port, protocol); limited to 5 Gbps unless in a cluster placement group.</li>
       <li>Workaround: enable ENA Express for up to 25 Gbps between instances in the same subnet.</li>
     </ul>
-    <p class="exam-tip">Exam tip: Key numbers &mdash; 5 Gbps single-flow, 50% for cross-region/IGW/DX, 32 vCPU threshold, cluster placement groups lift the single-flow limit.</p>
+    <p class="exam-tip">Exam tip: Key numbers &mdash; 5 Gbps single-flow, 50% for cross-region/IGW/DX, 32 vCPU threshold, cluster placement groups lift the single-flow limit. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html" target="_blank" rel="noopener">AWS Enhanced Networking docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-082"><span class="nav-label">&#8592; Previous</span>Slide 082</a><a href="#slide-146"><span class="nav-label">Next &#8594;</span>Slide 146</a></div>
 </section>
 <section class="slide" id="slide-146">
   <div class="slide-img"><img src="03-43-146.jpg" width="1008" height="567" alt="Slide 146 conclusion" loading="lazy" /></div>
@@ -321,8 +346,9 @@ main > h3 + dl dd { margin-left: 20px; }
       <li>Intel 82599 VF: up to 10 Gbps.</li>
       <li>MPTCP offers the full benefits of implementing Enhanced Networking.</li>
     </ul>
-    <p class="exam-tip">Exam tip: MPTCP (Multi-Path TCP) with ENA Express can maximize throughput &mdash; a common "best performance" answer.</p>
+    <p class="exam-tip">Exam tip: MPTCP (Multi-Path TCP) with ENA Express can maximize throughput &mdash; a common "best performance" answer. <span class="aws-doc-link">(<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena.html" target="_blank" rel="noopener">AWS ENA & ENA Express docs</a>)</span></p>
   </aside>
+<div class="slide-nav"><a href="#slide-109"><span class="nav-label">&#8592; Previous</span>Slide 109</a><span class="disabled"><span class="nav-label">Next &#8594;</span>End</span></div>
 </section>
 <div class="footer">IT Knowledge Base &middot; AWS ANS-C01 &middot; 03-43 Enabling Enhanced Networking on Amazon EC2</div>
 </main>

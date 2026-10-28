@@ -1,105 +1,331 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>03-43 Enabling Enhanced Networking on Amazon EC2 (JPG)</title>
 <style>
-  body { padding-top: 58px; }
-  #nav-toolbar {
-    position: fixed; top: 0; left: 0; right: 0; height: 46px; z-index: 9999;
-    display: flex; align-items: center; gap: 10px; padding: 0 14px;
-    background: #1b1f24; color: #e8eaed; box-shadow: 0 2px 6px rgba(0,0,0,.35);
-    font: 14px/1.2 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  }
-  #nav-toolbar button {
-    display: inline-flex; align-items: center; gap: 6px;
-    height: 30px; padding: 0 12px; border-radius: 6px; cursor: pointer;
-    border: 1px solid #3a4149; background: #2a3038; color: #e8eaed; font: inherit;
-  }
-  #nav-toolbar button:hover:not(:disabled) { background: #353d47; border-color: #4a5560; }
-  #nav-toolbar button:disabled { opacity: .4; cursor: default; }
-  #nav-counter { margin-left: auto; color: #aab4c0; font-variant-numeric: tabular-nums; }
-  img { scroll-margin-top: 58px; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #fafbfc; color: #23272f; margin: 0; padding: 0; }
+.container { max-width: none; margin: 0; background: #fff; box-shadow: none; border-radius: 0; padding: 16px 20px; }
+h1 { color: #1565c0; }
+h2 { color: #2e7d32; margin-top: 32px; }
+h3 { color: #7b1fa2; margin-top: 24px; }
+.note { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 16px 20px; margin: 18px 0; border-radius: 7px; }
+.note ul { list-style: disc inside; margin: 0; padding-left: 1.2em; }
+.note li { margin-bottom: 3px; line-height: 1.35; }
+.note p { margin: 0 0 6px 0; line-height: 1.5; }
+.footer { text-align: right; color: #888; font-size: 1em; margin-top: 40px; }
+.tag { background: #e3f2fd; color: #1565c0; border-radius: 4px; padding: 3px 8px; margin-left: 6px; font-size: 0.95em; }
+dt { color: #2e7d32; font-weight: bold; margin-top: 10px; }
+dd { margin-bottom: 10px; }
+.params table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+.params th, .params td { border: 1px solid #ccc; padding: 6px; }
+.traceability { border: 2px solid #90caf9; border-radius: 9px; padding: 6px; background: linear-gradient(135deg, #f8fbff, #f7fcf8); }
+.traceability th, .traceability td { padding: 10px; }
+.traceability th { background: linear-gradient(135deg, #1565c0, #2e7d32); color: #fff; border-color: #0d47a1; }
+.traceability tbody tr { transition: background .15s ease, box-shadow .15s ease; }
+.traceability tbody tr:hover td, .traceability tbody tr:focus-within td { background: #dff3ff !important; }
+.traceability tbody tr:hover, .traceability tbody tr:focus-within { box-shadow: inset 0 0 0 2px #1565c0; }
+.traceability .req-id { white-space: nowrap; text-align: center; font-weight: 900; color: #0d47a1; background: #e3f2fd; border-radius: 5px; }
+.traceability tbody tr:nth-child(-n+5) td { background: #eef8ff; }
+.traceability tbody tr:nth-child(n+6):nth-child(-n+8) td { background: #f3f0ff; }
+.traceability tbody tr:nth-child(n+9):nth-child(-n+10) td { background: #fff5e6; }
+.traceability tbody tr:nth-child(11) td { background: #fffde7; }
+.traceability tbody tr:nth-child(12) td { background: #e0f7fa; }
+.traceability tbody tr:nth-child(13) td { background: #fce4ec; }
+.traceability tbody tr:nth-child(-n+5) .req-id { color: #1b5e20; background: #dcedc8; border-left: 5px solid #2e7d32; }
+.traceability tbody tr:nth-child(n+6):nth-child(-n+8) .req-id { color: #4527a0; background: #e8eaf6; border-left: 5px solid #5e35b1; }
+.traceability tbody tr:nth-child(n+9):nth-child(-n+10) .req-id { color: #e65100; background: #fff3e0; border-left: 5px solid #ef6c00; }
+.traceability tbody tr:nth-child(11) .req-id { color: #795548; background: #fff8e1; border-left: 5px solid #f9a825; }
+.traceability tbody tr:nth-child(12) .req-id { color: #006064; background: #e0f7fa; border-left: 5px solid #00838f; }
+.traceability tbody tr:nth-child(13) .req-id { color: #880e4f; background: #fce4ec; border-left: 5px solid #c2185b; }
+/* Shared table interaction: colored row marker plus full-row hover */
+table tbody tr { transition: background .15s ease, box-shadow .15s ease; }
+table tbody tr td:first-child::before { content: '🔹 '; }
+table tbody tr:nth-child(4n+1) td:first-child { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+table tbody tr:nth-child(4n+2) td:first-child { background: #e3f2fd; border-left: 5px solid #1565c0; }
+table tbody tr:nth-child(4n+3) td:first-child { background: #fff3e0; border-left: 5px solid #ef6c00; }
+table tbody tr:nth-child(4n) td:first-child { background: #f3e5f5; border-left: 5px solid #7b1fa2; }
+table tbody tr:hover td, table tbody tr:focus-within td { background: #dff3ff !important; }
+table tbody tr:hover, table tbody tr:focus-within { box-shadow: inset 0 0 0 2px #1565c0; }
+.important { background: #fffde7; border-left: 4px solid #fbc02d; padding: 12px 18px; margin: 18px 0; border-radius: 5px; }
+.sideEffects ul, .solid ul { margin: 0; padding-left: 20px; }
+/* Code block styling */
+pre { background: #f6f8fa; padding: 14px; border-radius: 8px; overflow: auto; font-size: 0.92em; }
+code { font-family: Consolas, 'Courier New', monospace; }
+.row { display:flex; gap:20px; flex-wrap:wrap; }
+.col { flex:1 1 420px; }
+/* Small visual helpers */
+.endpoint { border: 1px solid #e0e0e0; padding: 12px 14px; border-radius: 8px; background: #fff; box-shadow: 0 3px 8px rgba(0,0,0,0.04); }
+.json { white-space: pre; font-family: Consolas, 'Courier New', monospace; font-size: 0.95em; }
+.success { color: #2e7d32; font-weight: 600; }
+.error { color: #c62828; font-weight: 600; }
+.phase { border-top: 3px solid #e3f2fd; padding-top: 8px; }
+.checklist li { margin: 7px 0; line-height: 1.45; }
+.time { color: #666; font-size: 0.95em; }
+/* Hierarchy-aware document indentation */
+main > h2 { padding-left: 0; }
+main > h2.phase + p, main > h2.phase + .note, main > h2.phase + .important, main > h2.phase + .params, main > h2.phase + .row { margin-left: 20px; }
+main > h3 { margin-left: 20px; padding-left: 12px; border-left: 3px solid #d1c4e9; }
+main > h3 + p, main > h3 + dl, main > h3 + ol, main > h3 + ul, main > h3 + .params, main > h3 + .row { margin-left: 40px; }
+main > h3 + dl dd { margin-left: 20px; }
+.profile-link { display:inline-block; margin:10px 0 4px; padding:9px 13px; border-radius:6px; background:#1565c0; color:#fff; font-weight:700; text-decoration:none; }
+.profile-link:hover, .profile-link:focus { background:#0d47a1; outline:2px solid #93c5fd; outline-offset:2px; }
+.candidate-sticky-header { position: sticky; top: 0; z-index: 90; display: grid; grid-template-columns: auto minmax(285px, auto) minmax(0, 1fr); align-items: center; gap: 10px 14px; padding: 10px 12px; border-bottom: 1px solid #cbd5e1; background: rgba(255, 255, 255, 0.98); box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08); }
+.candidate-photo { width: 66px; height: 66px; border: 2px solid #bfdbfe; border-radius: 50%; object-fit: cover; background: #e3f2fd; box-shadow: 0 2px 6px rgba(15, 23, 42, 0.16); }
+.candidate-identity { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.candidate-identity strong { color: #1565c0; font-size: 1.28rem; font-weight: 950; white-space: nowrap; }
+.candidate-identity span { color: #475569; font-size: 0.92rem; font-weight: 800; white-space: nowrap; }
+.candidate-basic-data { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 3px; min-width: 0; }
+.candidate-basic-data a, .candidate-basic-data span { display: inline-flex; align-items: center; min-height: 27px; padding: 4px 8px; border: 1px solid #cbd5e1; border-radius: 999px; background: #f8fafc; color: #334155; font-size: 0.82rem; font-weight: 850; line-height: 1.1; text-decoration: none; white-space: nowrap; }
+.candidate-basic-data a:hover, .candidate-basic-data a:focus { border-color: #1565c0; background: #e3f2fd; color: #0d47a1; outline: 2px solid #93c5fd; outline-offset: 1px; }
+.collapsible-section { margin: 14px 0; border: 1px solid #d7e3f1; border-radius: 8px; background: #fff; overflow: hidden; }
+.collapsible-summary { display: flex; align-items: center; gap: 10px; padding: 12px 14px; cursor: pointer; color: #1f4f8c; background: linear-gradient(90deg, #f4f9ff, #f7fcf8); font-size: 1.2rem; font-weight: 800; list-style: none; }
+.section-number, .subsection-number, .subsubsection-number { display: inline-flex; align-items: center; justify-content: center; min-width: 2.1em; padding: 2px 6px; border-radius: 5px; background: #1565c0; color: #fff; font-size: .76em; font-weight: 950; line-height: 1.15; }
+.subsection-number { min-width: 2.7em; margin-right: 7px; background: #7b1fa2; vertical-align: middle; } .subsubsection-number { min-width: 3.6em; margin-right: 7px; background: #ef6c00; vertical-align: middle; }
+.section-subheading { color: #7b1fa2; } .section-subsubheading { color: #e65100; }
+.collapsible-summary::-webkit-details-marker { display: none; }
+.collapsible-summary::before { content: '➕'; font-size: 1rem; }
+.collapsible-section[open] > .collapsible-summary { border-bottom: 1px solid #d7e3f1; background: #eaf5ff; }
+.collapsible-section[open] > .collapsible-summary::before { content: '➖'; }
+.collapsible-section > :not(summary) { margin-left: 20px; margin-right: 20px; }
+.collapsible-section > .footer { margin-bottom: 20px; }
+.term-trigger { display: inline; padding: 0 2px; border: 0; border-bottom: 2px dotted #1565c0; background: #e3f2fd; color: #0d47a1; font: inherit; font-weight: 750; cursor: pointer; }
+.term-trigger:hover, .term-trigger:focus { background: #bbdefb; outline: 2px solid #64b5f6; outline-offset: 1px; }
+.term-modal[hidden] { display: none; }
+.term-modal { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 18px; background: rgba(15, 23, 42, .58); }
+.term-modal-card { width: min(680px, 100%); max-height: min(600px, 90vh); overflow: auto; padding: 22px; border-radius: 10px; background: #fff; box-shadow: 0 22px 60px rgba(0,0,0,.28); }
+.term-modal-card h2 { margin: 0 38px 10px 0; color: #1565c0; font-size: 1.55rem; }
+.term-modal-card p { line-height: 1.6; }
+.term-modal-close { float: right; min-width: 34px; min-height: 34px; border: 1px solid #90caf9; border-radius: 6px; background: #e3f2fd; color: #0d47a1; font-size: 1.2rem; cursor: pointer; }
+.term-definition { padding: 12px 14px; border-left: 4px solid #1565c0; border-radius: 6px; background: linear-gradient(90deg, #e3f2fd, #f8fbff); color: #263238; }
+.term-definition .modal-emoji { display: inline-block; margin-right: 6px; font-size: 1.18em; } .term-definition strong { color: #0d47a1; }
+.term-feature-heading { margin: 16px 0 7px; color: #7b1fa2; font-size: 1.04rem; }
+.term-feature-table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid #bbdefb; border-radius: 8px; font-size: .92rem; }
+.term-feature-table th { padding: 8px; background: linear-gradient(90deg, #1565c0, #2e7d32); color: #fff; text-align: left; }
+.term-feature-table td { padding: 8px; border-top: 1px solid #d7e3f1; vertical-align: top; transition: background .15s ease, color .15s ease; }
+.term-feature-table tbody tr:nth-child(1) td { background: #eef8ff; } .term-feature-table tbody tr:nth-child(2) td { background: #f3f0ff; } .term-feature-table tbody tr:nth-child(3) td { background: #f1f8e9; } .term-feature-table tbody tr:nth-child(4) td { background: #fff8e1; }
+.term-feature-table tbody tr td:first-child { color: #0d47a1; font-weight: 850; white-space: nowrap; } .term-feature-table tbody tr:hover td, .term-feature-table tbody tr:focus-within td { background: #bbdefb !important; color: #0d47a1; }
+.jd-document { margin: 18px 0; overflow: hidden; border: 1px solid #c5d8ec; border-radius: 10px; background: #fff; box-shadow: 0 6px 18px rgba(21,101,192,.08); }
+.jd-confidential { margin: 0; padding: 8px 16px; background: #b71c1c; color: #fff; font-size: .82rem; font-weight: 900; letter-spacing: .08em; }
+.jd-document h3 { margin: 0; padding: 18px 20px 6px; border: 0; color: #0d47a1; font-size: 1.65rem; }
+.jd-document h4 { margin: 22px 0 9px; padding: 8px 20px; border-left: 5px solid #2e7d32; background: #f1f8e9; color: #1b5e20; font-size: 1.08rem; }
+.jd-document p { margin: 10px 20px; line-height: 1.6; }
+.jd-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 20px 16px !important; color: #455a64; font-weight: 700; }
+.jd-meta span { padding: 4px 9px; border-radius: 999px; background: #e3f2fd; color: #0d47a1; }
+.jd-list { margin: 8px 28px 18px 46px; padding-left: 18px; }
+.jd-list li { margin: 7px 0; line-height: 1.45; }
+.jd-required { border-left-color: #7b1fa2 !important; background: #f3e5f5 !important; color: #6a1b9a !important; }
+.jd-preferred { border-left-color: #ef6c00 !important; background: #fff3e0 !important; color: #e65100 !important; }
+@media (max-width: 600px) { .container { padding: 10px 8px; } .collapsible-summary { padding: 10px; font-size: 1rem; } .collapsible-section > :not(summary) { margin-left: 8px; margin-right: 8px; } main > h2.phase + p, main > h2.phase + .note, main > h2.phase + .important, main > h2.phase + .params, main > h2.phase + .row, main > h3 { margin-left: 8px; } main > h3 + p, main > h3 + dl, main > h3 + ol, main > h3 + ul, main > h3 + .params, main > h3 + .row { margin-left: 16px; } .candidate-sticky-header { grid-template-columns: auto minmax(0, 1fr); gap: 3px 6px; padding: 4px 5px; } .candidate-photo { width: 52px; height: 52px; } .candidate-identity { justify-content: flex-start; flex-wrap: wrap; gap: 3px; } .candidate-identity strong { font-size: 1.05rem; } .candidate-identity span, .candidate-basic-data a, .candidate-basic-data span { font-size: 0.7rem; } .candidate-basic-data { grid-column: 1 / -1; justify-content: center; gap: 2px; }
+}
+/* Slide layout: image reduced 25% on the left, exam notes on the right */
+.slide { display: flex; gap: 24px; margin: 28px 0; align-items: flex-start; flex-wrap: wrap; padding: 16px; border: 1px solid #e3f2fd; border-radius: 10px; background: #fff; box-shadow: 0 6px 16px rgba(21,101,192,.06); }
+.slide-img { flex: 0 0 auto; width: 75%; max-width: 1008px; }
+.slide-img img { width: 100%; height: auto; display: block; border: 1px solid #e0e0e0; border-radius: 8px; }
+.slide-info { flex: 1 1 300px; min-width: 260px; background: linear-gradient(135deg, #f8fbff, #f7fcf8); border: 1px solid #d7e3f1; border-radius: 8px; padding: 14px 16px; }
+.slide-info h3 { margin: 0 0 8px 0; color: #1565c0; font-size: 1.05rem; border: 0; padding: 0; margin-left: 0; }
+.slide-info p { margin: 6px 0; line-height: 1.5; }
+.slide-info ul { margin: 6px 0 0 18px; padding: 0; }
+.slide-info li { margin: 4px 0; line-height: 1.45; }
+.exam-tip { background: #fffde7; border-left: 4px solid #fbc02d; padding: 10px 14px; margin: 10px 0; border-radius: 5px; font-size: 0.92em; }
+@media (max-width: 900px) { .slide-img { width: 100%; } }
 </style>
 </head>
 <body>
-<h1>03-43 Enabling Enhanced Networking on Amazon EC2 (JPG)</h1>
-<ul>
-<li>03-43-001.jpg</li>
-<img src="03-43-001.jpg" width="1344" height="756" /><li>03-43-006.jpg</li>
-<img src="03-43-006.jpg" width="1344" height="756" /><li>03-43-013.jpg</li>
-<img src="03-43-013.jpg" width="1344" height="756" /><li>03-43-027.jpg</li>
-<img src="03-43-027.jpg" width="1344" height="756" /><li>03-43-046.jpg</li>
-<img src="03-43-046.jpg" width="1344" height="756" /><li>03-43-047.jpg</li>
-<img src="03-43-047.jpg" width="1344" height="756" /><li>03-43-048.jpg</li>
-<img src="03-43-048.jpg" width="1344" height="756" /><li>03-43-057.jpg</li>
-<img src="03-43-057.jpg" width="1344" height="756" /><li>03-43-060.jpg</li>
-<img src="03-43-060.jpg" width="1344" height="756" /><li>03-43-061.jpg</li>
-<img src="03-43-061.jpg" width="1344" height="756" /><li>03-43-080.jpg</li>
-<img src="03-43-080.jpg" width="1344" height="756" /><li>03-43-081.jpg</li>
-<img src="03-43-081.jpg" width="1344" height="756" /><li>03-43-082.jpg</li>
-<img src="03-43-082.jpg" width="1344" height="756" /><li>03-43-109.jpg</li>
-<img src="03-43-109.jpg" width="1344" height="756" /><li>03-43-146.jpg</li>
-<img src="03-43-146.jpg" width="1344" height="756" /></ul>
-<div id="nav-toolbar">
-  <button id="nav-prev" type="button" title="Imagen anterior (flecha izquierda)">&#8592; Anterior</button>
-  <button id="nav-next" type="button" title="Imagen siguiente (flecha derecha)">Siguiente &#8594;</button>
-  <span id="nav-counter"></span>
+<div class="container">
+<main>
+<h1>03-43 Enabling Enhanced Networking on Amazon EC2<span class="tag">ANS-C01</span></h1>
+<p class="note"><strong>Slide deck (JPG)</strong> &mdash; each slide is shown at 75% of its original size on the left, with AWS certification exam-oriented notes on the right. Topic: Enhanced Networking on Amazon EC2 (SR-IOV, ENA, Intel 82599 VF, bandwidth/flow limits, ENA Express).</p>
+<section class="slide" id="slide-001">
+  <div class="slide-img"><img src="03-43-001.jpg" width="1008" height="567" alt="Slide 001 title" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-001 &mdash; Title</h3>
+    <p>Instructor: Andru Estes (AWS Training Architect). Course: AWS Certified Advanced Networking &ndash; Specialty (ANS-C01), Chapter 3.</p>
+    <ul>
+      <li>Topic: Enabling Enhanced Networking on Amazon EC2.</li>
+      <li>Exam tip: Enhanced networking uses SR-IOV; it is <strong>free</strong> to enable and lowers CPU while raising PPS/bandwidth and lowering latency.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Memorize the two adapter families (ENA, Intel 82599 VF), their max speeds, drivers and supported instance types.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-006">
+  <div class="slide-img"><img src="03-43-006.jpg" width="1008" height="567" alt="Slide 006 diagram" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-006 &mdash; Architecture diagram</h3>
+    <p>Diagram contrasting traditional (hypervisor-mediated) networking with SR-IOV enhanced networking.</p>
+    <ul>
+      <li>Traditional: all traffic flows through hypervisor software &rarr; higher CPU, variable latency.</li>
+      <li>Enhanced: SR-IOV gives the VM direct access to a slice of the physical NIC.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: If a question asks how enhanced networking reduces CPU, answer SR-IOV bypass of the hypervisor.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-013">
+  <div class="slide-img"><img src="03-43-013.jpg" width="1008" height="567" alt="Slide 013 overview" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-013 &mdash; Agenda</h3>
+    <p>Four pillars of the session.</p>
+    <ul>
+      <li>Traditional Virtual Networking</li>
+      <li>SR-IOV (Single Root I/O Virtualization)</li>
+      <li>Enhanced Networking Interface Types (ENA, Intel 82599 VF)</li>
+      <li>Multi-Flow vs. Single-Flow Traffic</li>
+    </ul>
+    <p class="exam-tip">Exam tip: These four topics are exactly the exam's enhanced-networking question clusters.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-027">
+  <div class="slide-img"><img src="03-43-027.jpg" width="1008" height="567" alt="Slide 027 traditional networking" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-027 &mdash; Traditional Virtual Networking</h3>
+    <p>All networking is virtual and controlled by the hypervisor; it shares the same physical hardware.</p>
+    <ul>
+      <li>Early passthrough tied a VM to a specific NIC &mdash; inflexible.</li>
+      <li>Hypervisor mediation costs CPU and adds latency.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Contrast with enhanced networking (no hardware tie-in, better performance, no extra cost).</p>
+  </aside>
+</section>
+<section class="slide" id="slide-046">
+  <div class="slide-img"><img src="03-43-046.jpg" width="1008" height="567" alt="Slide 046 SR-IOV" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-046 &mdash; SR-IOV</h3>
+    <p>Single Root I/O Virtualization supports very high-performance networking requirements.</p>
+    <ul>
+      <li>Drastically lower CPU utilization vs. traditional virtual networking.</li>
+      <li>Benefits: higher bandwidth, higher PPS, consistently lower inter-instance latency.</li>
+      <li><strong>No additional charge to enable.</strong></li>
+    </ul>
+    <p class="exam-tip">Exam tip: "No additional charge" is a common distractor answer &mdash; enhanced networking is free.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-047">
+  <div class="slide-img"><img src="03-43-047.jpg" width="1008" height="567" alt="Slide 047 SR-IOV repeat" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-047 &mdash; SR-IOV (recap)</h3>
+    <p>Repeat of the SR-IOV benefits slide.</p>
+    <ul>
+      <li>SR-IOV = the technology behind enhanced networking.</li>
+      <li>Lower CPU, higher bandwidth/PPS, lower latency, free.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Don't confuse SR-IOV (mechanism) with ENA/Intel VF (adapter implementations).</p>
+  </aside>
+</section>
+<section class="slide" id="slide-048">
+  <div class="slide-img"><img src="03-43-048.jpg" width="1008" height="567" alt="Slide 048 support" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-048 &mdash; Instance support</h3>
+    <p>All current-generation instance types <strong>except T2</strong> support enhanced networking.</p>
+    <ul>
+      <li>T2 instances do not support enhanced networking.</li>
+      <li>Most modern families (M5/M6, C5/C6, R5/R6, etc.) support ENA.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: If enhanced networking is unavailable, check the instance family (T2 excluded).</p>
+  </aside>
+</section>
+<section class="slide" id="slide-057">
+  <div class="slide-img"><img src="03-43-057.jpg" width="1008" height="567" alt="Slide 057 interface types" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-057 &mdash; Interface types</h3>
+    <p>Two enhanced networking adapters.</p>
+    <ul>
+      <li><strong>ENA</strong>: up to 100 Gbps.</li>
+      <li><strong>Intel 82599 VF</strong>: up to 10 Gbps.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Speed ceiling is the fastest way to distinguish ENA (100 Gbps) from Intel VF (10 Gbps).</p>
+  </aside>
+</section>
+<section class="slide" id="slide-060">
+  <div class="slide-img"><img src="03-43-060.jpg" width="1008" height="567" alt="Slide 060 ENA" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-060 &mdash; ENA</h3>
+    <p>Elastic Network Adapter (ENA): network speeds up to 100 Gbps for supported instance types.</p>
+    <ul>
+      <li>Primary adapter for current-generation instances.</li>
+      <li>Supports higher throughput and PPS than Intel VF.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: When you see "100 Gbps" or "current generation", think ENA.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-061">
+  <div class="slide-img"><img src="03-43-061.jpg" width="1008" height="567" alt="Slide 061 ENA details" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-061 &mdash; ENA details</h3>
+    <ul>
+      <li>Requires ENA module installed and ENA support enabled.</li>
+      <li>Most common implementation for the current generation of instances.</li>
+      <li><strong>ENA Express</strong>: high-performance communication between instances in the <strong>same subnet</strong>.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: ENA Express (SRD protocol) reaches up to 25 Gbps instance-to-instance in the same subnet &mdash; use for low-latency east-west traffic.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-080">
+  <div class="slide-img"><img src="03-43-080.jpg" width="1008" height="567" alt="Slide 080 speed limit" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-080 &mdash; Speed limits</h3>
+    <p>Speed-limit comparison chart between ENA and Intel 82599 VF.</p>
+    <ul>
+      <li>ENA: up to 100 Gbps.</li>
+      <li>Intel VF: up to 10 Gbps.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Always pick the adapter whose ceiling meets the stated bandwidth requirement.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-081">
+  <div class="slide-img"><img src="03-43-081.jpg" width="1008" height="567" alt="Slide 081 Intel VF" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-081 &mdash; Intel 82599 VF</h3>
+    <p>Intel 82599 Virtual Function (VF) interface: supports network speeds up to 10 Gbps.</p>
+    <ul>
+      <li>Used by older instance families.</li>
+      <li>Lower ceiling than ENA.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: 10 Gbps + older families (C3/C4, M4, etc.) &rarr; Intel 82599 VF.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-082">
+  <div class="slide-img"><img src="03-43-082.jpg" width="1008" height="567" alt="Slide 082 Intel VF driver" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-082 &mdash; Intel VF driver &amp; instances</h3>
+    <ul>
+      <li>Uses the <strong>Intel ixgbevf</strong> driver.</li>
+      <li>Supported instance types: C3, C4, D2, I2, M4 (excluding m4.16xlarge), R3.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Remember the ixgbevf driver and the m4.16xlarge exclusion for Intel VF.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-109">
+  <div class="slide-img"><img src="03-43-109.jpg" width="1008" height="567" alt="Slide 109 multi vs single flow" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-109 &mdash; Multi-Flow vs Single-Flow</h3>
+    <ul>
+      <li>Aggregated instance bandwidth depends on traffic destination.</li>
+      <li>Same-Region: full available bandwidth.</li>
+      <li>Cross-Region, IGW, DX: up to 50% of available bandwidth.</li>
+      <li>Instances with &lt;32 vCPUs: limited to 5 Gbps.</li>
+      <li>Single-flow = 5-tuple (src IP, src port, dst IP, dst port, protocol); limited to 5 Gbps unless in a cluster placement group.</li>
+      <li>Workaround: enable ENA Express for up to 25 Gbps between instances in the same subnet.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: Key numbers &mdash; 5 Gbps single-flow, 50% for cross-region/IGW/DX, 32 vCPU threshold, cluster placement groups lift the single-flow limit.</p>
+  </aside>
+</section>
+<section class="slide" id="slide-146">
+  <div class="slide-img"><img src="03-43-146.jpg" width="1008" height="567" alt="Slide 146 conclusion" loading="lazy" /></div>
+  <aside class="slide-info">
+    <h3>Slide 03-43-146 &mdash; Conclusion</h3>
+    <ul>
+      <li>SR-IOV: lower CPU than traditional virtual networking.</li>
+      <li>ENA Express: up to 25 Gbps between instances in the same subnet.</li>
+      <li>ENA: up to 100 Gbps.</li>
+      <li>Intel 82599 VF: up to 10 Gbps.</li>
+      <li>MPTCP offers the full benefits of implementing Enhanced Networking.</li>
+    </ul>
+    <p class="exam-tip">Exam tip: MPTCP (Multi-Path TCP) with ENA Express can maximize throughput &mdash; a common "best performance" answer.</p>
+  </aside>
+</section>
+<div class="footer">IT Knowledge Base &middot; AWS ANS-C01 &middot; 03-43 Enabling Enhanced Networking on Amazon EC2</div>
+</main>
 </div>
-<script>
-(function () {
-  var imgs = Array.prototype.slice.call(document.querySelectorAll('img'));
-  var prev = document.getElementById('nav-prev');
-  var next = document.getElementById('nav-next');
-  var counter = document.getElementById('nav-counter');
-  var index = 0;
-  var OFFSET = 58;
-
-  function anchorOf(img) {
-    var prev = img.previousElementSibling;
-    return (prev && prev.tagName === 'LI') ? prev : img;
-  }
-
-  function paint() {
-    counter.textContent = 'Imagen ' + (index + 1) + ' de ' + imgs.length;
-    prev.disabled = index <= 0;
-    next.disabled = index >= imgs.length - 1;
-  }
-
-  function goTo(n, smooth) {
-    index = Math.max(0, Math.min(imgs.length - 1, n));
-    var el = anchorOf(imgs[index]);
-    var top = el.getBoundingClientRect().top + window.pageYOffset - OFFSET;
-    window.scrollTo({ top: top, behavior: smooth === false ? 'auto' : 'smooth' });
-    paint();
-  }
-
-  function syncFromScroll() {
-    var best = 0, bestDist = Infinity;
-    for (var i = 0; i < imgs.length; i++) {
-      var d = Math.abs(anchorOf(imgs[i]).getBoundingClientRect().top - OFFSET);
-      if (d < bestDist) { bestDist = d; best = i; }
-    }
-    if (best !== index) { index = best; paint(); }
-  }
-
-  prev.addEventListener('click', function () { goTo(index - 1); });
-  next.addEventListener('click', function () { goTo(index + 1); });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(index - 1); }
-    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); goTo(index + 1); }
-    if (e.key === 'Home') { e.preventDefault(); goTo(0); }
-    if (e.key === 'End') { e.preventDefault(); goTo(imgs.length - 1); }
-  });
-
-  var ticking = false;
-  window.addEventListener('scroll', function () {
-    if (ticking) { return; }
-    ticking = true;
-    window.requestAnimationFrame(function () { syncFromScroll(); ticking = false; });
-  }, { passive: true });
-
-  paint();
-})();
-</script>
 </body>
 </html>

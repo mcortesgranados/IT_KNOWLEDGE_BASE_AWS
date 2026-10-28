@@ -1,0 +1,16 @@
+CHAPTER 4 Simple Storage Service (S3)
+S3 Overview
+Securing Your Bucket with S3 Block Public Access
+Hosting a Static Website Using S3
+Versioning Objects in S3
+S3 Storage Classes
+Lifecycle Management with S3
+S3 Object Lock and Glacier Vault Lock
+Encrypting S3 Objects
+Optimizing S3 Performance
+Backing up Data With S3 Replication
+S3 Exam Tips
+HANDS-ON LAB Set Up Cross-Region S3 Bucket Replication
+HANDS-ON LAB Create a Static Website Using Amazon S3
+HANDS-ON LAB Creating Amazon S3 Buckets, Managing Objects, and Enabling Versioning
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Simple Storage Service (S3) Quiz

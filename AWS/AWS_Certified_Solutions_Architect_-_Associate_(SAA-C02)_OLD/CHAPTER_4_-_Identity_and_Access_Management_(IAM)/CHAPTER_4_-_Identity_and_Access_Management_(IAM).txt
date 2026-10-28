@@ -1,0 +1,8 @@
+CHAPTER 3 Identity and Access Management (IAM)
+Securing the Root Account
+Controlling Users' Actions with IAM Policy Documents
+Permanent IAM Credentials
+IAM Exam Tips
+HANDS-ON LAB Create and Assume Roles in AWS
+HANDS-ON LAB Introduction to AWS Identity and Access Management (IAM)
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Identity and Access Management (IAM) Quiz

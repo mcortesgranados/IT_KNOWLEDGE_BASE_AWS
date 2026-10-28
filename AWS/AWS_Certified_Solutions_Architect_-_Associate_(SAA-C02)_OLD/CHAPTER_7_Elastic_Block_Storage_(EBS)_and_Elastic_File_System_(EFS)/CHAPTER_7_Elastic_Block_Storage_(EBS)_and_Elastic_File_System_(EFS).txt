@@ -1,0 +1,12 @@
+CHAPTER 6 Elastic Block Storage (EBS) and Elastic File System (EFS)
+EBS Overview
+Volumes and Snapshots
+Protecting EBS Volumes with Encryption
+EC2 Hibernation
+EFS Overview
+FSx Overview
+Amazon Machine Images: EBS vs. Instance Store
+AWS Backup
+EBS Exam Tips
+HANDS-ON LAB Reduce Storage Costs with EFS
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Elastic Block Storage (EBS) and Elastic File System (EFS) Quiz

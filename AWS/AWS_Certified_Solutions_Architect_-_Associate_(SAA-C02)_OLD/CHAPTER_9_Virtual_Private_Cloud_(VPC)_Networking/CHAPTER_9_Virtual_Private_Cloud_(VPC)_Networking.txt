@@ -1,0 +1,17 @@
+CHAPTER 8 Virtual Private Cloud (VPC) Networking
+VPC Overview
+Demo: Provisioning a VPC - Part 1
+Demo: Provisioning a VPC - Part 2
+Using NAT Gateways for Internet Access
+Protecting Your Resources with Security Groups
+Controlling Subnet Traffic with Network ACLs
+Private Communication Using VPC Endpoints
+Building Solutions across VPCs with Peering
+Network Privacy with AWS PrivateLink
+Securing Your Network with VPN CloudHub
+Connecting On-Premises with Direct Connect
+Simplifying Networks with Transit Gateway
+5G Networking with AWS Wavelength
+VPC Networking Exam Tips
+HANDS-ON LAB Build Solutions across VPCs with Peering
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Virtual Private Cloud (VPC) Networking Quiz

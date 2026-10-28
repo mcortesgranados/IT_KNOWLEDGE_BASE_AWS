@@ -1,0 +1,8 @@
+CHAPTER 11 Monitoring
+CloudWatch Overview
+Application Monitoring with CloudWatch Logs
+Monitoring with Amazon Managed Service for Prometheus and Amazon Managed Grafana
+Monitoring Exam Tips
+HANDS-ON LAB Implement Advanced CloudWatch Monitoring for a Web Server
+HANDS-ON LAB Work with AWS VPC Flow Logs for Network Monitoring
+QUIZ AWS Certified Solutions Architect - Associate (SAA-C03) - Monitoring Quiz

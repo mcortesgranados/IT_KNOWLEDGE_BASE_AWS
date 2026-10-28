@@ -1,0 +1,99 @@
+Which of the following items are NOT a part of a VPC?
+
+Service Gateway
+
+Correct Answer
+This is not an AWS service.
+
+
+____________________________________________________________________________________
+
+What is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets?
+
+Network ACLs
+
+Correct Answer
+A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. You might set up network ACLs with rules similar to your security groups in order to add an additional layer of security to your VPC. Network ACLs.
+
+____________________________________________________________________________________
+
+What is the safest way to open up a single API endpoint to another AWS VPC?
+
+Use PrivateLink to securely share out your API.
+
+Correct Answer
+PrivateLink allows you to share out a single endpoint and not your entire VPC. Reference Documentation: PrivateLink
+
+____________________________________________________________________________________
+
+How do you scale a NAT Gateway?
+
+You don't. AWS handles this for you.
+
+Good work!
+AWS handles scaling for you. Reference Documentation: VPC NAT Gateway
+
+____________________________________________________________________________________
+
+What is the purpose of a NAT Gateway?
+
+To forward traffic from private subnets to services outside your VPC
+
+Correct Answer
+A NAT gateway is a Network Address Translation (NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances. Reference Documentation: VPC NAT Gateway
+
+____________________________________________________________________________________
+
+True or False? Direct Connect provides you with an encrypted connection to your AWS account by default.
+
+false
+
+Good work!
+Direct Connect is not encrypted by default. Reference Documentation: Encryption in Transit
+
+____________________________________________________________________________________
+
+Fill in the blank: Security groups are ____.
+
+Stateful
+
+Correct Answer
+Security groups are stateful. Reference Documentation: VPC Security Groups
+
+____________________________________________________________________________________
+
+By default, what range of IP addresses and ports do security groups leave open for inbound traffic?
+
+None. They are closed by default.
+
+Correct Answer
+No inbound ports are open by default. Reference Documentation: VPC Security Groups
+
+____________________________________________________________________________________
+
+Which of the following is a reason that VPC peering could fail?
+
+The VPCs have overlapping IP addresses.
+
+Correct Answer
+Overlapping IP addresses would prevent this. Reference Documentation: Invalid Peering Configurations
+
+____________________________________________________________________________________
+
+True or False? Transitive peering is not a supported VPC peering connection configuration.
+
+True
+
+Correct Answer
+Transitive peering is not supported. Reference Documentation: Invalid Peering Configurations
+
+____________________________________________________________________________________
+
+Fill in the blank: Network Access Control Lists (NACLs) are ____.
+
+Stateless
+
+Correct Answer
+NACLs are stateless. Reference Documentation: VPC Network ACLs
+
+____________________________________________________________________________________
